@@ -1,0 +1,45 @@
+model: Qwen/Qwen2.5-32B-Instruct
+vllm_base_url: http://localhost:8000/v1
+
+discrete:
+  questions_per_topic: 50
+  max_retries: 3
+  temperature_generate: 0.8
+  temperature_validate: 0.3
+  batch_size: 20          # concurrent requests to vLLM
+
+cars:
+  passages_per_topic: 100  # per CARS skill category
+  questions_per_passage: 10
+  passage_word_range: [500, 600]
+  max_retries: 3
+  temperature_generate: 0.8
+  temperature_validate: 0.3
+  batch_size: 10           # lower because passages are longer
+
+  # CARS passages are drawn from humanities/social science subjects
+  passage_subjects:
+    - Philosophy
+    - Ethics
+    - Art History
+    - Political Theory
+    - Literary Criticism
+    - History of Science
+    - Sociology
+    - Anthropology
+    - Economics
+    - Cultural Studies
+    - Musicology
+    - Architecture and Design
+    - Psychology and Society
+    - Linguistics
+    - Religious Studies
+    - Media Studies
+    - Legal Theory
+    - Environmental Ethics
+    - Education Theory
+    - Gender Studies
+
+checkpoint_dir: ./checkpoints
+output_dir: ./output
+topics_file: ./topics.json
