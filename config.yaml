@@ -2,14 +2,14 @@ model: Qwen/Qwen2.5-32B-Instruct
 vllm_base_url: http://localhost:8000/v1
 
 discrete:
-  questions_per_topic: 50
+  questions_per_topic: 3
   max_retries: 3
   temperature_generate: 0.8
   temperature_validate: 0.3
   batch_size: 20          # concurrent requests to vLLM
 
 cars:
-  passages_per_topic: 100  # per CARS skill category
+  passages_per_topic: 2  # per CARS skill category
   questions_per_passage: 10
   passage_word_range: [500, 600]
   max_retries: 3
