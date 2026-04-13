@@ -42,4 +42,4 @@ cars:
 
 checkpoint_dir: ./checkpoints
 output_dir: ./output
-topics_file: ./topics.json
+topics_file: ./mcat_topics.json
