@@ -7,7 +7,7 @@ model: claude-opus-4-8
 checker_model: claude-haiku-4-5-20251001
 
 discrete:
-  questions_per_topic: 8
+  questions_per_topic: 10
   max_retries: 3
   temperature_generate: 0.8
   temperature_validate: 0.3
@@ -19,7 +19,7 @@ discrete:
   discrete_checker_model: claude-sonnet-4-6
 
 cars:
-  passages_per_topic: 30   # TOTAL CARS passages to generate this beta run (not per-category)
+  passages_per_topic: 60   # TOTAL CARS passages to generate this beta run (not per-category)
   questions_per_passage_range: [5, 7]   # was a fixed 10; real CARS carries ~5-7 per passage
   passage_word_range: [500, 600]
   max_retries: 3
@@ -62,7 +62,7 @@ cars:
     - Studies of Diverse Cultures
 
 science_passage:
-  passages_per_topic_cluster: 1
+  passages_per_topic_cluster: 2
   questions_per_passage_range: [4, 7]
 
   # Independent model for the SCIENCE blind-solve check ONLY (generation +
