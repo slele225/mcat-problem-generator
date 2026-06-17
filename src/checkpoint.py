@@ -86,6 +86,35 @@ class CheckpointManager:
         self._save_progress()
         logger.info("All checkpoints cleared")
 
+    def rebuild_from_counts(self, counts: dict, target: int) -> tuple[int, int]:
+        """Rebuild markers + progress from actual accepted-question counts.
+
+        Clears all existing `.done` markers and progress, then rebuilds: topics
+        with >= `target` accepted questions get a `.done` marker; under-quota
+        topics have their partial count recorded so a later run resumes them.
+        Topics absent from `counts` (no questions) end up with neither, so they
+        regenerate from scratch. Does not touch any questions file.
+
+        Returns (kept_complete, reopened).
+        """
+        for f in self.checkpoint_dir.glob("*.done"):
+            f.unlink()
+        self._progress = {}
+        kept = reopened = 0
+        for topic_id, n in counts.items():
+            if n >= target:
+                (self.checkpoint_dir / f"{topic_id}.done").touch()
+                kept += 1
+            else:
+                self._progress[topic_id] = n
+                reopened += 1
+        self._save_progress()
+        logger.info(
+            f"Recount: {kept} topic(s) complete, {reopened} reopened "
+            f"from {len(counts)} topic(s) with questions"
+        )
+        return kept, reopened
+
 
 class OutputWriter:
     """Append-only JSONL writer for incremental output."""

@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 checkpoints/
 output/*.jsonl
+runs/
 logs/*.log
 .vllm.pid
 uv.lock

@@ -6,9 +6,9 @@
     "content_category": "1A: Structure and function of proteins and their constituent amino acids",
     "topic_group": "Amino Acids",
     "discipline": "BC, OC",
-    "topic": "Description",
+    "topic": "Amino acid structure and classification",
     "subtopics": [
-      "Absolute configuration at the \u03b1 position",
+      "Absolute configuration at the α position",
       "Amino acids as dipolar ions",
       "Classifications"
     ],
@@ -84,10 +84,10 @@
     "discipline": "BIO, BC, OC",
     "topic": "Structure",
     "subtopics": [
-      "1\u00b0 structure of proteins",
-      "2\u00b0 structure of proteins",
-      "3\u00b0 structure of proteins; role of proline, cystine, hydrophobic bonding",
-      "4\u00b0 structure of proteins (BIO, BC)"
+      "1° structure of proteins",
+      "2° structure of proteins",
+      "3° structure of proteins; role of proline, cystine, hydrophobic bonding",
+      "4° structure of proteins (BIO, BC)"
     ],
     "tags": [
       "Biology",
@@ -173,7 +173,8 @@
       "Nonenzymatic Protein Function"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "biological systems and pathways"
   },
   {
     "topic_id": "BB_1A_010",
@@ -182,7 +183,7 @@
     "content_category": "1A: Structure and function of proteins and their constituent amino acids",
     "topic_group": "Nonenzymatic Protein Function",
     "discipline": "BIO, BC",
-    "topic": "Motors",
+    "topic": "Motor proteins in cellular movement",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -377,7 +378,7 @@
     "content_category": "1A: Structure and function of proteins and their constituent amino acids",
     "topic_group": "Control of Enzyme Activity",
     "discipline": "BIO, BC",
-    "topic": "Inhibition \u2015 types",
+    "topic": "Inhibition ― types",
     "subtopics": [
       "Competitive",
       "Noncompetitive",
@@ -420,7 +421,7 @@
     "content_category": "1B: Transmission of genetic information from the gene to the protein",
     "topic_group": "Nucleic Acid Structure and Function",
     "discipline": "BIO, BC",
-    "topic": "Description",
+    "topic": "Nucleic acid structure overview",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -637,7 +638,7 @@
     "content_category": "1B: Transmission of genetic information from the gene to the protein",
     "topic_group": "Genetic Code",
     "discipline": "BIO",
-    "topic": "Central Dogma: DNA \u2192 RNA \u2192 protein",
+    "topic": "Central Dogma: DNA → RNA → protein",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -1389,7 +1390,7 @@
     "content_category": "1C: Transmission of heritable information from generation to generation and the processes that increase genetic diversity",
     "topic_group": "Mendelian Concepts",
     "discipline": "BIO",
-    "topic": "Gene",
+    "topic": "Gene as unit of heredity",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -1405,7 +1406,7 @@
     "content_category": "1C: Transmission of heritable information from generation to generation and the processes that increase genetic diversity",
     "topic_group": "Mendelian Concepts",
     "discipline": "BIO",
-    "topic": "Locus",
+    "topic": "Locus as chromosomal position of a gene",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -1453,7 +1454,7 @@
     "content_category": "1C: Transmission of heritable information from generation to generation and the processes that increase genetic diversity",
     "topic_group": "Mendelian Concepts",
     "discipline": "BIO",
-    "topic": "Wild-type",
+    "topic": "Wild-type allele and phenotype",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -1549,7 +1550,7 @@
     "content_category": "1C: Transmission of heritable information from generation to generation and the processes that increase genetic diversity",
     "topic_group": "Mendelian Concepts",
     "discipline": "BIO",
-    "topic": "Gene pool",
+    "topic": "Gene pool of a population",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -1688,7 +1689,7 @@
     "discipline": "BIO",
     "topic": "Mutation",
     "subtopics": [
-      "General concept of mutation \u2014 error in DNA sequence",
+      "General concept of mutation — error in DNA sequence",
       "Types of mutations: random, translation error, transcription error, base substitution, inversion, addition, deletion, translocation, mispairing",
       "Advantageous vs. deleterious mutation",
       "Inborn errors of metabolism",
@@ -1871,7 +1872,8 @@
       "Principles of Bioenergetics"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "biological systems and pathways"
   },
   {
     "topic_id": "BB_1D_002",
@@ -1883,7 +1885,7 @@
     "topic": "Free energy/Keq",
     "subtopics": [
       "Equilibrium constant",
-      "Relationship of the equilibrium constant and \u0394G\u00b0"
+      "Relationship of the equilibrium constant and ΔG°"
     ],
     "tags": [
       "Biochemistry",
@@ -1902,7 +1904,7 @@
     "discipline": "BC, GC",
     "topic": "Concentration",
     "subtopics": [
-      "Le Ch\u00e2telier\u2019s Principle"
+      "Le Châtelier’s Principle"
     ],
     "tags": [
       "Biochemistry",
@@ -1953,7 +1955,7 @@
     "content_category": "1D: Principles of bioenergetics and fuel molecule metabolism",
     "topic_group": "Principles of Bioenergetics",
     "discipline": "BC, GC",
-    "topic": "Spontaneous reactions and \u0394G\u00b0",
+    "topic": "Spontaneous reactions and ΔG°",
     "subtopics": [],
     "tags": [
       "Biochemistry",
@@ -1972,7 +1974,7 @@
     "discipline": "BC, GC",
     "topic": "Phosphoryl group transfers and ATP",
     "subtopics": [
-      "ATP hydrolysis \u0394G << 0",
+      "ATP hydrolysis ΔG << 0",
       "ATP group transfers"
     ],
     "tags": [
@@ -2002,7 +2004,8 @@
       "Principles of Bioenergetics"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "biological systems and pathways"
   },
   {
     "topic_id": "BB_1D_009",
@@ -2011,7 +2014,7 @@
     "content_category": "1D: Principles of bioenergetics and fuel molecule metabolism",
     "topic_group": "Carbohydrates",
     "discipline": "BC, OC",
-    "topic": "Description",
+    "topic": "Carbohydrate classification and stereochemistry",
     "subtopics": [
       "Nomenclature and classification, common names",
       "Absolute configuration",
@@ -2024,7 +2027,8 @@
       "Carbohydrates"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "biological systems and pathways"
   },
   {
     "topic_id": "BB_1D_010",
@@ -2041,7 +2045,8 @@
       "Carbohydrates"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "biological systems and pathways"
   },
   {
     "topic_id": "BB_1D_011",
@@ -2687,7 +2692,7 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Plasma Membrane",
     "discipline": "BIO, BC",
-    "topic": "Steroids",
+    "topic": "Steroids in plasma membrane composition",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -2891,7 +2896,7 @@
     "subtopics": [
       "Compartmentalization, storage of genetic matrix, cells of multicellular organisms organize into information tissues, organs, and organ systems. Certain",
       "Nucleolus: location and function membrane-associated proteins also play key roles in",
-      "Nuclear envelope, nuclear pores identifying tissues or recent events in the cell\u2019s history"
+      "Nuclear envelope, nuclear pores identifying tissues or recent events in the cell’s history"
     ],
     "tags": [
       "Biology",
@@ -2907,7 +2912,7 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Characteristics of Eukaryotic Cells",
     "discipline": "BIO",
-    "topic": "Mitochondria for purposes of recognition of \u201cself\u201d versus foreign",
+    "topic": "Mitochondria for purposes of recognition of “self” versus foreign",
     "subtopics": [
       "Site of ATP production molecules.",
       "Inner- and outer-membrane structure (BIO, BC)",
@@ -3452,7 +3457,7 @@
     "content_category": "2B: The structure, growth, physiology, and genetics of prokaryotes and viruses",
     "topic_group": "Virus Structure",
     "discipline": "BIO",
-    "topic": "Genomic content \u2014 RNA or DNA",
+    "topic": "Genomic content — RNA or DNA",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -4304,7 +4309,7 @@
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
     "topic_group": "Lipids",
     "discipline": "BC, OC",
-    "topic": "Neuroendocrinology \u2015 relation between neurons and hormonal systems Endocrine System: Mechanisms of Hormone Action (BIO)",
+    "topic": "Neuroendocrinology ― relation between neurons and hormonal systems Endocrine System: Mechanisms of Hormone Action (BIO)",
     "subtopics": [],
     "tags": [
       "Biochemistry",
@@ -4495,7 +4500,7 @@
     "topic": "Alveolar gas exchange",
     "subtopics": [
       "Diffusion, differential partial pressure",
-      "Henry\u2019s Law (GC)"
+      "Henry’s Law (GC)"
     ],
     "tags": [
       "Biology",
@@ -5244,7 +5249,7 @@
     "topic": "Nephron structure",
     "subtopics": [
       "Glomerulus",
-      "Bowman\u2019s capsule",
+      "Bowman’s capsule",
       "Proximal tubule",
       "Loop of Henle",
       "Distal tubule",
@@ -5533,7 +5538,7 @@
     "content_category": "3B: Structure and integrative functions of the main organ systems",
     "topic_group": "Muscle System",
     "discipline": "BIO",
-    "topic": "Sarcomeres: \u201cI\u201d and \u201cA\u201d bands, \u201cM\u201d and \u201cZ\u201d lines, \u201cH\u201d zone",
+    "topic": "Sarcomeres: “I” and “A” bands, “M” and “Z” lines, “H” zone",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -5843,7 +5848,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Force",
     "discipline": "PHY",
-    "topic": "Newton\u2019s First Law, inertia different forms. In a living system, the energy for",
+    "topic": "Newton’s First Law, inertia different forms. In a living system, the energy for",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -5859,7 +5864,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Force",
     "discipline": "PHY",
-    "topic": "Newton\u2019s Second Law (F = ma)",
+    "topic": "Newton’s Second Law (F = ma)",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -5875,7 +5880,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Force",
     "discipline": "PHY",
-    "topic": "Newton\u2019s Third Law, forces equal and opposite",
+    "topic": "Newton’s Third Law, forces equal and opposite",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -5955,7 +5960,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Work",
     "discipline": "PHY",
-    "topic": "Work done by a constant force: W = Fd cos\u03b8",
+    "topic": "Work done by a constant force: W = Fd cosθ",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6019,7 +6024,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Energy of Point Object Systems",
     "discipline": "PHY",
-    "topic": "Kinetic Energy: KE = \u00bdmv2; units",
+    "topic": "Kinetic Energy: KE = ½mv2; units",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6038,7 +6043,7 @@
     "topic": "Potential Energy",
     "subtopics": [
       "PE = mgh (gravitational, local)",
-      "PE = \u00bdkx2 (spring)"
+      "PE = ½kx2 (spring)"
     ],
     "tags": [
       "Physics",
@@ -6134,7 +6139,7 @@
     "content_category": "4B: Importance of fluids for the circulation of blood, gas movement, and gas exchange",
     "topic_group": "Fluids",
     "discipline": "PHY",
-    "topic": "Buoyancy, Archimedes\u2019 Principle",
+    "topic": "Buoyancy, Archimedes’ Principle",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6152,8 +6157,8 @@
     "discipline": "PHY",
     "topic": "Hydrostatic pressure",
     "subtopics": [
-      "Pascal\u2019s Law",
-      "Hydrostatic pressure; P = \u03c1gh (pressure vs. depth)"
+      "Pascal’s Law",
+      "Hydrostatic pressure; P = ρgh (pressure vs. depth)"
     ],
     "tags": [
       "Physics",
@@ -6185,7 +6190,7 @@
     "content_category": "4B: Importance of fluids for the circulation of blood, gas movement, and gas exchange",
     "topic_group": "Fluids",
     "discipline": "PHY",
-    "topic": "Continuity equation (A\u2219v = constant)",
+    "topic": "Continuity equation (A∙v = constant)",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6233,7 +6238,7 @@
     "content_category": "4B: Importance of fluids for the circulation of blood, gas movement, and gas exchange",
     "topic_group": "Fluids",
     "discipline": "PHY",
-    "topic": "Bernoulli\u2019s equation",
+    "topic": "Bernoulli’s equation",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6315,7 +6320,7 @@
     "content_category": "4B: Importance of fluids for the circulation of blood, gas movement, and gas exchange",
     "topic_group": "Gas Phase",
     "discipline": "GC, PHY",
-    "topic": "Molar volume at 0\u00b0C and 1 atm = 22.4 L/mol",
+    "topic": "Molar volume at 0°C and 1 atm = 22.4 L/mol",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -6336,9 +6341,9 @@
     "subtopics": [
       "Definition",
       "Ideal Gas Law: PV = nRT",
-      "Boyle\u2019s Law: PV = constant",
-      "Charles\u2019 Law: V/T = constant",
-      "Avogadro\u2019s Law: V/n = constant"
+      "Boyle’s Law: PV = constant",
+      "Charles’ Law: V/T = constant",
+      "Avogadro’s Law: V/n = constant"
     ],
     "tags": [
       "General Chemistry",
@@ -6358,7 +6363,7 @@
     "topic": "Kinetic Molecular Theory of Gases",
     "subtopics": [
       "Heat capacity at constant volume and at constant pressure (PHY)",
-      "Boltzmann\u2019s Constant (PHY)"
+      "Boltzmann’s Constant (PHY)"
     ],
     "tags": [
       "General Chemistry",
@@ -6378,7 +6383,7 @@
     "topic": "Deviation of real gas behavior from Ideal Gas Law",
     "subtopics": [
       "Qualitative",
-      "Quantitative (Van der Waals\u2019 Equation)"
+      "Quantitative (Van der Waals’ Equation)"
     ],
     "tags": [
       "General Chemistry",
@@ -6412,7 +6417,7 @@
     "content_category": "4B: Importance of fluids for the circulation of blood, gas movement, and gas exchange",
     "topic_group": "Gas Phase",
     "discipline": "GC, PHY",
-    "topic": "Dalton\u2019s Law relating partial pressure to composition",
+    "topic": "Dalton’s Law relating partial pressure to composition",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -6461,7 +6466,7 @@
     "content_category": "4C: Electrochemistry and electrical circuits and their elements",
     "topic_group": "Electrostatics",
     "discipline": "PHY",
-    "topic": "Coulomb\u2019s Law",
+    "topic": "Coulomb’s Law",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6512,7 +6517,7 @@
     "content_category": "4C: Electrochemistry and electrical circuits and their elements",
     "topic_group": "Circuit Elements",
     "discipline": "PHY",
-    "topic": "Current I = \u0394Q/\u0394t, sign conventions, units",
+    "topic": "Current I = ΔQ/Δt, sign conventions, units",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6546,10 +6551,10 @@
     "discipline": "PHY",
     "topic": "Resistance",
     "subtopics": [
-      "Ohm\u2019s Law: I = V/R",
+      "Ohm’s Law: I = V/R",
       "Resistors in series",
       "Resistors in parallel",
-      "Resistivity: \u03c1 = R\u2022A/L"
+      "Resistivity: ρ = R•A/L"
     ],
     "tags": [
       "Physics",
@@ -6606,7 +6611,7 @@
     "content_category": "4C: Electrochemistry and electrical circuits and their elements",
     "topic_group": "Circuit Elements",
     "discipline": "PHY",
-    "topic": "Meters",
+    "topic": "Ammeters and voltmeters in circuits",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6659,7 +6664,7 @@
       "Electrolysis",
       "Anode, cathode",
       "Electrolyte",
-      "Faraday\u2019s Law relating amount of elements deposited (or gas liberated) at an electrode to current",
+      "Faraday’s Law relating amount of elements deposited (or gas liberated) at an electrode to current",
       "Electron flow; oxidation and reduction at the electrodes"
     ],
     "tags": [
@@ -6844,7 +6849,7 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Sound",
     "discipline": "PHY",
-    "topic": "Pitch",
+    "topic": "Pitch and frequency of sound waves",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6908,7 +6913,7 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Light, Electromagnetic Radiation",
     "discipline": "PHY",
-    "topic": "Concept of Interference; Young\u2019s double-slit experiment",
+    "topic": "Concept of Interference; Young’s double-slit experiment",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6956,7 +6961,7 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Light, Electromagnetic Radiation",
     "discipline": "PHY",
-    "topic": "Polarization of light: linear and circular \u201csound\u201d are generated. Sound waves are audible if the",
+    "topic": "Polarization of light: linear and circular “sound” are generated. Sound waves are audible if the",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -7063,7 +7068,7 @@
     "discipline": "OC",
     "topic": "Ultraviolet region",
     "subtopics": [
-      "\u03c0-Electron and nonbonding electron transitions",
+      "π-Electron and nonbonding electron transitions",
       "Conjugated systems"
     ],
     "tags": [
@@ -7115,7 +7120,7 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Geometrical Optics",
     "discipline": "PHY",
-    "topic": "Refraction, refractive index n; Snell\u2019s law: n1 sin \u03b81 = n2 sin \u03b82",
+    "topic": "Refraction, refractive index n; Snell’s law: n1 sin θ1 = n2 sin θ2",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -7304,7 +7309,7 @@
     "discipline": "PHY, GC",
     "topic": "Radioactive decay",
     "subtopics": [
-      "\u03b1, \u03b2, \u03b3 decay",
+      "α, β, γ decay",
       "Half-life, exponential decay, semi-log plots"
     ],
     "tags": [
@@ -7458,7 +7463,7 @@
     "content_category": "4E: Atoms, nuclear decay, electronic structure, and atomic chemical behavior",
     "topic_group": "Electronic Structure",
     "discipline": "PHY, GC",
-    "topic": "Bohr atom",
+    "topic": "Bohr model of the atom",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -7509,7 +7514,7 @@
     "content_category": "4E: Atoms, nuclear decay, electronic structure, and atomic chemical behavior",
     "topic_group": "Electronic Structure",
     "discipline": "PHY, GC",
-    "topic": "Photoelectric effect The Periodic Table \u2015 Classification of Elements",
+    "topic": "Photoelectric effect The Periodic Table ― Classification of Elements",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -7823,7 +7828,7 @@
     "content_category": "4E: Atoms, nuclear decay, electronic structure, and atomic chemical behavior",
     "topic_group": "Stoichiometry",
     "discipline": "GC",
-    "topic": "Mole concept, Avogadro\u2019s number NA",
+    "topic": "Mole concept, Avogadro’s number NA",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -7895,10 +7900,10 @@
     "content_category": "5A: Unique nature of water and its solutions",
     "topic_group": "Acid-Base Equilibria",
     "discipline": "GC, BC",
-    "topic": "Br\u00f8nsted-Lowry definition of acid, base",
+    "topic": "Brønsted-Lowry definition of acid, base",
     "subtopics": [
-      "Kw, its approximate value (Kw = [H+][OH\u2013] = 10\u201314 properties of water allow it to strongly interact with at 25\u00b0C, 1 atm) and mobilize many types of solutes, including ions.",
-      "Definition of pH: pH of pure water Water is also unique in its ability to absorb energy and \u25aa Conjugate acids and bases (e.g., NH4+ and NH3) buffer living systems from the chemical changes"
+      "Kw, its approximate value (Kw = [H+][OH–] = 10–14 properties of water allow it to strongly interact with at 25°C, 1 atm) and mobilize many types of solutes, including ions.",
+      "Definition of pH: pH of pure water Water is also unique in its ability to absorb energy and ▪ Conjugate acids and bases (e.g., NH4+ and NH3) buffer living systems from the chemical changes"
     ],
     "tags": [
       "General Chemistry",
@@ -7990,7 +7995,7 @@
     "content_category": "5A: Unique nature of water and its solutions",
     "topic_group": "Ions in Solutions",
     "discipline": "GC, BC",
-    "topic": "Anion, cation: common names, formulas, and charges for familiar ions (e.g., NH4+ ammonium, PO43\u2013 phosphate, SO42\u2013 sulfate)",
+    "topic": "Anion, cation: common names, formulas, and charges for familiar ions (e.g., NH4+ ammonium, PO43– phosphate, SO42– sulfate)",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -8179,7 +8184,7 @@
     "content_category": "5B: Nature of molecules and intermolecular interactions",
     "topic_group": "Covalent Bond",
     "discipline": "GC",
-    "topic": "\u03c3 and \u03c0 bonds",
+    "topic": "σ and π bonds",
     "subtopics": [
       "Hybrid orbitals: sp3, sp2, sp, and respective geometries",
       "Valence shell electron pair repulsion and the prediction of shapes of molecules (e.g., NH3, H2O, CO2)",
@@ -8352,7 +8357,7 @@
     "content_category": "5B: Nature of molecules and intermolecular interactions",
     "topic_group": "Covalent Bond",
     "discipline": "GC",
-    "topic": "Van der Waals\u2019 Forces (London dispersion forces)",
+    "topic": "Van der Waals’ Forces (London dispersion forces)",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -8513,7 +8518,7 @@
     "content_category": "5C: Separation and purification methods",
     "topic_group": "Separations and Purifications",
     "discipline": "OC, BC",
-    "topic": "Affinity",
+    "topic": "Affinity chromatography",
     "subtopics": [],
     "tags": [
       "Organic Chemistry",
@@ -8620,7 +8625,7 @@
     "discipline": "OC, BC",
     "topic": "Amino acids: description",
     "subtopics": [
-      "Absolute configuration at the \u03b1 position",
+      "Absolute configuration at the α position",
       "Dipolar ions",
       "Classification"
     ],
@@ -8658,7 +8663,7 @@
     "discipline": "OC, BC",
     "topic": "Hydrophilic or hydrophobic",
     "subtopics": [
-      "Synthesis of \u03b1-amino acids (OC)"
+      "Synthesis of α-amino acids (OC)"
     ],
     "tags": [
       "Organic Chemistry",
@@ -8803,7 +8808,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Nonenzymatic Protein Function",
     "discipline": "BC",
-    "topic": "Binding",
+    "topic": "Ligand binding by nonenzymatic proteins",
     "subtopics": [],
     "tags": [
       "Biochemistry",
@@ -8826,7 +8831,8 @@
       "Nonenzymatic Protein Function"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "chemical principles and reactions"
   },
   {
     "topic_id": "CP_5D_017",
@@ -8835,7 +8841,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Nonenzymatic Protein Function",
     "discipline": "BC",
-    "topic": "Motor",
+    "topic": "Motor proteins and mechanochemistry",
     "subtopics": [],
     "tags": [
       "Biochemistry",
@@ -8976,7 +8982,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Lipids",
     "discipline": "BC, OC",
-    "topic": "Steroids",
+    "topic": "Steroid structure and properties",
     "subtopics": [],
     "tags": [
       "Biochemistry",
@@ -9010,7 +9016,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Carbohydrates",
     "discipline": "OC",
-    "topic": "Description",
+    "topic": "Carbohydrate nomenclature and conformations",
     "subtopics": [
       "Nomenclature and classification, common names",
       "Absolute configuration",
@@ -9022,7 +9028,8 @@
       "Carbohydrates"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "chemical principles and reactions"
   },
   {
     "topic_id": "CP_5D_028",
@@ -9038,7 +9045,8 @@
       "Carbohydrates"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "chemical principles and reactions"
   },
   {
     "topic_id": "CP_5D_029",
@@ -9095,7 +9103,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Aldehydes and Ketones",
     "discipline": "OC",
-    "topic": "Description",
+    "topic": "Aldehyde and ketone structure and nomenclature",
     "subtopics": [
       "Nomenclature",
       "Physical properties"
@@ -9199,7 +9207,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Aldehydes and Ketones",
     "discipline": "OC",
-    "topic": "Keto-enol tautomerism (\u03b1-racemization)",
+    "topic": "Keto-enol tautomerism (α-racemization)",
     "subtopics": [],
     "tags": [
       "Organic Chemistry",
@@ -9250,7 +9258,7 @@
     "topic": "General principles",
     "subtopics": [
       "Effect of substituents on reactivity of C=O; steric hindrance",
-      "Acidity of \u03b1-H; carbanions"
+      "Acidity of α-H; carbanions"
     ],
     "tags": [
       "Organic Chemistry",
@@ -9266,7 +9274,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Alcohols",
     "discipline": "OC",
-    "topic": "Description",
+    "topic": "Alcohol structure and classification",
     "subtopics": [
       "Nomenclature",
       "Physical properties (acidity, hydrogen bonding)"
@@ -9306,7 +9314,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Carboxylic Acids",
     "discipline": "OC",
-    "topic": "Description",
+    "topic": "Carboxylic acid structure and properties",
     "subtopics": [
       "Nomenclature",
       "Physical properties"
@@ -9359,7 +9367,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Carboxylic Acids",
     "discipline": "OC",
-    "topic": "Reduction",
+    "topic": "Reduction of carboxylic acids",
     "subtopics": [],
     "tags": [
       "Organic Chemistry",
@@ -9393,7 +9401,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Acid Derivatives (Anhydrides, Amides, Esters)",
     "discipline": "OC",
-    "topic": "Description",
+    "topic": "Acid derivative structure and nomenclature",
     "subtopics": [
       "Nomenclature",
       "Physical properties"
@@ -9437,7 +9445,7 @@
       "Relative reactivity of acid derivatives",
       "Steric effects",
       "Electronic effects",
-      "Strain (e.g., \u03b2-lactams)"
+      "Strain (e.g., β-lactams)"
     ],
     "tags": [
       "Organic Chemistry",
@@ -9453,7 +9461,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Phenols",
     "discipline": "OC, BC",
-    "topic": "Oxidation and reduction (e.g., hydroquinones, ubiquinones): biological 2e\u2013 redox centers Polycyclic and Heterocyclic Aromatic Compounds (OC, BC)",
+    "topic": "Oxidation and reduction (e.g., hydroquinones, ubiquinones): biological 2e– redox centers Polycyclic and Heterocyclic Aromatic Compounds (OC, BC)",
     "subtopics": [],
     "tags": [
       "Organic Chemistry",
@@ -9595,7 +9603,8 @@
       "Principles of Bioenergetics"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "chemical principles and reactions"
   },
   {
     "topic_id": "CP_5E_007",
@@ -9606,7 +9615,7 @@
     "discipline": "BC",
     "topic": "Phosphorylation/ATP",
     "subtopics": [
-      "ATP hydrolysis \u0394G << 0",
+      "ATP hydrolysis ΔG << 0",
       "ATP group transfers"
     ],
     "tags": [
@@ -9627,14 +9636,15 @@
     "subtopics": [
       "Half-reactions",
       "Soluble electron carriers",
-      "Flavoproteins Energy Changes in Chemical Reactions \u2015"
+      "Flavoproteins Energy Changes in Chemical Reactions ―"
     ],
     "tags": [
       "Biochemistry",
       "Principles of Bioenergetics"
     ],
     "adaptive_score": 1.0,
-    "last_seen": 0.0
+    "last_seen": 0.0,
+    "section_focus": "chemical principles and reactions"
   },
   {
     "topic_id": "CP_5E_009",
@@ -9643,7 +9653,7 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Thermochemistry, Thermodynamics",
     "discipline": "GC, PHY",
-    "topic": "Thermodynamic system \u2013 state function",
+    "topic": "Thermodynamic system – state function",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -9660,7 +9670,7 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Thermochemistry, Thermodynamics",
     "discipline": "GC, PHY",
-    "topic": "Zeroth Law \u2013 concept of temperature",
+    "topic": "Zeroth Law – concept of temperature",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -9677,7 +9687,7 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Thermochemistry, Thermodynamics",
     "discipline": "GC, PHY",
-    "topic": "First Law \u2212 conservation of energy in thermodynamic processes",
+    "topic": "First Law − conservation of energy in thermodynamic processes",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -9711,9 +9721,9 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Thermochemistry, Thermodynamics",
     "discipline": "GC, PHY",
-    "topic": "Second Law \u2013 concept of entropy",
+    "topic": "Second Law – concept of entropy",
     "subtopics": [
-      "Entropy as a measure of \u201cdisorder\u201d",
+      "Entropy as a measure of “disorder”",
       "Relative entropy for gas, liquid, and crystal states"
     ],
     "tags": [
@@ -9748,7 +9758,7 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Thermochemistry, Thermodynamics",
     "discipline": "GC, PHY",
-    "topic": "Heat transfer \u2013 conduction, convection, radiation (PHY)",
+    "topic": "Heat transfer – conduction, convection, radiation (PHY)",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -9768,7 +9778,7 @@
     "topic": "Endothermic, exothermic reactions (GC)",
     "subtopics": [
       "Enthalpy, H, and standard heats of reaction and formation",
-      "Hess\u2019 Law of Heat Summation"
+      "Hess’ Law of Heat Summation"
     ],
     "tags": [
       "General Chemistry",
@@ -9819,7 +9829,7 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Thermochemistry, Thermodynamics",
     "discipline": "GC, PHY",
-    "topic": "Spontaneous reactions and \u0394G\u00b0 (GC)",
+    "topic": "Spontaneous reactions and ΔG° (GC)",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -9972,7 +9982,7 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Equilibrium",
     "discipline": "GC",
-    "topic": "Interpretation of energy profiles showing energies of reactants, products, activation energy, and \u0394H for the reaction",
+    "topic": "Interpretation of energy profiles showing energies of reactants, products, activation energy, and ΔH for the reaction",
     "subtopics": [
       "Use of the Arrhenius Equation"
     ],
@@ -10006,7 +10016,7 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Equilibrium",
     "discipline": "GC",
-    "topic": "Catalysts",
+    "topic": "Catalysts and chemical equilibrium",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -10026,7 +10036,7 @@
     "subtopics": [
       "Law of Mass Action",
       "Equilibrium Constant",
-      "Application of Le Ch\u00e2telier\u2019s Principle"
+      "Application of Le Châtelier’s Principle"
     ],
     "tags": [
       "General Chemistry",
@@ -10042,7 +10052,7 @@
     "content_category": "5E: Principles of chemical thermodynamics and kinetics",
     "topic_group": "Equilibrium",
     "discipline": "GC",
-    "topic": "Relationship of the equilibrium constant and \u0394G\u00b0",
+    "topic": "Relationship of the equilibrium constant and ΔG°",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -10061,7 +10071,7 @@
     "topic": "Sensation",
     "subtopics": [
       "Threshold",
-      "Weber\u2019s Law (PSY)",
+      "Weber’s Law (PSY)",
       "Signal detection theory (PSY)",
       "Sensory adaptation",
       "Psychophysics"
@@ -10377,7 +10387,7 @@
     "discipline": "PSY",
     "topic": "Cognitive development",
     "subtopics": [
-      "Piaget\u2019s stages of cognitive development",
+      "Piaget’s stages of cognitive development",
       "Cognitive changes in late adulthood",
       "Role of culture in cognitive development",
       "Influence of heredity and environment on cognitive development"
@@ -10520,7 +10530,7 @@
     "content_category": "6B: Making sense of the environment",
     "topic_group": "Consciousness",
     "discipline": "PSY",
-    "topic": "Dreaming",
+    "topic": "Dreaming and states of consciousness",
     "subtopics": [],
     "tags": [
       "Psychology",
@@ -10635,7 +10645,7 @@
     "topic": "Forgetting",
     "subtopics": [
       "Aging and memory",
-      "Memory dysfunctions (e.g., Alzheimer\u2019s disease, Korsakoff\u2019s syndrome)",
+      "Memory dysfunctions (e.g., Alzheimer’s disease, Korsakoff’s syndrome)",
       "Decay",
       "Interference",
       "Memory construction and source monitoring"
@@ -11135,8 +11145,8 @@
     "subtopics": [
       "Schizophrenia",
       "Depression",
-      "Alzheimer\u2019s disease",
-      "Parkinson\u2019s disease",
+      "Alzheimer’s disease",
+      "Parkinson’s disease",
       "Stem cell-based therapy to regenerate neurons in the central nervous system (BIO)"
     ],
     "tags": [
@@ -11553,7 +11563,7 @@
     "content_category": "7C: Attitude and behavior change",
     "topic_group": "Observational Learning",
     "discipline": "PSY",
-    "topic": "Modeling",
+    "topic": "Modeling in observational learning",
     "subtopics": [],
     "tags": [
       "Psychology",
@@ -12147,7 +12157,7 @@
     "content_category": "8C: Social interactions",
     "topic_group": "Social Behavior",
     "discipline": "PSY",
-    "topic": "Altruism",
+    "topic": "Altruism as social behavior",
     "subtopics": [],
     "tags": [
       "Psychology",

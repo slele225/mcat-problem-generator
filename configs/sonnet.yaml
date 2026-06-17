@@ -1,3 +1,5 @@
+# Experiment config: Sonnet generation model.
+# Identical to configs/opus.yaml in every way EXCEPT `model`.
 model: claude-sonnet-4-6
 
 # Cheaper model used only for the blind-solve validation step (an independent,
@@ -5,11 +7,16 @@ model: claude-sonnet-4-6
 checker_model: claude-haiku-4-5-20251001
 
 discrete:
-  questions_per_topic: 2
+  questions_per_topic: 4
   max_retries: 3
   temperature_generate: 0.8
   temperature_validate: 0.3
   batch_size: 5           # concurrent requests to Anthropic API
+
+  # Independent model for the DISCRETE blind-solve check ONLY (generation +
+  # adversarial review stay on `model`). Sonnet follows the JSON contract more
+  # reliably than Haiku and is stronger on hard items, matching CARS.
+  discrete_checker_model: claude-sonnet-4-6
 
 cars:
   passages_per_topic: 1  # per CARS skill category
@@ -22,7 +29,7 @@ cars:
 
   # Independent model for the CARS blind-solve check ONLY (generation +
   # adversarial review stay on `model`). Sonnet is strong enough for dense CARS
-  # reading and avoids "Opus checking Opus" weak independence.
+  # reading; avoids the generator marking its own work.
   cars_checker_model: claude-sonnet-4-6
 
   # CARS passages are drawn 50/50 from the AAMC's official humanities and
@@ -55,30 +62,10 @@ cars:
     - Studies of Diverse Cultures
 
 science_passage:
-  passages_per_topic_cluster: 1
-  # Questions per passage are drawn uniformly from this inclusive range each
-  # passage (real MCAT science passages carry 4-7 linked questions).
-  questions_per_passage_range: [4, 7]
-  # Clusters aim for 2-3 related topics drawn from the same content category.
-  min_topics_per_cluster: 2
-  max_topics_per_cluster: 3
-  passage_word_range: [200, 350]
-  # Per-passage skill mix, weighted toward Skills 2/3/4 (NOT the discrete
-  # 35/45/10/10 split): Skill 2 reasoning, Skill 3 research design, Skill 4 data.
-  skill_weights:
-    skill_1: 15
-    skill_2: 35
-    skill_3: 25
-    skill_4: 25
-  max_retries: 3
-  temperature_generate: 0.8
-  temperature_validate: 0.3
-  batch_size: 5
-  # Figure support (chemistry SMILES via RDKit + plots via matplotlib). Keep
-  # FALSE until tested; when true, rdkit + matplotlib are required (checked at
-  # startup) and figures are rendered with a separate `--render-figures` pass.
-  enable_figures: false
-  figure_format: png   # png or svg
+  # Independent model for the SCIENCE blind-solve check ONLY (generation +
+  # adversarial review stay on `model`). Sonnet follows the JSON contract more
+  # reliably than Haiku and is stronger on hard items, matching CARS.
+  science_checker_model: claude-sonnet-4-6
 
 checkpoint_dir: ./checkpoints
 output_dir: ./output

@@ -1,13 +1,15 @@
 [project]
 name = "mcat-gen"
 version = "0.1.0"
-description = "Generate MCAT practice questions using a local LLM"
+description = "Generate MCAT practice questions using the Anthropic Claude API"
 requires-python = ">=3.10"
 dependencies = [
-    "httpx>=0.25.0",
+    "anthropic>=0.40.0",
+    "matplotlib>=3.10.9",
+    "psycopg[binary]>=3.2",
     "pydantic>=2.0",
     "pyyaml>=6.0",
-    "vllm>=0.6.0",
+    "rdkit>=2026.3.2",
 ]
 
 [project.scripts]

@@ -32,6 +32,14 @@ discrete (standalone) questions. This module generates discrete-style questions.
 
 import random
 
+from .common import (
+    NO_FIFTH_OPTION_RULE,
+    NO_FIFTH_OPTION_EXPLANATION_RULE,
+    NO_FIFTH_OPTION_CONTRACT,
+    LATEX_NOTATION_RULE,
+    LATEX_REVIEW_NOTE,
+)
+
 
 # Weighted distribution matching AAMC percentages
 SKILL_WEIGHTS = {
@@ -48,6 +56,14 @@ SKILL_LABELS = {
     "skill_4": "Skill 4: Data-Based and Statistical Reasoning",
 }
 
+# Difficulty distribution: easier questions should be rarer than the meat of
+# the exam, hard questions show up regularly but not as the default.
+DIFFICULTY_WEIGHTS = {
+    "easy": 20,
+    "medium": 50,
+    "hard": 30,
+}
+
 
 def _pick_skill() -> str:
     """Randomly select a skill category weighted by AAMC distribution."""
@@ -56,91 +72,130 @@ def _pick_skill() -> str:
     return random.choices(keys, weights=weights, k=1)[0]
 
 
-def generation_prompt(topic_data: dict) -> list[dict]:
+def _pick_difficulty() -> str:
+    """Randomly select a target difficulty weighted 20/50/30."""
+    keys = list(DIFFICULTY_WEIGHTS.keys())
+    weights = list(DIFFICULTY_WEIGHTS.values())
+    return random.choices(keys, weights=weights, k=1)[0]
+
+
+def _pick_answer() -> str:
+    """Randomly select the target correct-answer position (equal probability).
+
+    LLMs tend to favor B/C as the correct choice; fixing a uniformly random
+    target letter per question keeps the answer key balanced across A/B/C/D.
+    """
+    return random.choice(["A", "B", "C", "D"])
+
+
+def generation_prompt(
+    topic_data: dict, previous_stems: list[str] = None
+) -> tuple[list[dict], str]:
     """Build the prompt for generating a single discrete MCAT question.
+
+    Returns ``(messages, skill_label)``: the chat messages and the AAMC SIRS
+    skill this question was ASSIGNED to test. The skill is chosen here (the
+    prompt instructs the model to echo it back), so surfacing it lets the
+    pipeline persist the authoritative assigned skill rather than trusting the
+    model's echo (which can be blank or mislabeled).
 
     Args:
         topic_data: A single topic entry from topics.json
+        previous_stems: Stems of questions already accepted for this topic. When
+            non-empty, a section is added to the USER message asking for a
+            genuinely different angle (within-topic diversity). Empty/None leaves
+            the prompt unchanged.
     """
     subtopics_str = ""
     if topic_data.get("subtopics"):
         subtopics_str = f"\nSpecific subtopics to potentially test: {', '.join(topic_data['subtopics'])}"
 
+    focus_str = ""
+    if topic_data.get("section_focus"):
+        focus_str = f"\nFocus angle: {topic_data['section_focus']}"
+
+    diversity_str = ""
+    if previous_stems:
+        numbered = "\n".join(f"{i}. {s}" for i, s in enumerate(previous_stems, 1))
+        diversity_str = (
+            "\n\nQuestions already accepted for this topic test the following. Do NOT "
+            "duplicate them — generate a question on a genuinely different concept, "
+            "application, or angle within this topic:\n"
+            f"{numbered}\n"
+            "If the topic is too narrow for another distinct angle, a related question "
+            "is acceptable, but prioritize new ground."
+        )
+
     skill_key = _pick_skill()
     skill_label = SKILL_LABELS[skill_key]
+    difficulty = _pick_difficulty()
+    target_answer = _pick_answer()
+
+    difficulty_guidance = {
+        "easy": (
+            "EASY: A well-prepared student should be able to answer this in under 30 "
+            "seconds. The scenario should be straightforward and the correct application "
+            "of the concept should be relatively direct. Distractors should still be "
+            "plausible, but the right answer should be reachable without multi-step "
+            "reasoning."
+        ),
+        "medium": (
+            "MEDIUM: Typical MCAT difficulty. The student must read carefully, apply a "
+            "concept or principle to a non-trivial scenario, and reason through plausible "
+            "distractors. Should take ~60-75 seconds."
+        ),
+        "hard": (
+            "HARD: A challenging MCAT question. May require combining two concepts, "
+            "multi-step calculation, careful elimination of subtly wrong distractors, or "
+            "recognizing a counterintuitive application of a principle. Still solvable "
+            "with introductory college-level knowledge — not graduate-level obscurity."
+        ),
+    }
 
     # Skill-specific generation guidance based on AAMC descriptions
     skill_guidance = {
         "skill_1": """\
 This question should test Skill 1: Knowledge of Scientific Concepts and Principles.
-The question should ask the student to:
-- Recognize or identify a scientific concept, principle, or relationship from an example or scenario
-- Identify relationships between closely related concepts (e.g., written vs. graphical representations)
-- Identify examples or observations that illustrate a scientific principle
-- Use a given mathematical equation to solve a problem
-- Recognize a concept shown in a diagram, graph, or structural formula
-
-Example formats: "What type of functional group is formed when...", \
-"Which of the following best describes the relationship between...", \
-"A student observes X. This is an example of..."
-
-Do NOT write a simple recall/definition question. Even Skill 1 questions should present \
-a scenario, example, or representation that the student must interpret.""",
+Ask the student to recognize/identify a concept, principle, or relationship from a scenario, \
+example, or representation (diagram, graph, structural formula), or to use a given equation. \
+Do NOT write a bare recall/definition question — present something the student must interpret.
+Compact example: a stem describing salivation that declines across repeated lemon-juice trials \
+then recovers when switched to lime juice; correct answer "habituation and dishabituation" \
+(recognized from the scenario), with distractors that are related-but-distinct learning \
+processes.""",
 
         "skill_2": """\
 This question should test Skill 2: Scientific Reasoning and Problem-Solving.
-The question should ask the student to:
-- Use scientific theories or models to explain observations or make predictions
-- Evaluate the validity or credibility of a scientific explanation
-- Evaluate arguments about cause and effect using scientific knowledge
-- Bring together theory, observations, and evidence to draw conclusions
-- Recognize findings that challenge or invalidate a theory or model
-- Determine and use scientific formulas to solve a multi-step problem
-
-Example formats: "A researcher observes X. Which explanation best accounts for...", \
-"Based on the principle of Y, what would happen if...", \
-"Which finding would most weaken the hypothesis that...", \
-"Given the following data, calculate..."
-
-Present a scenario that requires REASONING, not just recall. The student should need to \
-apply a principle to a novel situation or evaluate competing explanations.""",
+Ask the student to apply a theory/model to a novel scenario, evaluate an explanation or a \
+cause-and-effect argument, draw a conclusion from evidence, or carry out a multi-step \
+calculation. Require REASONING, not recall.
+RECOGNITION vs. REASONING (this trips up psych/soc concept items): merely identifying which \
+named concept a vignette illustrates is Skill 1 (Knowledge), NOT Skill 2 — do not write that \
+here. Skill 1 example: "a traveler judges another culture by their own culture's norms" -> name \
+it (ethnocentrism). Skill 2 example: given two study findings, predict how an ethnocentric \
+framing would bias a researcher's interpretation. Skill 2 must demand application or analysis \
+beyond labeling the concept.
+Compact example: give aorta vs. capillary radii and flow velocities and ask for the approximate \
+number of capillaries; the student applies continuity (A₁v₁ = N·A₂v₂) in a multi-step \
+calculation, with distractors that are order-of-magnitude errors.""",
 
         "skill_3": """\
 This question should test Skill 3: Reasoning About the Design and Execution of Research.
-The question should ask the student to:
-- Identify independent, dependent, and confounding variables in a described experiment
-- Evaluate the appropriateness of a research method, tool, or measurement
-- Identify limitations or flaws in a research study design
-- Distinguish between correlational and causal claims
-- Identify what controls are needed and why
-- Reason about ethical issues in research
-
-Example formats: "Researchers conducted a study where... What is the independent variable?", \
-"Which modification to the experimental design would best control for...", \
-"A study finds a correlation between X and Y. Which conclusion is most justified?", \
-"Which aspect of this study design most threatens its internal validity?"
-
-You MUST describe a specific experiment or study in the question stem. The student should \
-evaluate the research design, not just recall a concept.""",
+You MUST describe a specific experiment or study in the stem. Ask the student to identify \
+variables (independent/dependent/confounding), evaluate a method or control, spot a design \
+flaw, or distinguish correlation from causation.
+Compact example: describe a randomized caffeine-vs-placebo word-recall study and ask for the \
+dependent variable; correct answer is the measured outcome (words recalled), with distractors \
+that are the other variables in the design.""",
 
         "skill_4": """\
 This question should test Skill 4: Data-Based and Statistical Reasoning.
-The question should ask the student to:
-- Interpret patterns in data presented in a table, graph, or figure (describe the data in text)
-- Use measures of central tendency (mean, median, mode) or dispersion (range, SD)
-- Reason about random vs. systematic error
-- Interpret statistical significance or confidence intervals
-- Use data to explain relationships between variables or draw conclusions
-- Identify conclusions that are or are not supported by given results
-
-Example formats: "A table shows the following results... What conclusion is supported?", \
-"If the mean is X and the standard deviation is Y, approximately what percentage...", \
-"Researchers measure Z across four groups and obtain the following values... \
-Which comparison is statistically meaningful?", \
-"Based on the data, which relationship between the variables is most likely?"
-
-You MUST present specific data (numbers, values, trends) in the question stem. The student \
-should reason FROM the data, not just know what a statistical concept means.""",
+You MUST present specific data (numbers, values, trends) in the stem. Ask the student to \
+interpret patterns, use central tendency/dispersion, reason about error or significance, or \
+judge which conclusion the data support.
+Compact example: give mean ± SD resting heart rate across four exercise-intensity groups and \
+ask which conclusion is supported; correct answer is the descriptive trend, distinguished from \
+causal overreach, an unsupported universal claim, and an SD misreading.""",
     }
 
     system = f"""You are an expert MCAT question writer for the Association of American Medical \
@@ -148,37 +203,69 @@ Colleges (AAMC). You create questions that match the difficulty, style, and cogn
 the actual MCAT exam.
 
 The MCAT tests four Scientific Inquiry and Reasoning Skills across its science sections. \
-You are writing a question that tests a specific skill.
+You are writing one question that tests a specific skill.
+
+#1 PRIORITY — SCIENTIFIC ACCURACY (this is the hard part; get it right before worrying about \
+formatting):
+- Every element must be factually correct at the introductory-college level: the stem, the \
+keyed correct answer, EACH distractor, and the explanation.
+- The keyed answer must be unambiguously and verifiably correct, and each distractor must be \
+genuinely WRONG (ideally a real student misconception) — never a second defensible answer.
+- Before finalizing, DOUBLE-CHECK every mechanism, reaction, stereochemistry, calculation, and \
+factual claim, step by step. Organic-chemistry mechanisms and molecular-biology details are \
+where subtle errors hide — verify them explicitly. If you are not fully certain a claim is \
+correct, revise the question until it is.
+The formatting rules further below (answer position, no fifth option, LaTeX, JSON contract) are \
+easy compliance items — do not let them pull attention away from getting the science right.
 
 {skill_guidance[skill_key]}
 
-General question-writing rules:
-- Each question must have exactly 4 answer choices (A, B, C, D)
-- Exactly ONE answer must be unambiguously correct
-- Distractors (wrong answers) must be plausible — they should represent common misconceptions, \
-partially correct reasoning, or errors students commonly make
-- Answer choices should be roughly similar in length and specificity (a correct answer that is \
-much longer or more detailed than the others is a test-taking giveaway)
-- The question should require introductory college-level knowledge, not graduate-level obscurity
-- Mathematical questions should use algebra, logarithms, basic trig, or dimensional analysis \
-(no calculus). A periodic table is available during the exam.
-- Include a thorough explanation of why the correct answer is right AND why each distractor is wrong
+Target difficulty for this question: {difficulty.upper()}
+{difficulty_guidance[difficulty]}
 
-Respond with ONLY a JSON object in this exact format, no other text:
+Question-writing rules:
+- STEM LENGTH (applies to the "stem" field ONLY): keep the stem under 150 words. Discrete \
+questions are standalone, not passage-based — if a scenario needs more setup than that, simplify \
+it. This cap does NOT apply to the explanation.
+- For THIS question, the correct answer MUST be option {target_answer}. Write the four choices so \
+that option {target_answer} is the single correct answer and the other three are plausible \
+distractors (common misconceptions, partially correct reasoning, or typical errors). Do not let \
+the correct option's position be guessable from its length, specificity, or phrasing.
+- Answer choices should be roughly similar in length and specificity (a correct answer that is \
+much longer or more detailed than the others is a test-taking giveaway).
+- Use introductory college-level knowledge, not graduate-level obscurity. Math uses algebra, \
+logarithms, basic trig, or dimensional analysis (no calculus); a periodic table is available.
+- EXPLANATION (the "explanation" field — separate from the stem cap above): be thorough but \
+focused — state why the correct answer is right and why EACH distractor is wrong, in as many \
+words as that genuinely needs and no more (no padding or repetition). It is FINAL, PUBLISHED \
+content for a student, so write it as finished and correct: NO meta-commentary about the \
+question's format, validity, or completeness (never write "this item is illustrative", \
+"placeholder", "a properly formatted question would have four options", or similar), and no \
+hedging or disclaimers. {NO_FIFTH_OPTION_EXPLANATION_RULE}
+- {NO_FIFTH_OPTION_RULE}
+
+Respond with ONLY a JSON object that has EXACTLY these seven keys. Each value is described \
+in angle brackets — produce a real value matching the description; do NOT output the \
+angle-bracket text itself:
 {{
-  "stem": "The question text here",
-  "choices": {{
-    "A": "First choice",
-    "B": "Second choice",
-    "C": "Third choice",
-    "D": "Fourth choice"
-  }},
-  "correct_answer": "B",
-  "explanation": "Explanation of correct answer and why others are wrong",
-  "difficulty": "medium",
-  "subtopics_tested": ["relevant subtopic 1"],
-  "skill_tested": "{skill_label}"
-}}"""
+  "stem": <string: the full question text>,
+  "choices": <object with EXACTLY keys "A","B","C","D", each a non-empty string>,
+  "correct_answer": <one of "A","B","C","D"; for this question must be "{target_answer}">,
+  "explanation": <string: final published explanation referencing only A-D, no meta-commentary>,
+  "difficulty": <exactly "{difficulty}">,
+  "subtopics_tested": <array of 1-3 short strings>,
+  "skill_tested": <exactly "{skill_label}">
+}}
+
+STRICT OUTPUT CONTRACT — follow EXACTLY or the response is rejected:
+- Replace each angle-bracket description with real content; never emit a literal "<...>" or the \
+word "placeholder" as a value or key.
+- {NO_FIFTH_OPTION_CONTRACT}
+- {LATEX_NOTATION_RULE}
+- Output EXACTLY the seven keys listed above and NOTHING else. Do NOT add any other \
+top-level key for any reason — no "comment", "note", "explanation_placeholder", \
+"answer_placeholder", "choices_extra", or any other commentary, metadata, or placeholder key.
+Output the raw JSON object only — no markdown fences, no preamble, no trailing notes."""
 
     user = f"""Generate an MCAT-style discrete question for:
 
@@ -186,20 +273,22 @@ Section: {topic_data['section']}
 Content Category: {topic_data['content_category']}
 Topic Group: {topic_data['topic_group']}
 Topic: {topic_data['topic']}
-Discipline: {topic_data.get('discipline', 'N/A')}{subtopics_str}
+Discipline: {topic_data.get('discipline', 'N/A')}{focus_str}{subtopics_str}
 
 Target Skill: {skill_label}
+Target Difficulty: {difficulty}
+Target correct-answer position: {target_answer}{diversity_str}
 
-Write a challenging, realistic MCAT question testing this specific skill. \
-The question should be at an appropriate difficulty for the actual exam — \
-not a simple definition lookup, but also not impossibly obscure. \
+Write a realistic MCAT question testing this specific skill at the target difficulty. \
 Present a scenario, experiment, data, or problem that requires the student \
-to think, not just remember."""
+to think, not just remember. Above all, make sure every element — the keyed answer, each \
+distractor, and the explanation — is scientifically accurate; verify any mechanism or \
+calculation before you finalize."""
 
     return [
         {"role": "system", "content": system},
         {"role": "user", "content": user},
-    ]
+    ], skill_label
 
 
 def adversarial_review_prompt(question_data: dict, topic_data: dict) -> list[dict]:
@@ -208,6 +297,8 @@ def adversarial_review_prompt(question_data: dict, topic_data: dict) -> list[dic
     system = """You are a rigorous MCAT question reviewer and quality assurance expert working \
 for the AAMC. Your job is to find flaws in MCAT questions before they go to students. Be \
 critical and thorough.
+
+""" + LATEX_REVIEW_NOTE + """
 
 The MCAT tests four Scientific Inquiry and Reasoning Skills:
 - Skill 1 (Knowledge): Recognize/identify concepts, use equations, interpret representations
@@ -231,6 +322,8 @@ that is noticeably longer, more detailed, or more qualified than the distractors
 test-taking giveaway that must be fixed.
 7. STEM QUALITY: Does the stem present a scenario or problem (not just "which of the following \
 is true about X")? For Skills 3-4, does it describe a study or present data?
+8. CHOICE STRUCTURE: The question must have EXACTLY four answer choices keyed A, B, C, and D — \
+no missing, extra, duplicate, or empty choices. Fail the question if the choice set is malformed.
 
 Respond with ONLY a JSON object:
 {
@@ -276,6 +369,8 @@ def blind_solve_prompt(question_data: dict) -> list[dict]:
 physics, and psychology/sociology at the introductory college level. Answer the following \
 question by selecting the SINGLE BEST answer choice.
 
+""" + LATEX_REVIEW_NOTE + """
+
 Think through it step by step:
 1. Read the stem carefully and identify what is being asked
 2. Consider each answer choice
@@ -289,7 +384,13 @@ Respond with ONLY a JSON object:
   "reasoning": "Brief explanation of your reasoning"
 }
 
-confidence should be "high", "medium", or "low"."""
+confidence should be "high", "medium", or "low".
+
+OUTPUT FORMAT — ABSOLUTE: Respond with ONLY the raw JSON object specified above and NOTHING \
+else. Do NOT show your reasoning or working in prose outside the JSON. Do NOT write 'I need \
+to', 'Let me', or any preamble. Put any brief reasoning INSIDE the JSON's reasoning field if \
+one exists; otherwise omit it. Your entire response must start with { and end with } and be \
+valid parseable JSON."""
 
     user = f"""Answer this MCAT question:
 
