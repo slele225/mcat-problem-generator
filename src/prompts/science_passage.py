@@ -28,6 +28,7 @@ from .common import (
     NO_FIFTH_OPTION_RULE,
     NO_FIFTH_OPTION_EXPLANATION_RULE,
     NO_FIFTH_OPTION_CONTRACT,
+    CHOICE_REFERENCE_BOLD_RULE,
     LATEX_NOTATION_RULE,
     LATEX_REVIEW_NOTE,
 )
@@ -665,7 +666,7 @@ content shown to a student — not a draft or a note to a reviewer. {NO_FIFTH_OP
 It must contain NO meta-commentary about the question itself — no hedging, disclaimers, or \
 remarks about the item's format, validity, or completeness (e.g. never write "this item is \
 illustrative", "placeholder", "a properly formatted question would have four options", or \
-similar).
+similar). {CHOICE_REFERENCE_BOLD_RULE}
 - {NO_FIFTH_OPTION_RULE}{figure_section}
 
 Respond with ONLY a JSON object that has EXACTLY these keys. Each value is described in \

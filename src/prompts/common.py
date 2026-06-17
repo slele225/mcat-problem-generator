@@ -44,6 +44,25 @@ NO_FIFTH_OPTION_CONTRACT = (
 )
 
 
+# --- Choice-reference bolding in explanations (shared by all generators) ------
+#
+# When an explanation refers to an answer choice, the writer names it "Choice X"
+# and bolds that whole phrase in markdown. Doing this GENERATION-side — where the
+# model knows what is a choice versus a chemical element symbol or experimental
+# label — replaces a brittle render-time regex in the consuming app that mis-bolded
+# bare letters (e.g. the C in a "C–Br" bond, the A in "Series A"). Bolding the
+# PHRASE "Choice X", never a bare letter, keeps the reference unambiguous.
+CHOICE_REFERENCE_BOLD_RULE = (
+    "When the explanation refers to an answer choice, name it \"Choice A/B/C/D\" "
+    "and bold that whole phrase in markdown — e.g. \"**Choice B** incorrectly "
+    "attributes the rise...\", \"**Choice A** describes a competitive inhibitor\", "
+    "\"**Choice D** is correct because...\". Bold the entire \"Choice X\" phrase, "
+    "never a bare letter, and do NOT bold letters that are chemical element symbols "
+    "(the C in a C–Br bond), experimental labels (Series A, Group B), or variables "
+    "— only explicit \"Choice X\" references."
+)
+
+
 # --- LaTeX math/chemical notation contract (shared by all generators) --------
 #
 # All NEW questions replace the old bank, so math/chemistry must render. Every

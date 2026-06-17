@@ -36,6 +36,7 @@ from .common import (
     NO_FIFTH_OPTION_RULE,
     NO_FIFTH_OPTION_EXPLANATION_RULE,
     NO_FIFTH_OPTION_CONTRACT,
+    CHOICE_REFERENCE_BOLD_RULE,
     LATEX_NOTATION_RULE,
     LATEX_REVIEW_NOTE,
 )
@@ -241,7 +242,7 @@ words as that genuinely needs and no more (no padding or repetition). It is FINA
 content for a student, so write it as finished and correct: NO meta-commentary about the \
 question's format, validity, or completeness (never write "this item is illustrative", \
 "placeholder", "a properly formatted question would have four options", or similar), and no \
-hedging or disclaimers. {NO_FIFTH_OPTION_EXPLANATION_RULE}
+hedging or disclaimers. {NO_FIFTH_OPTION_EXPLANATION_RULE} {CHOICE_REFERENCE_BOLD_RULE}
 - {NO_FIFTH_OPTION_RULE}
 
 Respond with ONLY a JSON object that has EXACTLY these seven keys. Each value is described \

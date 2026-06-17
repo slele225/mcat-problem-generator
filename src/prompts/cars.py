@@ -527,7 +527,12 @@ exist). NEVER mention, discuss, or reference an option E or any option beyond D 
 option exists. Do NOT write phrases like "Option E", "E is...", or "E overstates...". If you \
 find yourself about to reference a fifth option, stop: there are only four. The explanation \
 must also contain NO meta-commentary about the question itself — no hedging, disclaimers, or \
-remarks about the item's format, validity, or completeness.
+remarks about the item's format, validity, or completeness. When the explanation refers to an \
+answer choice, name it "Choice A/B/C/D" and bold that whole phrase in markdown — e.g. \
+"**Choice B** incorrectly attributes the rise to the author...", "**Choice A** misreads the \
+second paragraph", "**Choice D** is correct because...". Bold the entire "Choice X" phrase, \
+never a bare letter, and do NOT bold letters used as experimental labels (Series A, Group B) \
+or variables — only explicit "Choice X" references.
 
 Respond with ONLY a JSON object that has EXACTLY these keys. Each value is described in \
 angle brackets — produce a real value matching the description; do NOT output the \

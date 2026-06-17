@@ -1,0 +1,736 @@
+﻿===== DISCRETE =====
+ID: CP_5D_010_q001
+Difficulty: medium
+STEM: A researcher purifies a small extracellular protein that contains two disulfide bonds and is biologically active. To probe its structure, she treats the protein with the reducing agent dithiothreitol (DTT) and the denaturant urea, then removes both reagents under conditions that prevent reoxidation. She finds the protein has lost all activity. When she then allows the sample to stand in an oxygen-containing buffer at neutral pH, only about 1 percent of the molecules regain full activity. Which explanation best accounts for the low recovery of activity after reoxidation?
+
+  A. DTT permanently cleaved the peptide bonds linking the cysteine residues, so the polypeptide backbone could no longer fold.
+  B. Random reoxidation of the free thiols produced many incorrectly paired disulfide bonds, and only the native pairing yields the active structure.
+  C. Urea hydrolyzed the side chains of the cysteine residues, so few cysteines remained available to form any disulfide bonds.
+  D. Oxygen oxidized the cysteine thiols all the way to sulfonic acids, preventing the formation of any disulfide linkages.
+CORRECT: B
+EXPLANATION: DTT reduces disulfide (cystine) bonds back to free cysteine thiols, and urea unfolds the protein, so after treatment the four cysteines are free and the chain is disordered. With four cysteines there are three possible ways to pair them into two disulfide bonds; only one of these pairings matches the native, active structure. When the protein reoxidizes in air without the folding information that urea has erased, the thiols pair largely at random, so only a small fraction reform the correct (native) pattern and regain activity. This matches the roughly 1 percent recovery and identifies B as correct. A is wrong because disulfide bonds are not peptide bonds; DTT reduces S–S linkages, it does not hydrolyze the amide backbone, so the chain remains intact. C is wrong because urea is a denaturant that disrupts noncovalent interactions; it does not hydrolyze cysteine side chains, and the cysteines remain present and capable of forming disulfides. D is wrong because mild air oxidation at neutral pH favors disulfide (cystine) formation, not over-oxidation to sulfonic acid; if all thiols were destroyed, essentially zero molecules would reactivate, yet about 1 percent do recover, consistent with mispairing rather than thiol destruction.
+--------------------------------------------------------------------------------
+ID: CP_5D_010_q002
+Difficulty: easy
+STEM: A peptide with the sequence Ala-Gly-Ser-Val is fully hydrolyzed by boiling in $6\ \text{M HCl}$ for 24 hours. Which type of bond is cleaved in this process, and what is the immediate product?
+
+  A. Amide (peptide) bonds are cleaved, releasing the four free amino acids
+  B. Disulfide bonds are cleaved, releasing two shorter peptide fragments
+  C. Ester bonds are cleaved, releasing free amino acids and water
+  D. Hydrogen bonds are cleaved, releasing the intact unfolded peptide chain
+CORRECT: A
+EXPLANATION: The covalent bonds linking adjacent residues in a peptide are amide (peptide) bonds, formed between the carboxyl group of one amino acid and the amino group of the next. Acid hydrolysis with hot concentrated HCl adds water across each of these amide bonds, cleaving the backbone completely and liberating all the constituent free amino acids—here, alanine, glycine, serine, and valine. A is therefore correct. B is wrong because disulfide bonds form only between cysteine side chains, and none of these four residues contains a thiol, so there are no disulfide bonds to break; moreover disulfide cleavage would not break the backbone into separate amino acids. C is wrong because the backbone linkages are amides, not esters; ester bonds contain a C–O–C(=O) linkage, whereas peptide bonds contain a C–N–C(=O) linkage. D is wrong because hydrogen bonds are weak, noncovalent interactions that stabilize secondary structure; disrupting them would denature the peptide but leave the covalent backbone—and thus the intact chain—unbroken, not hydrolyzed into amino acids.
+--------------------------------------------------------------------------------
+ID: CP_5D_010_q003
+Difficulty: medium
+STEM: A biochemist treats a purified protein with the enzyme glutathione reductase together with reduced glutathione, conditions that supply electrons to break a specific covalent linkage between two amino acid side chains. After this treatment, two free cysteine residues are generated where one cross-link previously existed, and the protein partially unfolds. Which statement best characterizes the chemical change that occurred at this linkage?
+
+  A. A disulfide bond was reduced, converting one cystine cross-link into two cysteine thiol groups
+  B. A peptide bond was hydrolyzed, releasing two separate cysteine residues into solution
+  C. A thioester bond was reduced, regenerating a free thiol and a carboxylic acid
+  D. Two cysteine thiols were oxidized, forming a new cystine cross-link between the chains
+CORRECT: A
+EXPLANATION: The linkage between two cysteine side chains is a disulfide (S–S) bond, and the residue pair joined by this bond is collectively called cystine. Glutathione/glutathione reductase is a physiological reducing system; supplying electrons reduces the disulfide, cleaving the S–S bond and regenerating two free cysteine thiol ($\text{-SH}$) groups. This loss of a cross-link allows partial unfolding, exactly as described. A is correct. B is wrong because hydrolysis of a peptide bond cleaves the polypeptide backbone (a $\text{C-N}$ amide bond), not a side-chain cross-link, and would fragment the chain rather than simply generate two thiols; reduction, not hydrolysis, is occurring here. C is wrong because the cross-link between two cysteines is a disulfide, not a thioester; thioesters link a thiol to an acyl carbon and are not the side-chain cross-links found in folded proteins like this one. D describes the reverse reaction (oxidation forming a disulfide), which is the opposite of what a reducing system accomplishes—reduction breaks the cross-link, it does not create one.
+--------------------------------------------------------------------------------
+ID: CP_5D_010_q004
+Difficulty: medium
+STEM: A protease called Glu-C cleaves peptide bonds specifically on the C-terminal side of glutamate residues. A researcher digests the linear peptide Phe-Glu-Lys-Gly-Glu-Ser-Ala with Glu-C under conditions that go to completion. The resulting fragments are then separated, and each is subjected to complete acid hydrolysis. Considering both the enzymatic and the subsequent chemical step, how many distinct fragments result from Glu-C digestion, and how many total free amino acids (counting repeats) are released after the fragments are fully hydrolyzed?
+
+  A. Two fragments from digestion, releasing 5 free amino acids after hydrolysis
+  B. Two fragments from digestion, releasing 7 free amino acids after hydrolysis
+  C. Three fragments from digestion, releasing 7 free amino acids after hydrolysis
+  D. Three fragments from digestion, releasing 6 free amino acids after hydrolysis
+CORRECT: C
+EXPLANATION: Glu-C cleaves on the C-terminal side of each glutamate. The peptide Phe-Glu-Lys-Gly-Glu-Ser-Ala contains two glutamate residues, at positions 2 and 5. Cleaving after each Glu produces three fragments: Phe-Glu, Lys-Gly-Glu, and Ser-Ala. Two cut sites in a linear chain always yield three pieces, so any answer claiming two fragments (A and B) miscounts the cleavage sites or overlooks that each Glu provides a separate site. Complete acid hydrolysis then breaks every remaining peptide bond, liberating all residues as free amino acids. The original heptapeptide has seven residues, and hydrolysis is conservative of residue count, so the total number of free amino acids is 7 (Phe, Glu, Lys, Gly, Glu, Ser, Ala), counting the two Glu separately. Option C correctly gives three fragments and 7 free amino acids. Option D undercounts the amino acids, perhaps by treating the two identical Glu residues as one. Acid hydrolysis cleaves peptide (amide) bonds regardless of whether the protease already acted; the number of starting residues fixes the final tally at 7.
+--------------------------------------------------------------------------------
+ID: CP_5D_010_q005
+Difficulty: hard
+STEM: A researcher studies whether a buried disulfide bond stabilizes a 90-residue enzyme. She compares the wild-type enzyme (one disulfide) with a mutant in which both cysteines are replaced by serine, abolishing the cross-link. Both proteins are purified to homogeneity. She measures the temperature at which each protein is half-unfolded (the melting temperature, $T_\text{m}$) by circular dichroism. To ensure the comparison reflects only the disulfide, all measurements use identical buffer, protein concentration, and heating rate. Critically, she also runs every sample in the presence of $50\ \text{mM}$ dithiothreitol (DTT) as well as without it. What is the primary purpose of including the DTT condition?
+
+  A. To hydrolyze any contaminating peptide bonds so that only intact, full-length protein contributes to the measured $T_\text{m}$
+  B. To confirm that any difference in $T_\text{m}$ between wild-type and mutant is actually caused by the disulfide, by reducing the wild-type cross-link in situ
+  C. To denature both proteins fully before heating so that the circular dichroism signal starts from the same unfolded baseline
+  D. To prevent the free serine hydroxyl groups in the mutant from forming spurious oxygen-based cross-links during heating
+CORRECT: B
+EXPLANATION: The experiment attributes any stability difference to the single structural change between the two proteins—the presence or absence of the disulfide bond. But wild-type and mutant differ in primary sequence (Cys vs. Ser), so a $T_\text{m}$ difference could in principle arise from the side-chain substitution itself rather than from the cross-link. DTT is a reducing agent that cleaves disulfide bonds, converting cystine back to two free cysteines without altering the sequence. Reducing the wild-type protein in situ should eliminate the stabilizing cross-link, so reduced wild-type should behave like the disulfide-free mutant. If the $T_\text{m}$ gap disappears upon DTT treatment, the difference is genuinely caused by the disulfide; this is an internal control isolating the variable of interest. This makes B correct.
+
+A is wrong: DTT is a reductant of disulfides, not a hydrolytic agent—it does not cleave peptide bonds, which require strong acid or proteases.
+
+C is wrong: DTT does not denature proteins; chemical denaturation requires agents like urea or guanidinium. The experiment deliberately measures thermal unfolding from the native state, so starting from an unfolded baseline would defeat the purpose of measuring $T_\text{m}$.
+
+D is wrong: serine hydroxyl groups do not form oxidative cross-links analogous to disulfides, and DTT (a thiol reductant) would not be the appropriate reagent to suppress such chemistry. The serine substitution is chosen precisely because its hydroxyl is redox-inert under these conditions.
+--------------------------------------------------------------------------------
+ID: CP_5D_010_q006
+Difficulty: medium
+STEM: A chemist synthesizes the tripeptide Cys-Gly-Cys and oxidizes a dilute solution of it with mild $\text{O}_2$. Under dilute conditions, two separate tripeptide molecules join through their cysteine side chains to form a covalently linked dimer rather than an intramolecular ring. If the only new covalent bonds formed are between cysteine side chains and no other groups react, what is the maximum number of intermolecular disulfide cross-links that can form between the two tripeptide molecules in a single dimer?
+
+  A. One, because a disulfide bond can form only once between any two peptide molecules.
+  B. One, because each tripeptide contributes only a single reactive thiol overall.
+  C. Two, because each tripeptide supplies two thiols and each disulfide consumes one thiol from each molecule.
+  D. Four, because each of the four thiols present can pair independently with any other thiol.
+CORRECT: C
+EXPLANATION: Each Cys-Gly-Cys molecule has two cysteine side chains, each bearing one $\text{-SH}$ (thiol) group. A disulfide bond ($\text{-S-S-}$) forms when two thiols are oxidized, consuming one $\text{-SH}$ group from each partner. With two molecules in the dimer, there are four thiols total (two per molecule). To make an intermolecular cross-link, one thiol from molecule 1 pairs with one thiol from molecule 2. Molecule 1's two thiols can each bond to one of molecule 2's two thiols, giving a maximum of two intermolecular disulfide bridges, with all four thiols used. C correctly tracks this stoichiometry. A is wrong because nothing limits two peptides to a single shared disulfide; multiple cross-links are possible when multiple cysteines are present. B is wrong because each tripeptide has two cysteines, not one, so it contributes two reactive thiols. D overcounts: each disulfide consumes two thiols (one from each molecule), so four thiols can form at most two bonds, not four; counting four also incorrectly allows a thiol to participate in more than one disulfide simultaneously, which is impossible.
+--------------------------------------------------------------------------------
+ID: CP_5D_010_q007
+Difficulty: easy
+STEM: A pentapeptide has the sequence Gly-Ala-Phe-Lys-Ser. A researcher subjects a $1\ \text{mmol}$ sample to complete acid hydrolysis. Assuming every peptide bond is cleaved and each released amino acid remains intact, how many moles of water are consumed and how many total moles of free amino acids are produced?
+
+  A. $5\ \text{mmol}$ of water consumed and $5\ \text{mmol}$ of amino acids produced
+  B. $5\ \text{mmol}$ of water consumed and $4\ \text{mmol}$ of amino acids produced
+  C. $3\ \text{mmol}$ of water consumed and $4\ \text{mmol}$ of amino acids produced
+  D. $4\ \text{mmol}$ of water consumed and $5\ \text{mmol}$ of amino acids produced
+CORRECT: D
+EXPLANATION: A peptide of $n$ residues contains $n-1$ peptide bonds, because each peptide bond links two adjacent residues. Hydrolysis adds one molecule of water across each peptide bond to break it, so the number of water molecules consumed equals the number of bonds cleaved. For the pentapeptide ($n=5$), there are $5-1=4$ peptide bonds, so $4\ \text{mmol}$ of water is consumed per $1\ \text{mmol}$ of peptide. Cleaving all 4 bonds liberates all 5 residues as free amino acids, giving $5\ \text{mmol}$ of amino acids. This matches D. Choice A overcounts the bonds, assuming 5 peptide bonds for 5 residues (it ignores that the chain has free ends, so there are only $n-1$ internal bonds). Choice B uses the correct water amount but mistakenly reports only 4 free amino acids; cleaving 4 bonds releases 5 separate residues, not 4. Choice C undercounts both the water consumed and the amino acids released and is internally inconsistent with the stoichiometry of hydrolysis.
+--------------------------------------------------------------------------------
+ID: CP_5D_010_q008
+Difficulty: medium
+STEM: A researcher quantifies free thiol (-SH) content in four protein preparations using Ellman's reagent, which reacts only with free cysteine thiols. The measured free thiols per molecule (mean $\pm$ SD, $n = 5$) are shown below, alongside the total cysteine count determined from each protein's gene sequence.
+
+| Protein | Total Cys (from sequence) | Free thiols measured |
+|---|---|---|
+| W | 6 | $6.0 \pm 0.2$ |
+| X | 6 | $2.0 \pm 0.3$ |
+| Y | 8 | $0.1 \pm 0.1$ |
+| Z | 4 | $4.0 \pm 0.2$ |
+
+Assuming all unmeasured cysteines are paired in disulfide bonds, which conclusion is best supported by the data?
+
+  A. Protein W contains three disulfide bonds, accounting for its six cysteines.
+  B. Protein X contains two disulfide bonds, while protein Y contains four.
+  C. Protein Z contains two disulfide bonds, since all four cysteines are detected.
+  D. Protein Y has the most free thiols because it has the most total cysteines.
+CORRECT: B
+EXPLANATION: Each disulfide bond consumes two cysteine residues, which are therefore NOT detected as free thiols. The number of cysteines tied up in disulfides equals (total Cys) minus (free thiols measured), and dividing by 2 gives the number of disulfide bonds. For protein X: $(6 - 2)/2 = 2$ disulfide bonds. For protein Y: $(8 - 0.1)/2 \approx 4$ disulfide bonds (essentially all 8 cysteines are paired). Thus B is correct. A is wrong: protein W shows all 6 cysteines as free thiols ($6.0 \pm 0.2$), so none are in disulfides and it has zero, not three, disulfide bonds. C is wrong: protein Z shows all 4 cysteines as free thiols ($4.0 \pm 0.2$), meaning none are disulfide-bonded, so it has zero disulfide bonds. D misreads the data: protein Y has the most total cysteines but the fewest measured free thiols ($0.1$), because nearly all of its cysteines are oxidized into disulfides rather than remaining as free thiols.
+--------------------------------------------------------------------------------
+ID: PS_9A_020_q001
+Difficulty: hard
+STEM: Sociologists surveyed 1,200 adolescents on weekly hours of social media use and administered a validated body-dissatisfaction scale (range 0-50). Respondents were grouped by usage. Mean body-dissatisfaction scores ($\pm$ standard deviation) were: Light (0-5 hr), $18.2 \pm 6.1$, $n=300$; Moderate (6-14 hr), $21.5 \pm 6.4$, $n=450$; Heavy (15-25 hr), $24.0 \pm 6.0$, $n=300$; Very Heavy ($>25$ hr), $24.4 \pm 11.8$, $n=150$. A one-way ANOVA across groups yielded $p < 0.001$. Which conclusion is best supported by these data?
+
+  A. Because the Very Heavy group has the highest standard deviation, its mean is the most reliable estimate of that group's true body dissatisfaction.
+  B. The significant ANOVA demonstrates that heavier social media use causes greater body dissatisfaction in adolescents.
+  C. The roughly equal means of the Heavy and Very Heavy groups prove that body dissatisfaction stops increasing once use exceeds 15 hours per week.
+  D. Mean body dissatisfaction tends to rise with greater social media use, but the wide spread in the Very Heavy group indicates its members vary considerably around that mean.
+CORRECT: D
+EXPLANATION: The data show group means increasing from Light (18.2) to Moderate (21.5) to Heavy (24.0) to Very Heavy (24.4), and the ANOVA confirms the differences are statistically reliable, so describing an upward trend is appropriate. The Very Heavy group's standard deviation ($11.8$) is nearly double that of the other groups (around 6), meaning its members are much more dispersed around the mean—exactly what D states. D is the only choice that confines itself to what the data support: a descriptive trend plus an accurate reading of dispersion. A is wrong because a larger standard deviation signals MORE variability and (with the smallest n, 150) a LESS precise, not more reliable, estimate of the group mean. B commits causal overreach: this is a correlational cross-sectional survey, so significance establishes association, not causation—reverse causation (dissatisfied teens use more media) or confounders remain possible. C overinterprets the near-equal Heavy and Very Heavy means as a proven plateau; with the large overlapping standard deviations and the small Very Heavy sample, the data cannot establish that dissatisfaction 'stops increasing,' and 'prove' is far too strong for a descriptive cross-section.
+--------------------------------------------------------------------------------
+ID: PS_9A_020_q002
+Difficulty: hard
+STEM: A media researcher distinguishes the cultivation theory of mass media from the agenda-setting theory. Cultivation theory holds that heavy exposure to media content gradually shapes viewers' beliefs about what social reality is actually like, whereas agenda-setting theory holds that media shape which issues audiences regard as important without necessarily changing beliefs about reality itself. A researcher finds that adults who watch the most crime-focused television news both rate crime as the nation's most pressing problem AND substantially overestimate the actual neighborhood homicide rate, even though local crime has fallen for a decade. Which finding, if added, would most strengthen a specifically cultivation-theory interpretation over an agenda-setting one?
+
+  A. Heavy news viewers rank crime above the economy when asked to list the country's most urgent problems.
+  B. Heavy news viewers estimate that a far larger fraction of strangers cannot be trusted than light viewers do, independent of which problems they prioritize.
+  C. Heavy news viewers recall more specific crime stories from the past week than light viewers.
+  D. Newspaper coverage of crime predicts which issues legislators introduce bills about the following month.
+CORRECT: B
+EXPLANATION: Cultivation theory predicts that heavy media exposure alters viewers' perceptions of social reality itself—e.g., believing the world is more dangerous and people less trustworthy (the classic 'mean world' effect). Agenda-setting theory predicts only that media change which issues people deem important, not their underlying beliefs about reality. The strongest support for cultivation OVER agenda-setting must show a distorted belief about reality that is independent of issue prioritization. Choice B does exactly this: heavy viewers hold a more distrustful, danger-tinged view of social reality (a 'mean world' belief), and the effect persists independent of which problems they rank as important—isolating the cultivation mechanism from the agenda-setting one. Choice A is a textbook agenda-setting result: ranking crime as most urgent concerns issue salience, not beliefs about reality, so it does not distinguish cultivation. Choice C reflects memory or attention for media content, not a shaped perception of reality; better recall is consistent with mere exposure and supports neither theory's distinctive claim. Choice D describes media influencing the policy agenda (legislators' priorities), which is a form of agenda-setting at the institutional level and is the opposite of what is needed to favor cultivation.
+--------------------------------------------------------------------------------
+ID: PS_9A_020_q003
+Difficulty: easy
+STEM: A streaming platform releases a documentary on competitive baking that becomes wildly popular. Within months, sales of specialty baking equipment surge, home bakeries open in many cities, amateur baking competitions appear at community events, and the show's signature phrases enter everyday conversation. Sociologists note that these trends originated in a mass-produced media product designed for broad consumer audiences and were rapidly adopted across many social groups. Which concept best characterizes the cultural phenomenon described?
+
+  A. Cultural lag, in which material culture changes faster than nonmaterial culture
+  B. A subculture, defined by values that oppose those of the dominant society
+  C. Cultural relativism, the practice of judging a culture by its own standards
+  D. Popular culture, widely shared practices and tastes spread through mass media
+CORRECT: D
+EXPLANATION: The scenario describes patterns of consumption, language, and activity that originate in a mass-produced media product and spread broadly and quickly across society. This is the defining feature of popular (mass) culture: widely accessible, commercially distributed practices and tastes diffused through mass media, making D correct. A is wrong because cultural lag refers specifically to nonmaterial culture (beliefs, norms) failing to keep pace with technological/material change; the scenario is about the rapid diffusion of cultural products, not a mismatch in rates of change. B is wrong because a subculture involves a smaller group with distinctive values within a larger society, and a counterculture actively opposes dominant values; here the trends spread across many groups and are embraced by the mainstream rather than resisting it. C is wrong because cultural relativism is a methodological/ethical stance about evaluating other cultures on their own terms, which has nothing to do with the spread of a media-driven trend described here.
+--------------------------------------------------------------------------------
+ID: PS_9A_020_q004
+Difficulty: medium
+STEM: A sociologist studies how a mass medium reaches the public. She compares two models. In the hypodermic-needle (direct-effects) model, media messages are injected directly into a passive audience, producing uniform and immediate effects. In the two-step flow model, media messages first reach opinion leaders, who then interpret and pass the information along to others in their social networks, so personal influence mediates media effects. She launches a new public-health campaign promoting vaccination through television ads. Which observed outcome would provide the strongest evidence favoring the two-step flow model over the direct-effects model?
+
+  A. Vaccination intentions rose immediately and to a similar degree among all viewers regardless of their social ties.
+  B. Viewers who saw the ads more often reported greater recall of the campaign's slogan than those who saw them less often.
+  C. People who never saw the ads showed no change in vaccination intentions, while frequent viewers showed large increases.
+  D. People who never saw the ads but who discussed vaccination with highly connected, media-attentive peers increased their vaccination intentions.
+CORRECT: D
+EXPLANATION: The two-step flow model predicts that media effects are transmitted through opinion leaders to others in their networks, meaning that even people who never directly received the media message can be influenced via interpersonal contact with media-attentive, well-connected individuals. Option D shows exactly this indirect, person-mediated pathway, which the direct-effects model cannot explain, so it is the strongest discriminating evidence. Option A describes uniform, immediate, ties-independent effects, which is the signature prediction of the hypodermic-needle model, not the two-step flow model. Option B shows only a dose-response in message recall; greater exposure producing greater recall is consistent with simple direct exposure and says nothing about interpersonal mediation. Option C shows that only direct viewers change while non-viewers do not, which supports the direct-effects view because influence tracks personal exposure rather than flowing through social ties.
+--------------------------------------------------------------------------------
+ID: PS_9A_020_q005
+Difficulty: easy
+STEM: A toy company digitally alters advertisements so that the dolls it sells appear to have impossibly narrow waists and long legs. A developmental researcher argues that years of exposure to such idealized images teach young children to internalize an unrealistic standard for the human body, which they then use to judge themselves and others. Which prediction follows most directly from this argument?
+
+  A. Children with heavy exposure to the altered ads will report greater dissatisfaction with their own bodies than children with little exposure.
+  B. Children exposed to the altered ads will purchase fewer dolls because the proportions appear unrealistic to them.
+  C. Children will ignore the altered ads entirely because the bodies depicted are physically impossible.
+  D. Parents, rather than children, will be the group most affected by the altered ads.
+CORRECT: A
+EXPLANATION: The researcher's argument is that repeated media exposure to idealized bodies leads children to internalize an unrealistic standard against which they evaluate themselves, a socialization-through-media (cultivation-style) claim. The direct, testable consequence is a dose-response link between exposure and self-evaluation: children with more exposure should internalize the standard more strongly and therefore report greater body dissatisfaction. A captures exactly this prediction. B contradicts the argument: if anything, internalizing the idealized image would make the product more, not less, appealing, and reduced purchasing is not what the internalization claim predicts. C contradicts the premise that exposure shapes standards; the argument assumes children absorb the imagery rather than dismissing it as impossible. D misidentifies the target population; the argument concerns young children internalizing standards through repeated exposure, not parents, so predicting parents as the most affected group does not follow from the stated reasoning.
+--------------------------------------------------------------------------------
+ID: PS_9A_020_q006
+Difficulty: easy
+STEM: A sociologist studies the concept of cultural imperialism, the process by which a dominant nation's media products spread its values, products, and lifestyles into other societies, often displacing local cultural forms. She examines a small country whose national broadcaster recently began airing large amounts of imported entertainment from a wealthier foreign nation. Which observation, if confirmed, would most strongly support a cultural-imperialism interpretation of this change?
+
+  A. Viewership of the foreign programs is highest among older residents who already traveled abroad frequently.
+  B. The imported programs are dubbed into the local language before being broadcast nationally.
+  C. Domestic producers begin creating new programs that satirize the imported foreign content.
+  D. Young viewers increasingly adopt the foreign nation's consumer brands and styles while local traditional programming loses its audience.
+CORRECT: D
+EXPLANATION: Cultural imperialism predicts that exposure to a dominant nation's media spreads its values and consumer culture while local cultural forms are eroded or displaced. Option D captures both halves of this prediction: adoption of the foreign nation's brands and styles (transmission of foreign values) together with the decline of local traditional programming (displacement of indigenous culture). This pattern is exactly what the theory anticipates, so it provides the strongest support. Option A is weak because the affected group already had heavy foreign exposure through travel, so any change cannot be attributed to the new broadcasts and shows no displacement of local culture. Option B describes a technical adaptation (dubbing) that actually localizes the content into the native language; this facilitates access but is not itself evidence that foreign values are spreading or that local culture is being displaced. Option C shows local producers actively responding to and reworking foreign content, indicating cultural resilience and adaptation rather than the passive displacement central to cultural imperialism.
+--------------------------------------------------------------------------------
+ID: PS_9A_020_q007
+Difficulty: medium
+STEM: A media studies team analyzes how a popular reality television franchise depicts a particular occupation. They code 200 episodes and find that the occupation is portrayed almost exclusively in glamorous, high-conflict, high-reward terms. The team predicts that frequent viewers will hold systematically distorted beliefs about that occupation's typical day-to-day realities, even though viewers can readily distinguish that the show is entertainment. The researchers want to design a follow-up study whose results could disconfirm their prediction. Which study outcome would most directly falsify their hypothesis?
+
+  A. Frequent viewers report enjoying the show more and feeling more emotionally engaged than infrequent viewers do
+  B. Frequent viewers can accurately state that the program is scripted and edited for dramatic effect
+  C. Frequent viewers express stronger intentions to pursue the glamorized occupation than infrequent viewers do
+  D. Frequent and infrequent viewers do not differ in how accurately they estimate the occupation's typical income and daily duties
+CORRECT: D
+EXPLANATION: The hypothesis is a cultivation-style claim: heavy exposure to a consistent media portrayal shapes viewers' beliefs about real-world conditions. To FALSIFY this, the team needs evidence that frequent viewing is NOT associated with distorted real-world beliefs. Option D does exactly that: if heavy and light viewers estimate the occupation's actual income and duties equally accurately, then exposure is not tracking with belief distortion, directly contradicting the prediction. Option A concerns enjoyment and engagement, which the hypothesis never addressed; greater liking among frequent viewers neither supports nor refutes a claim about distorted factual beliefs. Option B is a trap built on the idea that recognizing fiction should block cultivation; however, the hypothesis explicitly assumes viewers know the show is entertainment yet still form distorted beliefs, so confirming that viewers know it is scripted is fully consistent with the hypothesis and cannot falsify it. Option C (stronger career intentions among frequent viewers) is an outcome that, if anything, is consistent with media influence and would tend to support rather than disconfirm an influence claim. Only D provides the pattern of evidence that would break the predicted link between exposure and distorted real-world beliefs.
+--------------------------------------------------------------------------------
+ID: PS_9A_020_q008
+Difficulty: easy
+STEM: A researcher wants to know whether watching violent music videos increases aggressive behavior in teenagers. She recruits 100 volunteers, has all of them watch a series of violent music videos in a lab, and afterward measures how many aggressive words each teen uses in a brief interview. She concludes that violent music videos cause aggression. A peer reviewer points out that the study lacks a key feature that would allow a causal claim. Which addition would most directly address this criticism?
+
+  A. Increasing the sample size from 100 to 500 teenagers
+  B. Using a validated questionnaire instead of counting aggressive words
+  C. Recruiting teenagers from several different schools
+  D. Adding a control group that watches nonviolent videos
+CORRECT: D
+EXPLANATION: The fundamental flaw is that every participant received the same treatment, so there is no comparison condition. Without a group that did NOT watch violent videos, the researcher cannot know whether the aggressive behavior was caused by the violent content or would have occurred anyway. A control group that watches nonviolent videos provides the needed comparison, allowing the researcher to isolate the effect of the independent variable (video content). This is option D.
+
+Option A is wrong because increasing the sample size improves statistical power and the precision of estimates but does nothing to establish a causal comparison; a larger single-condition study still has no baseline. Option B is wrong because switching to a validated questionnaire improves the reliability and validity of the dependent measure, but better measurement of an outcome in a single group still cannot establish causation. Option C is wrong because recruiting from multiple schools improves the generalizability (external validity) of the sample, yet it still leaves the design without a comparison group. Only adding a control group addresses the specific problem of being unable to make a causal claim.
+--------------------------------------------------------------------------------
+ID: BB_2B_020_q001
+Difficulty: easy
+STEM: A microbiologist examines four particles with electron microscopy and records the presence (+) or absence (–) of selected cellular features. The results are shown below.
+
+| Particle | Plasma membrane | Ribosomes | Nucleus | Genetic material |
+|----------|-----------------|-----------|---------|------------------|
+| W | + | + | + | + |
+| X | + | + | – | + |
+| Y | – | – | – | + |
+| Z | + | + | – | + |
+
+Based on the data, which particle is most consistent with a virus?
+
+  A. Particle W, because it contains genetic material
+  B. Particle Y, because it lacks ribosomes and a membrane while still carrying genetic material
+  C. Particle X, because it lacks a nucleus but has ribosomes
+  D. Particle Z, because it has both a plasma membrane and ribosomes
+CORRECT: B
+EXPLANATION: Viruses are acellular: they consist of genetic material (DNA or RNA) enclosed in a protein capsid, sometimes with a lipid envelope, but they lack the machinery of cells. Critically, they have NO ribosomes and rely on host ribosomes to synthesize their proteins. Particle Y is the only one in the data that carries genetic material yet lacks both ribosomes and a plasma membrane, matching the acellular nature of a virus, so B is correct. Particle W has a true nucleus, ribosomes, and a membrane—features of a eukaryotic cell, not a virus—so A is wrong. Particles X and Z both possess ribosomes and a plasma membrane while lacking a nucleus, which describes prokaryotic cells (e.g., bacteria), not viruses; the presence of ribosomes alone rules out a virus, making C and D incorrect.
+--------------------------------------------------------------------------------
+ID: BB_2B_020_q002
+Difficulty: medium
+STEM: A researcher wants to test whether a newly discovered infectious particle is a virus rather than a small bacterium. She proposes growing the particle on an agar plate containing only glucose, mineral salts, and amino acids, reasoning that a true virus should fail to form colonies on this medium. A colleague agrees the particle is a virus but argues this experiment is not, by itself, sufficient to prove it. Which of the following best supports the colleague's objection?
+
+  A. Because viruses lack the ribosomes and metabolic machinery to synthesize their own components, they cannot replicate on any cell-free medium, so failure to grow does not distinguish a virus from an obligate intracellular bacterium.
+  B. Viruses possess their own ribosomes but lack a nucleus, so they could still translate proteins and form visible colonies on the nutrient medium.
+  C. Some viruses carry a plasma membrane derived from the host, which would allow them to take up glucose and amino acids and grow independently on the plate.
+  D. Because viruses contain either DNA or RNA but not both, the medium would need to supply the missing nucleic acid before any replication could occur.
+CORRECT: A
+EXPLANATION: The proposed experiment relies on a virus failing to grow on cell-free medium. The colleague's valid objection is that this negative result is not unique to viruses. Viruses lack ribosomes and metabolic enzymes and therefore cannot replicate outside a host cell on any acellular medium. However, obligate intracellular bacteria (e.g., Chlamydia, Rickettsia) also fail to grow on such media despite being cellular organisms with ribosomes and a plasma membrane. Thus a failure to form colonies cannot, by itself, distinguish a virus from these bacteria, which is exactly why the experiment is insufficient. This makes A correct. B is wrong because viruses do not possess their own ribosomes; they depend entirely on host ribosomes for protein synthesis, so they could not translate proteins or form colonies on the plate. C is wrong because although some enveloped viruses acquire a host-derived membrane, this envelope does not confer metabolic capability such as nutrient uptake and biosynthesis; viruses still cannot replicate without a host cell. D is wrong because while an individual virus carries only DNA or only RNA, supplying nucleic acid to the medium would not enable replication, since viruses lack the ribosomes and enzymes needed to copy their genome and build progeny outside a host.
+--------------------------------------------------------------------------------
+ID: BB_2B_020_q003
+Difficulty: medium
+STEM: A pharmaceutical company is screening drug candidates that selectively poison the enzyme responsible for translating mRNA into polypeptides, with the goal of killing the agent of a viral respiratory infection. A virologist reviews the proposal and predicts that this class of drug will not directly halt the synthesis of new viral proteins inside an infected human cell. Which feature of viruses best accounts for the virologist's prediction?
+
+  A. Viruses store their genetic information as RNA rather than as double-stranded DNA
+  B. Viruses lack ribosomes and therefore rely on the host cell's translational machinery
+  C. Viruses lack a nuclear envelope, so viral transcription occurs in the cytoplasm
+  D. Viruses possess a protein capsid that shields the genome from the drug
+CORRECT: B
+EXPLANATION: Translation of mRNA into polypeptide is carried out by ribosomes. Because viruses are acellular and contain no ribosomes of their own, they must hijack the host cell's ribosomes to make viral proteins. A drug that poisons the translating enzyme would therefore have to act on host ribosomes, not a distinct viral target; the virus has no machinery of its own for the drug to selectively inhibit. This is exactly why the virologist predicts the strategy will not give a virus-specific block of viral protein synthesis, making B correct. A is wrong because many viruses use DNA genomes, and the genome type does not change the fact that ribosomes—not the genome—perform translation. C is a true statement about the absence of a nuclear envelope, but it concerns transcription and location rather than the translational machinery the drug targets, so it does not explain the prediction. D is incorrect because by the time viral mRNA is being translated, the genome has already been uncoated and is being expressed; a capsid does not protect the genome during active translation, and the drug in question targets the ribosome, not the genome.
+--------------------------------------------------------------------------------
+ID: BB_2B_020_q004
+Difficulty: hard
+STEM: A bacteriophage with a $40{,}000$ base-pair double-stranded DNA genome infects a culture of $E.\ coli$. A researcher adds $^{32}\text{P}$-labeled inorganic phosphate to the medium at the moment of infection and follows when the label is incorporated into newly made macromolecules. She finds that $^{32}\text{P}$ appears in new phage DNA only after a lag, and that this lag disappears if she instead labels the medium with $^{35}\text{S}$, which is incorporated into protein almost immediately. Which conclusion is best supported by these observations?
+
+  A. The phage carries its own ribosomes, allowing protein synthesis to begin before host enzymes are produced.
+  B. The phage genome is replicated by phage-encoded DNA polymerase present in the virion at the time of infection.
+  C. Viral protein synthesis precedes genome replication because the phage relies on host ribosomes already present in the cell.
+  D. The lag in DNA labeling occurs because the phage must first transcribe its genome inside its own nucleus before replication.
+CORRECT: C
+EXPLANATION: The data show that protein labeling (with $^{35}\text{S}$) begins almost immediately after infection, whereas DNA labeling (with $^{32}\text{P}$) shows a lag. The best explanation is that protein synthesis can start at once because the host cell already contains functional ribosomes that the phage hijacks; some of these early viral proteins are the enzymes (e.g., phage DNA polymerase, nucleotide-synthesizing enzymes) that must be made before genome replication can proceed, which accounts for the delay in DNA labeling. C captures this temporal logic and the dependence on pre-existing host ribosomes, so it is correct. A is wrong because viruses lack ribosomes entirely; the immediate protein synthesis is possible precisely because the HOST ribosomes are already present, not because the phage supplied any. B is contradicted by the data: if a fully functional phage DNA polymerase entered with the virion, DNA replication (and thus $^{32}\text{P}$ incorporation into DNA) should begin without a lag; the observed lag instead indicates that the replication machinery must be synthesized first. While some phages do package a few enzymes, the experiment shows replication waits on new protein synthesis. D is wrong on two counts: viruses have no nucleus or any organelle, and transcription is not what the labeling pattern tracks; the lag reflects the need to translate replication enzymes, not compartmentalized processing.
+--------------------------------------------------------------------------------
+ID: BB_2B_020_q005
+Difficulty: medium
+STEM: A researcher engineers a synthetic minimal cell by enclosing a self-replicating DNA genome together with ribosomes, tRNAs, aminoacyl-tRNA synthetases, and all metabolic enzymes inside a lipid vesicle. Supplied only with nucleotides, amino acids, and a carbon source, the construct grows, makes its own ATP, and divides on its own. The researcher then strips the vesicle down to just a protein capsid surrounding the genome, removing the membrane and all enzymes. She predicts the stripped construct can no longer replicate unless it is placed inside a living host cell. Which feature of the stripped construct best justifies this prediction?
+
+  A. It lacks the ribosomes and metabolic machinery needed to translate its genes and generate ATP independently.
+  B. It lacks a nucleus to protect its genome, so its DNA is rapidly degraded outside a host.
+  C. Its protein capsid blocks nucleotides from reaching the genome, preventing any DNA replication.
+  D. Its genome is too small to encode the proteins required for independent replication.
+CORRECT: A
+EXPLANATION: Stripping the construct to a capsid plus genome removes the ribosomes, tRNAs, synthetases, and metabolic enzymes that the intact minimal cell used to translate its own genes and produce ATP. Like a virus, the stripped particle therefore cannot synthesize proteins or generate energy on its own and must hijack a host cell's ribosomes and metabolism to replicate. This is exactly why viruses are obligate intracellular parasites, making A correct. B is wrong because the original construct lacked a nucleus yet still replicated freely; a nucleus is not required, and the prediction does not depend on DNA degradation. C is wrong because capsids package and protect nucleic acid but do not inherently exclude small molecules in a way that would prevent replication if the synthetic machinery were present; the decisive change is the loss of that machinery, not capsid impermeability. D is wrong because genome size is not the limiting issue: even a large genome cannot replicate without ribosomes and an energy source, and the same genome replicated successfully when the translational and metabolic machinery were present.
+--------------------------------------------------------------------------------
+ID: BB_2B_020_q006
+Difficulty: easy
+STEM: An antibiotic called erythromycin works by binding the 50S subunit of bacterial ribosomes, blocking the addition of amino acids during protein synthesis. A patient with a viral cold is mistakenly prescribed erythromycin, and after several days the viral infection has not improved at all. A student is asked to explain, in terms of viral biology, why the drug had no direct effect on the virus particles themselves. Which explanation is best supported?
+
+  A. The virus has 50S ribosomal subunits that are structurally different from the bacterial target, so erythromycin cannot bind them.
+  B. Virus particles contain no ribosomes of their own, so a ribosome-targeting drug has nothing to act on within the virus.
+  C. Viruses possess a nucleus that sequesters their ribosomes away from the drug.
+  D. Viruses use their mitochondria rather than ribosomes to assemble new viral proteins.
+CORRECT: B
+EXPLANATION: A virus particle is essentially nucleic acid enclosed in a protein capsid (sometimes with a membrane envelope); it carries no ribosomes, no nucleus, and no other organelles. Erythromycin acts by binding ribosomes, so a free virion offers no target for the drug, which is why the drug has no direct effect on the virus particle. B states exactly this. A is wrong because viruses do not possess ribosomes of any kind, including 50S subunits, so there is no viral ribosome to differ structurally. C is wrong because viruses lack a nucleus entirely; they cannot sequester ribosomes they do not have. D is wrong because viruses have no mitochondria, and protein synthesis is carried out by ribosomes, not mitochondria, in any organism. (Note that when the virus replicates inside a host cell, it relies on the host's ribosomes, but the question asks about the virus particle itself.)
+--------------------------------------------------------------------------------
+ID: BB_2B_020_q007
+Difficulty: medium
+STEM: An enveloped RNA virus infects human cells and replicates rapidly. During infection, the virus must generate energy to power the synthesis of thousands of new copies of its genome and proteins. A graduate student notes that the virus contains no mitochondria, no electron transport chain, and no glycolytic enzymes within the virion, yet replication clearly demands large amounts of ATP. She concludes that the high ATP demand of viral replication must still be met. Which statement best explains how this ATP demand is satisfied?
+
+  A. The viral envelope, derived from the host membrane, carries embedded ATP synthase that regenerates ATP for the virion.
+  B. The virus packages a small number of mitochondria from the previous host so it can produce ATP immediately upon entering a new cell.
+  C. Viral capsid proteins catalyze substrate-level phosphorylation using nucleotides supplied in the extracellular fluid.
+  D. The host cell's own metabolic machinery generates the ATP, which the virus diverts toward replicating its genome and proteins.
+CORRECT: D
+EXPLANATION: Viruses are acellular and possess no metabolic machinery of their own — no mitochondria, no glycolytic enzymes, and no means of independently generating ATP. Because of this, a virus is an obligate intracellular parasite that must rely entirely on the biosynthetic and energy-producing apparatus of the host cell it infects. Once inside, the virus redirects the host's glycolysis and oxidative phosphorylation to supply the ATP, nucleotides, and amino acids needed to copy its genome and translate its proteins. This makes D correct. A is wrong: although the envelope is indeed derived from host membrane, free virions do not carry functional ATP synthase, and even if a membrane fragment did, it could not sustain proton-gradient-driven ATP synthesis outside a living, respiring cell. B is wrong because viruses do not package organelles; they lack any membrane-bound organelles entirely, and mitochondria are far too large and complex to be enclosed in a virion. C is wrong because capsid proteins are structural, not metabolic enzymes; substrate-level phosphorylation requires specific glycolytic or Krebs-cycle enzymes that the virus does not encode in active form within the particle, and no such reactions occur free in the extracellular fluid.
+--------------------------------------------------------------------------------
+ID: BB_2B_020_q008
+Difficulty: easy
+STEM: A virologist purifies intact tobacco mosaic virus particles and analyzes their molecular composition. The analysis reveals that each particle consists of a single-stranded RNA molecule wound inside a coat built from many identical protein subunits, with no lipid bilayer and no carbohydrate detected. Based on this composition, what general structural term best describes the protein coat that surrounds and protects the viral genome?
+
+  A. Plasmid
+  B. Nucleoid
+  C. Capsid
+  D. Envelope
+CORRECT: C
+EXPLANATION: A virus is essentially a genome packaged inside a protein coat. The coat built from many identical protein subunits that surrounds and protects the nucleic acid is called the capsid (together with the genome it forms the nucleocapsid), making C correct. A plasmid (A) is a small, circular, extrachromosomal DNA molecule found in some bacteria; it is genetic material, not a protein coat. A nucleoid (B) is the region of a prokaryotic cell where the chromosome is concentrated—it is not a structure of a virus and is not made of protein subunits. An envelope (D) is a lipid bilayer membrane that some viruses acquire from host cell membranes; this particle was explicitly found to lack any lipid bilayer, so it is non-enveloped and the protective layer described is the protein capsid.
+--------------------------------------------------------------------------------
+===== SCIENCE =====
+### PASSAGE SP_BB_2B_012_01 ###
+The hindgut of many wood-feeding termites houses a dense microbial community that digests cellulose the insect cannot break down alone. Among these microbes are bacteria of the genus *Treponema*, which fix nitrogen and produce acetate used by the host as a carbon source. This relationship is obligate for the host, making the bacteria classic symbionts. Researchers sought to characterize the oxygen tolerance and motility behavior of three hindgut isolates (strains H1, H2, and H3) to understand how they position themselves within the steep oxygen gradient that exists between the oxygenated gut wall and the anoxic lumen.
+
+To classify each strain by oxygen requirement, investigators stab-inoculated identical thioglycolate broth tubes, which establish an oxygen gradient from a high concentration at the surface to near-zero at the bottom. Tubes were incubated at $30\ ^\circ\text{C}$ for 48 hours, and the depth of densest growth was recorded. A sterile uninoculated tube served as a control to confirm the medium itself produced no turbidity.
+
+The team then assayed chemotaxis using a capillary assay. A microcapillary tube filled with buffer containing a candidate attractant was inserted into a suspension of motile cells; after 60 minutes the cells that had accumulated inside the capillary were enumerated. Each strain was tested against three conditions: glucose, oxygen-saturated buffer, and a buffer-only control. The same starting cell density ($1 \times 10^{8}$ cells/mL) was used for every assay, and the temperature and incubation time were held constant. One acknowledged limitation was that the capillary assay cannot distinguish true attraction from increased random swimming speed (a kinetic, not directed, response).
+
+Results are presented in the table and figure. The investigators noted that a strain's preferred depth in the gradient tube should, in principle, correspond to its chemotactic response toward oxygen, allowing the two assays to be cross-checked.
+TABLE: | Strain | Depth of densest growth in thioglycolate tube |
+| --- | --- |
+| H1 | At the surface |
+| H2 | Throughout the tube, densest near surface |
+| H3 | Near the bottom |
+ID: SP_BB_2B_012_01_q01
+Difficulty: easy
+STEM: In the thioglycolate gradient tube, strain H1 grew densest at the surface, where oxygen concentration is highest. Based on this growth pattern, H1 is best classified as which type of organism?
+
+  A. Obligate anaerobe
+  B. Obligate aerobe
+  C. Aerotolerant anaerobe
+  D. Facultative anaerobe
+CORRECT: B
+EXPLANATION: Classifying organisms by oxygen requirement from thioglycolate gradient growth is standard introductory microbiology knowledge not stated in the passage. In a thioglycolate tube, oxygen is highest at the surface and near zero at the bottom. An organism that grows densest only at the surface requires oxygen for growth, which defines an obligate aerobe. B is therefore correct. A is wrong because an obligate anaerobe is poisoned by oxygen and would grow only at the bottom, the opposite of the observed pattern. C is wrong because an aerotolerant anaerobe does not use oxygen and grows evenly throughout the tube regardless of oxygen level. D is wrong because a facultative anaerobe grows throughout but densest near the surface (matching H2's pattern), not exclusively at the surface as H1 does.
+--------------------------------------------------------------------------------
+ID: SP_BB_2B_012_01_q02
+Difficulty: hard
+STEM: The investigators stated that a strain's preferred depth in the gradient tube should correspond to its chemotactic response toward oxygen, allowing the two assays to cross-check each other. Considering the gradient-tube depths together with the oxygen-saturated buffer data from the capillary assay, which strain provides the strongest mutual confirmation between the two assays?
+
+  A. H2, because it grew throughout the tube and showed an intermediate oxygen capillary count of $12.0 \times 10^{6}$.
+  B. H3, because it grew near the bottom and showed the highest glucose capillary count of $45.0 \times 10^{6}$.
+  C. H2, because its oxygen capillary count of $12.0 \times 10^{6}$ exceeded its buffer control of $6.0 \times 10^{6}$.
+  D. H1, because it grew at the surface and its oxygen capillary count of $38.0 \times 10^{6}$ far exceeded its buffer control of $5.0 \times 10^{6}$.
+CORRECT: D
+EXPLANATION: The cross-check requires that a strain's preferred oxygen environment in the gradient tube agree with its directed movement toward oxygen in the capillary assay, judged relative to that strain's own buffer control. H1 grew densest at the surface (highest oxygen), and in the capillary assay it accumulated $38.0 \times 10^{6}$ cells toward oxygen versus only $5.0 \times 10^{6}$ in buffer control — a roughly 7.6-fold increase indicating strong positive aerotaxis. Both assays independently point to oxygen-seeking behavior, so H1 gives the strongest mutual confirmation; D is correct. A is wrong: H2 grew throughout the tube (no single clear oxygen preference), and its oxygen count of $12.0 \times 10^{6}$ is only about double its $6.0 \times 10^{6}$ control, a weak and ambiguous response that does not strongly confirm anything. B is wrong because the glucose count is irrelevant to the oxygen cross-check the question specifies; H3 grew near the bottom (oxygen-avoiding), yet its oxygen capillary count of $3.0 \times 10^{6}$ is actually below its $4.0 \times 10^{6}$ control — consistent with avoidance but not a confirming attraction, and glucose data cannot validate an oxygen relationship. C is wrong because although H2's oxygen count ($12.0 \times 10^{6}$) does exceed its control ($6.0 \times 10^{6}$), the modest twofold difference paired with H2's diffuse growth throughout the tube is far weaker confirmation than H1's concordant surface growth and large fold-increase.
+--------------------------------------------------------------------------------
+ID: SP_BB_2B_012_01_q03
+Difficulty: hard
+STEM: The passage describes the *Treponema*–termite relationship as obligate for the host and calls the bacteria "classic symbionts." Considering how the passage characterizes what each partner gains from the association, this relationship is best classified as which type of interaction?
+
+  A. Commensalism, because only the termite benefits while the bacteria are unaffected
+  B. Mutualism, because the termite gains usable carbon and the bacteria gain a protected, nutrient-rich gut habitat
+  C. Parasitism, because the bacteria exploit the termite's gut at the host's expense
+  D. Competition, because the bacteria and host both rely on the same cellulose resource
+CORRECT: B
+EXPLANATION: The passage states the bacteria digest cellulose the insect cannot break down alone and supply acetate that the host uses as a carbon source; in turn the hindgut provides the bacteria a dense, anoxic, nutrient-rich environment in which to live. Both partners benefit, which defines mutualism, so B is correct. A (commensalism) is wrong because the bacteria are not merely unaffected—they obtain a habitat and nutrients from the gut, and the passage emphasizes a reciprocal exchange. C (parasitism) is wrong because there is no host harm described; the relationship is beneficial to the termite (it is obligate for the host because the bacteria help it). D (competition) misreads the biology: the termite cannot digest cellulose itself, so the two are not competing for the same usable resource—the bacteria process cellulose into a form the host can then use, a cooperative division of labor rather than competition.
+--------------------------------------------------------------------------------
+ID: SP_BB_2B_012_01_q04
+Difficulty: medium
+STEM: Using the capillary assay data, which strain shows the largest difference between its response to oxygen-saturated buffer and the buffer-only control, and what does this indicate?
+
+  A. H3, indicating strong attraction to oxygen
+  B. H2, indicating strong attraction to oxygen
+  C. H3, indicating strong repulsion from oxygen
+  D. H1, indicating strong attraction to oxygen
+CORRECT: D
+EXPLANATION: The buffer-only control measures background accumulation, so the magnitude of attraction is the increase above that control. For H1, oxygen-saturated buffer gives $38.0 \times 10^6$ versus a control of $5.0 \times 10^6$, a difference of $33.0 \times 10^6$ cells — by far the largest. For H2, $12.0 - 6.0 = 6.0 \times 10^6$, and for H3, $3.0 - 4.0 = -1.0 \times 10^6$ (no accumulation above control). A positive accumulation above control toward an attractant condition indicates attraction, so H1 is strongly attracted to oxygen, consistent with D. A is wrong because H3 accumulated essentially the same as (slightly below) its control, showing no attraction. B is wrong because H2's increase of only $6.0 \times 10^6$ is much smaller than H1's. C correctly notes H3 shows the lowest oxygen response, but the capillary assay measures cells that enter the capillary; it cannot demonstrate active repulsion (cells swimming away), only a failure to accumulate — and H3's value is not the largest difference from control in any case.
+--------------------------------------------------------------------------------
+ID: SP_BB_2B_012_01_q05
+Difficulty: hard
+STEM: For each strain, the response to glucose can be compared with the buffer-only control to gauge the magnitude of glucose chemotaxis. Using the capillary assay data, which statement about the glucose responses, expressed as the fold increase over each strain's own buffer control, is correct?
+
+  A. H1 shows the largest fold increase over its control because it accumulated the most cells in oxygen-saturated buffer.
+  B. All three strains show roughly equal fold increases because their raw glucose counts (42.0, 39.0, 45.0) are similar.
+  C. H2 shows the largest fold increase over its control because it has the lowest oxygen response.
+  D. H3 shows the largest fold increase over its control, accumulating about 11 times its buffer-control value.
+CORRECT: D
+EXPLANATION: Fold increase is the glucose count divided by that strain's own buffer-control count. H1: $42.0/5.0 = 8.4$. H2: $39.0/6.0 = 6.5$. H3: $45.0/4.0 = 11.25$. H3 has the largest fold increase, about 11-fold, because it pairs a high glucose count (45.0) with the lowest control (4.0). D is correct. A is wrong because the oxygen-saturated buffer response is irrelevant to the glucose fold increase, and on the glucose-to-control comparison H1's fold increase (8.4) is smaller than H3's. B is wrong because comparing raw glucose counts ignores the differing control values; once each is normalized to its own control, the fold increases (8.4, 6.5, 11.25) are clearly not equal. C is wrong both because H3, not H2, has the largest fold increase and because a strain's low oxygen response has no bearing on its glucose-versus-control ratio.
+--------------------------------------------------------------------------------
+ID: SP_BB_2B_012_01_q06
+Difficulty: hard
+STEM: In the capillary assay, strain H3 accumulated 3.0 ($\times 10^6$) cells in the oxygen-saturated capillary versus 4.0 ($\times 10^6$) in the buffer control. A reviewer argues this slightly lower count means H3 is actively repelled by oxygen and swims away from it. The passage notes the assay cannot distinguish true attraction from a kinetic (non-directed) increase in swimming speed. Which consideration most undermines the reviewer's claim of active repulsion based on these data?
+
+  A. Oxygen is a chemical attractant for all motile bacteria, so a repulsion response is physiologically impossible for H3.
+  B. Because H3 grew near the bottom of the gradient tube, it must be a strict anaerobe and therefore cannot respond to oxygen at all.
+  C. The capillary assay measures only the number of cells inside the tube, so a lower count automatically proves the cells were driven away.
+  D. A capillary assay detects cells that swim in and stay; true repulsion (negative chemotaxis) requires cells to move down a gradient away from a source, which this inward-accumulation format cannot demonstrate, and the 3.0-versus-4.0 difference is within the noise of the control accumulation.
+CORRECT: D
+EXPLANATION: The reviewer treats a count slightly below the buffer control as evidence of active (negative) chemotaxis away from oxygen. Applying outside knowledge of how chemotaxis assays work, a standard capillary assay scores cells that swim INTO the capillary and remain; it can demonstrate positive chemotaxis (accumulation above baseline) but cannot directly demonstrate repulsion, which would require observing cells moving down a gradient away from the source—a directed escape the inward-accumulation format does not capture. Moreover, 3.0 versus 4.0 ($\times 10^6$) is essentially baseline-level accumulation (compare H1's strong oxygen response of 38.0), well within the random scatter expected at control levels, so it indicates neither attraction nor repulsion. D correctly invokes both the assay's design limitation and the data's noise. A is false: oxygen is not universally an attractant—for anaerobes it is often avoided—and the blanket claim that repulsion is 'impossible' is wrong. B overreaches: although H3 grew near the bottom (consistent with anaerobic preference), an organism can still sense and avoid oxygen, so 'cannot respond at all' does not follow and does not address why the count comparison fails to prove repulsion. C endorses the reviewer's faulty logic—a lower count does not automatically prove active expulsion, because near-baseline accumulation simply reflects little net entry, not directed escape; the assay's one-directional design is exactly why the inference fails.
+--------------------------------------------------------------------------------
+### PASSAGE SP_BB_1B_014_01 ###
+Suppressor tRNAs are mutant transfer RNAs whose altered anticodons allow them to read codons that would otherwise terminate translation. Researchers studied a strain of Escherichia coli carrying a nonsense mutation in the gene encoding β-galactosidase, an enzyme that hydrolyzes lactose. The wild-type codon for tryptophan at position 18 of the protein, $5'\text{-UGG-}3'$, had been mutated to the amber stop codon $5'\text{-UAG-}3'$, truncating the polypeptide and abolishing enzyme activity.
+
+To restore full-length protein, the researchers introduced a suppressor tRNA gene encoding a tRNA charged with tyrosine but bearing an anticodon altered to pair with the amber codon. Recall that during translation, the anticodon of an incoming aminoacyl-tRNA base-pairs antiparallel with the mRNA codon in the ribosomal A site. The investigators prepared four bacterial constructs and measured β-galactosidase activity, expressed in Miller units, after growth on lactose medium.
+
+Construct 1 was the wild-type gene with no suppressor tRNA. Construct 2 carried the amber mutation with no suppressor tRNA. Construct 3 carried the amber mutation plus the tyrosine suppressor tRNA. Construct 4 carried the amber mutation plus a control suppressor tRNA whose anticodon had NOT been altered (it retained the normal tyrosine anticodon). All constructs were grown under identical conditions, and the amount of suppressor tRNA gene was held constant across Constructs 3 and 4.
+
+Because suppressor tRNAs compete with release factors at every amber codon in the cell, the investigators noted that high suppressor activity could reduce overall cell viability. Total cellular protein was therefore measured to normalize enzyme activity. The experiment tested whether a single nucleotide change in an anticodon could reverse the phenotypic consequence of a single nucleotide change in a codon.
+TABLE: | Construct | Codon at position 18 | Suppressor tRNA |
+| --- | --- | --- |
+| 1 | $5'\text{-UGG-}3'$ | none |
+| 2 | $5'\text{-UAG-}3'$ | none |
+| 3 | $5'\text{-UAG-}3'$ | altered anticodon |
+| 4 | $5'\text{-UAG-}3'$ | normal anticodon |
+ID: SP_BB_1B_014_01_q01
+Difficulty: easy
+STEM: Construct 4, carrying a suppressor tRNA whose anticodon was NOT altered, served as a control. What does this control demonstrate that Construct 3 alone could not?
+
+  A. That restoration of enzyme activity in Construct 3 required the specific anticodon change, not merely the presence of an extra tRNA gene
+  B. That the tyrosine inserted at position 18 is functionally equivalent to the original tryptophan
+  C. That the amber codon arose from a single nucleotide substitution in the wild-type codon
+  D. That suppressor tRNA expression lowers cell viability by competing with release factors
+CORRECT: A
+EXPLANATION: Construct 4 contains the same suppressor tRNA gene as Construct 3 but with the normal (unaltered) tyrosine anticodon, which cannot base-pair with the amber UAG codon. Because Construct 4 shows near-background activity (11 Miller units) while Construct 3 shows substantial activity (590 units), the control rules out the possibility that activity was restored simply by introducing an extra tRNA gene or by some nonspecific effect of the plasmid. This requires applying the principle that a normal anticodon (reading $5'\text{-GUA-}3'$ antiparallel pairs with the tyrosine codon $5'\text{-UAC-}3'$, not with $5'\text{-UAG-}3'$) cannot decode the stop codon. Thus the anticodon alteration itself is the necessary causal element, making A correct. B is wrong: comparing tyrosine versus the original tryptophan would require a construct restoring tryptophan; the partial activity (590 vs 1050) is not isolated by this control and cannot establish functional equivalence. C is wrong: the single-nucleotide origin of the mutation is established by comparing the wild-type and mutant codons in the table, not by the suppressor control. D is wrong: viability effects of suppression are assessed by the total-protein normalization, not by the unaltered-anticodon control.
+--------------------------------------------------------------------------------
+ID: SP_BB_1B_014_01_q02
+Difficulty: medium
+STEM: Based on the activity values in the figure, approximately what percentage of wild-type β-galactosidase activity was restored in the construct carrying the tyrosine suppressor tRNA with an altered anticodon?
+
+  A. About 56%
+  B. About 75%
+  C. About 98%
+  D. About 1%
+CORRECT: A
+EXPLANATION: Construct 3 (amber mutation plus altered-anticodon suppressor tRNA) showed 590 Miller units, while Construct 1 (wild type) showed 1050 Miller units. The fraction of wild-type activity restored is $590/1050 \approx 0.562$, or about 56%. A is therefore correct. B (about 75%) overestimates the ratio; $590/1050$ is closer to one-half than three-quarters. C (about 98%) would require Construct 3's activity to nearly match the wild-type 1050 units, which it does not (590 is well below 1050); this value instead resembles what near-complete suppression would yield. D (about 1%) corresponds to the unsuppressed amber mutant, Construct 2 (8 units, roughly $8/1050 \approx 0.8\%$), not to the suppressed Construct 3; it misreads which bar represents the altered-anticodon suppressor.
+--------------------------------------------------------------------------------
+ID: SP_BB_1B_014_01_q03
+Difficulty: medium
+STEM: Based on the passage, what is the sequence of the altered anticodon of the suppressor tRNA in Construct 3, and how is it oriented when paired with the amber codon $5'\text{-UAG-}3'$?
+
+  A. $5'\text{-CUA-}3'$, oriented parallel to the codon
+  B. $5'\text{-CUA-}3'$, oriented antiparallel to the codon
+  C. $5'\text{-AUC-}3'$, oriented antiparallel to the codon
+  D. $5'\text{-UAG-}3'$, oriented antiparallel to the codon
+CORRECT: B
+EXPLANATION: The passage states the anticodon base-pairs antiparallel with the mRNA codon in the A site. To pair antiparallel with the amber codon $5'\text{-UAG-}3'$, the anticodon must be written $3'\text{-AUC-}5'$, which, written conventionally in the $5'\to3'$ direction, is $5'\text{-CUA-}3'$. Pairing is by complementary, antiparallel base pairing: codon $5'\text{U-A-G}3'$ aligns with anticodon $3'\text{A-U-C}5'$. Thus B correctly gives both the sequence ($5'\text{-CUA-}3'$) and the antiparallel orientation. A has the correct sequence but wrongly claims parallel orientation, contradicting the passage's explicit statement that pairing is antiparallel. C reverses the directionality: $5'\text{-AUC-}3'$ is the complement read in the wrong direction, so it would not correctly oppose the codon when aligned antiparallel. D simply repeats the codon sequence itself; identical sequences are not complementary and cannot base-pair with each other.
+--------------------------------------------------------------------------------
+ID: SP_BB_1B_014_01_q04
+Difficulty: medium
+STEM: Using the activity values in the figure, which comparison most directly demonstrates that restoration of enzyme activity in Construct 3 depends on the alteration of the suppressor tRNA anticodon rather than the mere presence of an extra tyrosine tRNA gene?
+
+  A. Construct 3 (590 Miller units) versus Construct 4 (11 Miller units)
+  B. Construct 3 (590 Miller units) versus Construct 1 (1050 Miller units)
+  C. Construct 2 (8 Miller units) versus Construct 4 (11 Miller units)
+  D. Construct 1 (1050 Miller units) versus Construct 2 (8 Miller units)
+CORRECT: A
+EXPLANATION: Constructs 3 and 4 both carry the amber mutation and an identical amount of suppressor tRNA gene; they differ only in whether the anticodon was altered. Construct 3 (altered anticodon) shows 590 Miller units while Construct 4 (normal, unaltered anticodon) shows only 11 Miller units, near the background of Construct 2 (8 units). This large difference between two constructs that are matched in every respect except the anticodon alteration isolates the anticodon change as the cause of the restored activity, making A correct. B compares the suppressed construct to wild type; this shows how much activity was restored (about 56%) but does not isolate the role of the anticodon alteration, because Construct 1 lacks the suppressor tRNA entirely and differs from Construct 3 in multiple respects. C compares the unsuppressed mutant to the control suppressor; both values are low and nearly equal (8 versus 11), so this comparison shows only that an unaltered suppressor tRNA fails to restore activity, not that the alteration is responsible for restoration. D compares wild type to the unsuppressed amber mutant, which simply demonstrates that the nonsense mutation abolishes activity and says nothing about the suppressor tRNA.
+--------------------------------------------------------------------------------
+ID: SP_BB_1B_014_01_q05
+Difficulty: medium
+STEM: In Construct 3, the suppressor tRNA inserts tyrosine at position 18, where the wild-type protein has tryptophan, yet substantial β-galactosidase activity is restored. Tryptophan and tyrosine are both classified as aromatic amino acids. Which property shared by these two residues best explains why this substitution is reasonably well tolerated at position 18?
+
+  A. Both tryptophan and tyrosine carry a net positive charge at physiological pH, allowing them to form identical ionic contacts.
+  B. Both tryptophan and tyrosine contain a free sulfhydryl group that can form a stabilizing disulfide bond at the active site.
+  C. Both tryptophan and tyrosine have large nonpolar aromatic ring systems, so the substitution preserves bulky hydrophobic side-chain character.
+  D. Both tryptophan and tyrosine have small aliphatic side chains, minimizing steric disruption when one replaces the other.
+CORRECT: C
+EXPLANATION: Restoration of activity despite a Trp→Tyr change reflects the chemical similarity of the two side chains, which the student must supply from knowledge of amino acid structure (the passage does not give it). Both tryptophan (indole) and tyrosine (phenol) possess large aromatic ring systems that are predominantly hydrophobic, so substituting one for the other tends to preserve overall side-chain size and nonpolar/aromatic packing character—making the swap relatively conservative and consistent with the recovered enzyme activity. Thus C is correct. A is wrong: neither residue is positively charged at physiological pH; the basic, positively charged residues are lysine, arginine, and histidine. B is wrong: cysteine and methionine contain sulfur, and only cysteine bears a free sulfhydryl capable of disulfide bonding—neither tryptophan nor tyrosine does. D is wrong: both side chains are large aromatic groups, not small aliphatic ones; small aliphatic side chains describe residues such as glycine and alanine.
+--------------------------------------------------------------------------------
+### PASSAGE SP_PS_8C_018_01 ###
+Sociologists distinguish individual discrimination, in which one person treats members of a group unequally, from institutional discrimination, in which the policies and routine practices of organizations produce unequal outcomes regardless of any single actor's intent. Both may be linked to prejudice—negative attitudes or stereotypes about a group—but the link is imperfect: a person can hold prejudiced beliefs without acting on them, and discriminatory outcomes can arise from neutral-seeming rules administered by unprejudiced individuals.
+
+To examine these distinctions, researchers conducted a field audit of housing. Trained "testers" matched on age, income documentation, credit profile, and stated housing needs contacted rental agents about advertised apartments. Testers differed only in cues signaling group membership (conveyed through name and dialect on recorded inquiries). Each agent received inquiries from a majority-group tester and a minority-group tester for the same unit. The primary outcome was the callback rate—the proportion of inquiries that received an offer to view the unit.
+
+In a second arm, the team analyzed a company-wide tenant-screening algorithm used by a large property-management firm. The algorithm automatically rejected applicants whose neighborhood-of-origin ZIP code fell below a credit-history threshold. No individual agent selected applicants; rejections were generated by the firm's software. Researchers compared rejection rates by applicant group.
+
+Investigators also recorded each rental agency's prestige tier (measured by listed property values) to test whether firms managing higher-value, higher-prestige properties exercised greater latitude in selecting tenants. A separately administered attitude survey assessed each participating agent's explicit prejudice toward the minority group on a standardized scale. A limitation noted by the authors was that agents who agreed to complete the survey may differ systematically from those who declined, and recorded inquiries could not capture in-person interactions.
+ID: SP_PS_8C_018_01_q01
+Difficulty: easy
+STEM: In the housing audit arm, the researchers matched the majority-group and minority-group testers on age, income documentation, credit profile, and stated housing needs, while letting them differ only in cues signaling group membership. What is the main methodological purpose of matching the testers on these other characteristics?
+
+  A. To ensure that the callback rate would be higher for the majority-group testers than for the minority-group testers
+  B. To rule out alternative explanations so that differences in callbacks can be attributed to group membership cues
+  C. To measure the explicit prejudice of each rental agent who received the inquiries
+  D. To increase the prestige tier of the properties the testers inquired about
+CORRECT: B
+EXPLANATION: The passage states testers were matched on age, income, credit, and housing needs and differed only in group-membership cues, with callback rate as the outcome. Combining these facts shows the matching holds constant other factors that could affect a callback, so any remaining difference in callbacks can be attributed to the group-membership cue—the independent variable being tested. This is the logic of experimental control: eliminating confounds. B captures this. A is wrong because matching does not predetermine or guarantee any particular direction of result; the design is meant to detect a difference, not produce one. C is wrong because explicit prejudice was measured by a separate attitude survey, not by matching the testers. D is wrong because prestige tier was a recorded agency characteristic the testers could not change; matching testers has nothing to do with raising property prestige.
+--------------------------------------------------------------------------------
+ID: SP_PS_8C_018_01_q02
+Difficulty: easy
+STEM: The tenant-screening algorithm rejected applicants whose neighborhood-of-origin ZIP code fell below a credit-history threshold, and rejection rates differed by applicant group even though no agent chose applicants. This pattern, in which a facially neutral rule produces unequal outcomes because the group's residential distribution correlates with the ZIP-code criterion, is best described by which concept?
+
+  A. Cognitive dissonance
+  B. In-group favoritism
+  C. Disparate impact
+  D. The just-world hypothesis
+CORRECT: C
+EXPLANATION: The scenario describes a neutral criterion (ZIP-code credit threshold) applied uniformly that nonetheless yields unequal outcomes across groups because of an underlying correlation with group membership—the textbook definition of disparate impact, a form of institutional discrimination that occurs without any actor's discriminatory intent. C is correct. A, cognitive dissonance, refers to the discomfort from holding inconsistent attitudes/behaviors within an individual and does not describe a policy producing group-level inequality. B, in-group favoritism, requires actors who preferentially treat their own group; here no individual agent selected applicants, so this does not fit. D, the just-world hypothesis, is the belief that people get the outcomes they deserve—a cognitive bias about fairness attributions, not a description of how a neutral rule generates unequal outcomes.
+--------------------------------------------------------------------------------
+ID: SP_PS_8C_018_01_q03
+Difficulty: hard
+STEM: Using the figure, which condition shows the LARGEST absolute gap in acceptance rate favoring the majority group, and what is that gap?
+
+  A. Audit, high-prestige, with a gap of 30 percentage points
+  B. Algorithmic screening, with a gap of 29 percentage points
+  C. Agents high prejudice, with a gap of 22 percentage points
+  D. Audit, low-prestige, with a gap of 8 percentage points
+CORRECT: A
+EXPLANATION: Compute the majority-minus-minority gap for each condition from the figure. Audit, low-prestige: $62.0 - 54.0 = 8.0$ points. Audit, high-prestige: $71.0 - 41.0 = 30.0$ points. Algorithmic screening: $88.0 - 59.0 = 29.0$ points. Agents low prejudice: $64.0 - 57.0 = 7.0$ points. Agents high prejudice: $60.0 - 38.0 = 22.0$ points. The largest gap is 30 points in the high-prestige audit condition, so A is correct. B names the algorithmic screening gap (29 points), which is real and large but slightly smaller than the high-prestige audit gap; a student comparing only the absolute minority rates or the highest majority rate could be misled into picking it. C reports the high-prejudice agents gap (22 points) correctly but it is not the maximum. D reports the low-prestige audit gap (8 points), the smallest of the gaps shown, not the largest. Selecting the largest gap requires computing the difference within each condition rather than focusing on whichever bar is tallest overall.
+--------------------------------------------------------------------------------
+ID: SP_PS_8C_018_01_q04
+Difficulty: easy
+STEM: The attitude survey measured each agent's explicit prejudice, yet the authors caution that this measure may miss attitudes the agents are unwilling or unable to report. In social psychology, which type of attitude measure would BEST capture the automatic, less consciously controlled associations that explicit surveys can fail to detect?
+
+  A. A self-report questionnaire with a longer, more detailed Likert scale
+  B. An implicit association test measuring reaction-time differences between paired concepts
+  C. A structured interview in which agents describe their hiring philosophy
+  D. A demographic intake form recording each agent's own group membership
+CORRECT: B
+EXPLANATION: This question requires applying knowledge of attitude measurement from social psychology, which the passage does not supply. Explicit measures (self-reports) ask people to consciously state their attitudes and are vulnerable to social desirability and lack of introspective access. Implicit attitudes, by contrast, are automatic evaluations assessed indirectly. B is correct: the Implicit Association Test (IAT) infers attitudes from differences in reaction times when sorting stimuli, capturing automatic associations a person may not report or even be aware of. A is wrong because lengthening a self-report scale still relies on conscious, controlled responding and remains an explicit measure subject to the same reporting biases. C is wrong because a structured interview is also an explicit, self-reported account and is, if anything, even more susceptible to deliberate self-presentation. D is wrong because recording an agent's own group membership is a demographic descriptor, not a measure of attitude at all, and reveals nothing about automatic associations.
+--------------------------------------------------------------------------------
+===== CARS =====
+### CARS CARS_P0001 (Linguistics) ###
+When a Tlingit elder pauses before answering a stranger's question, the silence may stretch for what an impatient interviewer reads as discomfort, even refusal. To the elder, that interval is the answer's proper preface—a marker of respect proportional to the weight of what was asked. The disagreement here is not about words but about the meaning carried by their absence, and it is precisely this terrain that the study of conversational silence has claimed for itself.
+
+Basso, working among the Western Apache in the 1970s, advanced the foundational claim: silence is keyed to social uncertainty. Apache speakers, he reported, fell silent when relationships were ambiguous—greeting a returning relative whose character might have changed, courting a near-stranger, sitting with the bereaved. Silence, on this account, was not the empty space between communicative acts but a communicative act in its own right, deployed when the appropriate words could not yet be known. Basso took care to insist that the rule was culturally specific; he did not claim that all peoples grow quiet under uncertainty.
+
+It was later interpreters who blurred that caution. A generation of textbooks recast Basso's situated observation as a near-universal: where relationships are unsettled, the argument ran, humans default to reticence. Tannen, examining American conversational style, complicated this tidy picture. She distinguished speakers oriented toward "high involvement," for whom overlapping talk and rapid turn-taking signal engagement, from those oriented toward "high considerateness," for whom pauses signal respect. A silence that one speaker offers as courtesy, she observed, the other may experience as a rebuff—and then fill, prompting the considerate speaker to conclude that the floor was never truly his. The misreading, crucially, runs in both directions; neither party is simply wrong.
+
+Tannen's intervention reframed silence as relational rather than absolute, but it left Basso's central correlation—uncertainty produces silence—largely intact. That correlation is what a more recent body of work has unsettled. Comparative studies of turn-taking across unrelated languages found that the gap between conversational turns is strikingly short and strikingly uniform, clustering near a fifth of a second regardless of the language. On this evidence, sustained silence is not a default that uncertainty switches on but an effortful departure from a baseline of near-instant response. If so, Basso's Apache were not relaxing into a natural reticence; they were actively suspending a powerful pull toward rapid reply.
+
+This finding does not so much refute Basso as relocate him. The uniform brief gap suggests that what varies across cultures is not whether silence means something—everywhere a held pause is conspicuous against the quick rhythm of exchange—but which social conditions a community treats as warranting that conspicuous departure. Apache uncertainty and Tlingit deference become two answers to a shared question: when is it worth breaking the rhythm?
+
+Yet one attempt to extend the timing studies to ritual and ceremonial speech failed to find the expected uniformity; in those settings, the brief gap dissolved into long, patterned silences that no participant treated as marked. The exception is instructive. It implies that the rapid-response baseline governs ordinary conversation specifically, not speech as such, and that the very contrast on which silence's meaning depends can be suspended by genre. A silence in a courtroom, a sermon, or a lament may signify nothing at all—not because the participants share Basso's rule or violate Tannen's, but because the clock against which silence is read has been switched off.
+ID: CARS_P0001_q01
+Difficulty: easy
+STEM: A researcher observes that two friends, speaking the same dialect, repeatedly talk over one another during a lively dinner, each finishing the other's sentences without offense. Which scholar discussed in the passage would most readily account for this exchange?
+
+  A. Basso, because the friends' familiarity removes the social uncertainty that would otherwise produce silence
+  B. Tannen, because the friends share a high-involvement orientation in which overlapping talk signals engagement
+  C. Basso, because rapid turn-taking reflects the near-instant response baseline found across languages
+  D. Tannen, because the friends are misreading one another's pauses as rebuffs in both directions
+CORRECT: B
+EXPLANATION: The third paragraph attributes to Tannen the distinction between speakers oriented toward 'high involvement,' for whom 'overlapping talk and rapid turn-taking signal engagement,' and those oriented toward 'high considerateness.' Two friends comfortably talking over each other exemplify the high-involvement style, making B correct. A misattributes the scenario to Basso, whose claim concerns silence under social uncertainty, not overlapping speech among familiars. C also names Basso and invokes the comparative timing studies, which the passage credits to 'a more recent body of work,' not to Basso. D correctly names Tannen but describes the wrong phenomenon: the mutual misreading of pauses applies to a clash between considerate and involved speakers, whereas here the friends share an orientation and take no offense.
+--------------------------------------------------------------------------------
+ID: CARS_P0001_q02
+Difficulty: medium
+STEM: The author states that the comparative turn-taking studies do not "so much refute Basso as relocate him." In context, this claim most nearly means that Basso's work is best understood as having:
+
+  A. incorrectly identified silence as meaningful when in fact it is merely the empty space between communicative acts
+  B. correctly observed a meaningful silence but mischaracterized it as a natural default rather than an effortful departure from rapid response
+  C. applied a culturally specific Apache rule that later interpreters wrongly extended into a universal principle
+  D. described a relational misreading that runs in both directions, anticipating Tannen's later distinctions
+CORRECT: B
+EXPLANATION: The sentence in question follows the timing findings, which the passage says "unsettled" Basso's correlation by showing that "sustained silence is not a default that uncertainty switches on but an effortful departure from a baseline of near-instant response." The author preserves Basso's core insight—that the Apache silences were meaningful—while reframing what they are: "they were actively suspending a powerful pull toward rapid reply." That is precisely the sense in which Basso is "relocated" rather than refuted, making B correct. A reverses the passage, which credits Basso with treating silence as "a communicative act in its own right," not empty space. C describes the textbook over-extension critiqued earlier in the passage, not what 'relocate' means in this sentence. D refers to Tannen's contribution about bidirectional misreading, which is a separate point and not the basis for the 'relocate' claim.
+--------------------------------------------------------------------------------
+ID: CARS_P0001_q03
+Difficulty: medium
+STEM: Suppose researchers recorded the conversations of a deaf community using sign language and found that signers, too, exchanged turns with strikingly brief, uniform gaps, except during a community storytelling ceremony, where long pauses passed without any signer treating them as meaningful. How would this finding most likely bear on the positions discussed in the passage?
+
+  A. It would support the comparative turn-taking work over Basso by suggesting that a rapid-response baseline governs ordinary exchange while ceremonial genres suspend it.
+  B. It would vindicate Basso's original claim by showing that uncertainty switches on silence across communicative modalities.
+  C. It would undermine Tannen's framework by demonstrating that overlap and pausing are not relational but fixed by modality.
+  D. It would refute the comparative turn-taking studies by proving that their findings cannot extend beyond spoken language.
+CORRECT: A
+EXPLANATION: The novel scenario reproduces two features the passage attributes to the comparative turn-taking research: a brief, uniform gap in ordinary exchange and the dissolution of that gap into unmarked long silences during ceremony. The passage frames the comparative work as challenging Basso's view that uncertainty 'switches on' silence, instead casting sustained silence as 'an effortful departure from a baseline of near-instant response,' a baseline that 'governs ordinary conversation specifically' and 'can be suspended by genre.' A signed analogue of both findings would therefore support the comparative work's picture over Basso's, making A correct. B is wrong because the new data concern uniform timing and genre, not uncertainty triggering silence, so they do not vindicate Basso. C misattributes the finding's force: Tannen's claim is that silence is relational and read differently by high-involvement versus high-considerateness speakers, a point about interpretation that uniform gaps in a new modality neither targets nor undermines. D inverts the result; replicating the timing pattern in another modality would extend, not refute, the comparative studies.
+--------------------------------------------------------------------------------
+ID: CARS_P0001_q04
+Difficulty: hard
+STEM: Considering how the passage's final paragraph relates to the framework developed in the paragraph before it, the discussion of ceremonial speech functions primarily to:
+
+  A. qualify the author's own conclusion that silence is everywhere conspicuous against quick exchange, by identifying a setting in which that contrast no longer holds
+  B. reconcile Basso's account with Tannen's by showing that both rules operate in ritual as well as ordinary speech
+  C. demonstrate that the comparative turn-taking studies were methodologically flawed and therefore cannot bear on Basso's correlation
+  D. establish that ceremonial silence carries even greater social weight than the conspicuous pauses of ordinary conversation
+CORRECT: A
+EXPLANATION: The fifth paragraph builds the author's own synthesis: because turns cluster near a fifth of a second, a held pause is 'everywhere... conspicuous against the quick rhythm of exchange,' and cultures differ only in which conditions warrant breaking the rhythm. The final paragraph then introduces ceremonial speech as a case where 'the brief gap dissolved into long, patterned silences that no participant treated as marked,' meaning 'the clock against which silence is read has been switched off.' This limits the author's prior generalization, showing the conspicuousness-against-baseline framework governs 'ordinary conversation specifically, not speech as such.' A captures this self-qualifying move. B is wrong because the point of the exception is that neither Basso's nor Tannen's rule applies in ritual settings—'not because the participants share Basso's rule or violate Tannen's.' C misreads the passage: the author treats the failed extension as 'instructive,' not as evidence of flawed methodology in the comparative studies. D inverts the text—ceremonial silence may 'signify nothing at all,' so it carries less marked weight, not more.
+--------------------------------------------------------------------------------
+ID: CARS_P0001_q05
+Difficulty: medium
+STEM: The passage indicates that, according to the author, the later textbook writers who built on Basso's work erred chiefly by:
+
+  A. denying that silence functions as a communicative act in any culture
+  B. claiming that Apache speakers fell silent specifically when relationships were ambiguous
+  C. treating a culturally specific observation as if it described nearly all human beings
+  D. ignoring the comparative timing studies that established a uniform baseline gap between turns
+CORRECT: C
+EXPLANATION: The passage states that Basso 'took care to insist that the rule was culturally specific' and 'did not claim that all peoples grow quiet under uncertainty,' then says 'It was later interpreters who blurred that caution,' recasting his 'situated observation as a near-universal.' That is precisely the error C describes. A is wrong because the textbook writers did not deny silence's communicative role; they extended Basso's claim about it. B describes Basso's own accurate, culturally specific finding, not the interpreters' mistake. D is anachronistic and misplaced: the timing studies are described as a 'more recent body of work,' so the textbook writers could not have erred by ignoring them, and the passage never faults them for doing so.
+--------------------------------------------------------------------------------
+ID: CARS_P0001_q06
+Difficulty: hard
+STEM: Suppose a study of an unrelated language found that, in ordinary conversation, speakers routinely let three or four seconds elapse between turns without any speaker treating these gaps as conspicuous or in need of explanation. How would this finding most directly bear on the argument developed in the passage's final two paragraphs?
+
+  A. It would confirm the author's claim that genre, rather than uncertainty, determines when silence becomes meaningful.
+  B. It would vindicate Basso by showing that sustained reticence can be a community's natural conversational default rather than an effortful departure.
+  C. It would undercut the author's premise that meaningful silence everywhere depends on contrast with a near-instant baseline of ordinary reply.
+  D. It would support Tannen's view that the same pause can be read as courtesy by one speaker and as rebuff by another.
+CORRECT: C
+EXPLANATION: The author's culminating framework rests on the comparative timing studies, which found turn gaps clustering near a fifth of a second 'regardless of the language' in ORDINARY conversation. From this the author builds the claim that silence is meaningful everywhere because a held pause is 'conspicuous against the quick rhythm of exchange'—what varies is only which conditions warrant breaking that rhythm. A community whose ordinary conversation tolerates multi-second gaps as unmarked would contradict the universal rapid-response baseline on which that whole argument depends, so C correctly identifies the finding's most direct effect. A is wrong because the final paragraph's genre exception explicitly concerns ceremonial speech, not ordinary talk; the new finding is about ordinary conversation and would threaten, not confirm, the author's framework. B misreads the passage: the new finding concerns a different language's baseline, and Basso's own point was culturally specific to uncertainty, not a claim that long gaps are universally 'natural.' D invokes Tannen, but her relational point about courtesy versus rebuff is independent of whether a uniform baseline exists, so the finding does not bear on it directly.
+--------------------------------------------------------------------------------
+ID: CARS_P0001_q07
+Difficulty: medium
+STEM: In the context of the passage, the author's claim that the comparative timing studies show silence to be "an effortful departure from a baseline of near-instant response" most directly serves to:
+
+  A. demonstrate that Basso was mistaken to treat Apache silence as communicatively meaningful
+  B. show that Tannen's distinction between involvement and considerateness applies across all languages
+  C. establish that ceremonial silences and conversational silences are governed by the same underlying rule
+  D. overturn the assumption that silence is the natural condition that uncertainty merely activates
+CORRECT: D
+EXPLANATION: The phrase appears in the fourth paragraph, where the author contrasts the new finding with Basso's enduring correlation. Because turn-taking gaps cluster near a fifth of a second across languages, the author argues that sustained silence is not a 'default that uncertainty switches on' but a deliberate suspension of a 'powerful pull toward rapid reply.' This directly challenges the picture in which silence is the resting state that uncertainty triggers, which is exactly what option D captures. Option A misstates the author's position: the very next paragraph says the finding 'does not so much refute Basso as relocate him,' and Basso's view that silence is meaningful is left intact. Option B is wrong because Tannen's involvement/considerateness contrast describes American conversational styles, and the timing studies are not offered to universalize her categories. Option C contradicts the final paragraph, which holds that ceremonial silence is precisely the setting where the rapid-response baseline—and thus the contrast that gives silence meaning—is 'switched off,' making it governed differently from ordinary conversation.
+--------------------------------------------------------------------------------
+### CARS CARS_P0002 (Studies of Diverse Cultures) ###
+When the Garifuna of the Caribbean coast of Central America perform the dügü, a multi-day ceremony summoning ancestral spirits to heal an afflicted descendant, an observer might reasonably classify it as religion. Yet the anthropologist Byron Foster, working in Belize in the 1980s, resisted that classification. The dügü, he insisted, was less a system of belief than a technology of obligation: its function was to reassert that the living owed the dead a debt payable only in collective labor, food, and presence. To call it religion, Foster argued, was to import a Protestant assumption that the core of ritual lies in interior conviction rather than in the public discharge of duty.
+
+Foster's reframing drew on an older quarrel. Émile Durkheim had located the power of ritual in its capacity to make a society feel its own solidarity; the sacred, for him, was the group worshipping itself in disguised form. A later generation, influenced by Clifford Geertz, found this functionalism too tidy. Geertz proposed that rituals were texts to be read, dramatizations through which a people articulated and revised what they took the world to be like. On this view the dügü was not merely cementing obligation; it was a statement about the porousness of the boundary between the living and the dead, a claim the Garifuna were making to themselves about the nature of personhood.
+
+For a time these two readings coexisted uneasily, the one stressing what ritual does, the other what it says. The ethnographer Paul Christopher Johnson, returning to Garifuna communities decades after Foster, complicated both. His fieldwork tracked Garifuna who had migrated to New York and then returned home to commission ceremonies they could no longer regularly attend. Among these transnational participants, Johnson found, the dügü had acquired a function neither Durkheim nor Geertz anticipated: it served to certify authenticity, to prove that the migrant remained, despite distance and dollars, a genuine Garifuna. The ritual had become, in part, a performance addressed to an imagined external audience of Belizeans, North Americans, and the migrants' own uncertain self-image.
+
+Notably, Johnson revised a position he had earlier defended. In his first writings he had treated such diaspora ceremonies as diluted versions of a once-integral practice, corrupted by the logic of the marketplace. Confronted with participants who spoke movingly of the dügü as the one thing money could not finally buy—since the ancestors, they said, could detect insincerity—he abandoned the language of dilution. The ceremony was not decaying; it was doing new work under new conditions, and the older work had perhaps never been as stable as the salvage-minded ethnographer assumed.
+
+This last point cuts against a temptation common to all three thinkers' admirers: the belief that a ritual has an original, essential meaning from which later forms deviate. If Johnson is right, the search for what the dügü really is mistakes a moving target for a fixed one. A skeptic might object that this verges on saying the ceremony means whatever its practitioners need it to mean, draining the concept of analytic content. Johnson's reply is instructive. The ancestors, he notes, are imagined as exacting auditors who reject hollow gestures; the practitioners themselves police authenticity. The meaning is neither fixed nor infinitely pliable. It is negotiated, under constraints the participants take with deadly seriousness, by people who would be baffled to learn that scholars regard their negotiations as the interesting part.
+ID: CARS_P0002_q01
+Difficulty: easy
+STEM: According to the passage, Foster objected to classifying the dügü as religion primarily because doing so would:
+
+  A. ignore the influence of the marketplace on contemporary Garifuna ceremonies
+  B. treat the ritual as a fixed practice rather than a moving target
+  C. impose a Protestant emphasis on inner belief over the public performance of duty
+  D. overstate the ritual's role in making Garifuna society feel its own solidarity
+CORRECT: C
+EXPLANATION: The first paragraph states Foster's reasoning directly: to call the dügü religion 'was to import a Protestant assumption that the core of ritual lies in interior conviction rather than in the public discharge of duty.' For Foster, the dügü was 'a technology of obligation' centered on collective labor and presence, not belief—making C the precise restatement of his objection. A describes Johnson's later concern with diaspora and the marketplace, not Foster's objection. B reflects the passage's closing argument against an 'original, essential meaning,' a point associated with Johnson, not Foster's grounds for rejecting the religion label. D describes Durkheim's view of ritual as society worshipping itself, which the passage presents as an 'older quarrel' Foster drew on, not the basis of his objection to the term 'religion.'
+--------------------------------------------------------------------------------
+ID: CARS_P0002_q02
+Difficulty: easy
+STEM: Suppose a researcher documents a harvest festival in which a farming community gathers annually to dramatize, through staged scenes, its shared understanding of the relationship between humans and the land. Which thinker discussed in the passage would most likely find this description congenial to his own approach?
+
+  A. Geertz, because he treated rituals as dramatizations through which a people articulate what they take the world to be like
+  B. Durkheim, because he treated rituals as statements a people make to themselves about the nature of personhood
+  C. Foster, because he treated rituals primarily as technologies for discharging public obligations
+  D. Johnson, because he treated rituals as performances addressed to an imagined external audience
+CORRECT: A
+EXPLANATION: The festival is described as a staged dramatization through which a community articulates its understanding of the world—precisely the view the passage attributes to Geertz, who 'proposed that rituals were texts to be read, dramatizations through which a people articulated and revised what they took the world to be like.' A matches this position. B misattributes: the claim about 'a statement about the porousness of the boundary between the living and the dead' and 'the nature of personhood' is the Geertzian reading the passage applies to the dügü, not Durkheim's; Durkheim located ritual's power in making society feel its solidarity, not in articulating a worldview. C captures Foster's view (ritual as a 'technology of obligation'), which concerns discharging duty rather than dramatizing a shared understanding. D captures Johnson's distinctive addition (the ritual as a performance for an external audience certifying authenticity), which is not what the described festival emphasizes.
+--------------------------------------------------------------------------------
+ID: CARS_P0002_q03
+Difficulty: easy
+STEM: Based on the passage, what does the author mean in stating that the dügü is, for Foster, "a technology of obligation"?
+
+  A. A method by which the Garifuna preserve interior religious conviction across generations
+  B. A mechanism that allows a society to feel and celebrate its own solidarity
+  C. A symbolic text through which the Garifuna articulate their views about personhood
+  D. A practical means of enforcing the living's duty to repay the dead through shared labor and presence
+CORRECT: D
+EXPLANATION: The phrase is glossed in the immediately following clause: the dügü's "function was to reassert that the living owed the dead a debt payable only in collective labor, food, and presence." Foster frames it as a way of discharging duty, not as a matter of belief—making D correct. A inverts Foster's position; he explicitly rejected the idea that the ritual's core lies in "interior conviction." B describes Durkheim's view of ritual as a society worshipping its own solidarity, introduced only in the next paragraph. C describes Geertz's reading of rituals as "texts to be read" and the dügü as a statement about personhood, again a different thinker's framework.
+--------------------------------------------------------------------------------
+ID: CARS_P0002_q04
+Difficulty: medium
+STEM: Suppose a study finds that members of a diaspora community commission an expensive ancestral ceremony purely as a tourist spectacle, with no concern for whether the spirits accept the performance and no penalty for hollow participation. How would this finding bear on Johnson's revised position as described in the passage?
+
+  A. It would fall outside Johnson's account, since he insists meaning is constrained by practitioners who police authenticity—conditions absent here.
+  B. It would confirm Johnson's revised view that diaspora ceremonies are diluted versions corrupted by the marketplace.
+  C. It would vindicate Durkheim, since the spectacle still makes the community feel its own solidarity.
+  D. It would support Johnson's claim that the dügü serves to certify the migrant as a genuine member of the community.
+CORRECT: A
+EXPLANATION: Johnson's revised position holds that ritual meaning is 'neither fixed nor infinitely pliable' but 'negotiated, under constraints the participants take with deadly seriousness'—specifically the belief that the ancestors 'reject hollow gestures' and that 'the practitioners themselves police authenticity.' The hypothetical strips away exactly those constraints (no concern for spirit acceptance, no penalty for insincerity), so it describes a case Johnson's account would not cover, making A correct. B misattributes the dilution thesis to Johnson's REVISED view; the passage states he abandoned the language of dilution. C invokes Durkheim, whose solidarity thesis is not Johnson's revised position and is not what the question asks about. D describes Johnson's authenticity-certification finding, but that finding depended precisely on participants treating the ancestors as 'exacting auditors,' which the scenario removes; a ceremony performed with no concern for authenticity cannot certify it.
+--------------------------------------------------------------------------------
+ID: CARS_P0002_q05
+Difficulty: hard
+STEM: The author's treatment of the three thinkers' relationship to one another is best described as portraying Johnson's contribution as one that:
+
+  A. synthesizes Durkheim's and Geertz's accounts into a single framework that explains both what the dügü does and what it says
+  B. destabilizes a premise that Durkheim's and Geertz's accounts, despite their disagreement, both quietly shared
+  C. vindicates Durkheim's functionalism by showing that the dügü ultimately serves to reinforce group solidarity among migrants
+  D. rejects both prior accounts in favor of the skeptic's view that the dügü means whatever its practitioners need it to mean
+CORRECT: B
+EXPLANATION: The passage presents Durkheim and Geertz as opposed on whether ritual matters for what it does versus what it says, yet the final paragraphs locate Johnson's deeper move elsewhere: against "a temptation common to all three thinkers' admirers," namely "the belief that a ritual has an original, essential meaning from which later forms deviate." Johnson abandons the "language of dilution" and concludes that "the older work had perhaps never been as stable" as assumed. This challenges an assumption of fixed, original meaning that both prior accounts presuppose—whether the stable thing is solidarity (Durkheim) or an articulated worldview (Geertz). That makes B correct. A is wrong because the passage says Johnson "complicated both" rather than merging them, and explicitly introduces a function "neither Durkheim nor Geertz anticipated." C is wrong because Johnson identifies authentication addressed to an external audience, not group solidarity, as the new function. D misattributes to Johnson the skeptic's relativism, which he explicitly rebuts by noting that meaning is "neither fixed nor infinitely pliable" but constrained by practitioners policing authenticity.
+--------------------------------------------------------------------------------
+### CARS CARS_P0003 (Political Science) ###
+When citizens of a struggling democracy tolerate a leader who bends the rules, observers often reach for the language of pathology: voters have been duped, or have abandoned their principles. Yet a quieter scholarly debate concerns whether such tolerance might be, in its own terms, rational. The dispute turns on what voters believe they are choosing when they reward a norm-breaker at the ballot box.
+
+The earliest systematic answer came from Pradhan, who argued in the 1990s that support for transgressive leaders reflects a straightforward exchange. Voters, she contended, knowingly trade procedural integrity for tangible delivery—roads, jobs, security—because formal institutions have failed them so repeatedly that the rules themselves seem like a luxury affordable only to the comfortable. On this account, the citizen is not deceived but pragmatic, weighing the cost of broken procedures against the benefit of broken logjams.
+
+Moreno disputed the premise of a clean trade. Drawing on interviews across several Latin American municipalities, he held that voters rarely perceive any sacrifice at all. What scholars label "norm violation," he argued, ordinary partisans recode as decisiveness or loyalty to their side; the very act of bending a rule is read as evidence that the leader will fight for them rather than for an abstract system that has never served them. The voter, in Moreno's telling, is not balancing goods against costs but redefining what counts as a cost in the first place. Where Pradhan saw a calculated exchange, Moreno saw a shifting frame.
+
+Notably, Pradhan herself later complicated her original view. Returning to her data after two decades, she conceded that the "exchange" model assumed voters could readily identify which acts were transgressions—an assumption her newer evidence undercut. She did not adopt Moreno's framing wholesale, however. Voters, she now suggested, often recognized a violation perfectly well when it harmed a rival but declined to recognize the identical act when committed by their own side. This was neither pure pragmatism nor pure reframing, but a selective vision that depended on partisan position. The trade was real, she maintained, but its terms were not applied evenhandedly.
+
+A third strand, associated with the work of Adeyemi, attempted to test these claims experimentally by presenting subjects with descriptions of leaders who violated procedural norms and measuring shifts in approval. The studies produced an awkward result: in several replications, exposure to a co-partisan's violation produced no measurable change in support, neither the penalty Pradhan's exchange model implied nor the boost Moreno's reframing predicted. Adeyemi was careful not to overstate the finding. A null result, he noted, might mean that the behaviors he described were too mild, that respondents distrusted the hypothetical scenarios, or that approval is simply a blunt instrument for capturing a judgment that operates below the level of stated opinion.
+
+What the experimental difficulty exposes is how much each position rests on inference about interior states that resist direct observation. Pradhan reads calculation, Moreno reads reinterpretation, and each can cite the same electoral outcome as confirmation. The behavior—a vote cast, an approval expressed—underdetermines the mental accounting behind it. This is less a failure of any one theory than a reminder that the study of political tolerance must work largely by reconstruction, building plausible accounts of motives that the voters themselves may never articulate, and that no tally of votes can adjudicate.
+ID: CARS_P0003_q01
+Difficulty: medium
+STEM: Suppose a new study found that voters consistently described their favored norm-breaking leader's rule-bending as "strong leadership" while condemning identical conduct by an opposing leader as "corruption." Whose position would this finding most directly support?
+
+  A. Adeyemi's, because the divergent descriptions show that approval measures fail to capture voters' true judgments
+  B. Moreno's original framing alone, because voters recode all norm violations as decisiveness regardless of who commits them
+  C. Pradhan's revised view, because voters recognize a violation when a rival commits it but decline to recognize the identical act by their own side
+  D. Pradhan's original exchange model, because voters knowingly trade procedural integrity for the benefits their leader delivers
+CORRECT: C
+EXPLANATION: Pradhan's revised view holds that voters exhibit a "selective vision that depended on partisan position"—they "recognized a violation perfectly well when it harmed a rival but declined to recognize the identical act when committed by their own side." The hypothetical finding matches this exactly: the same conduct is labeled "strong leadership" for one's own side and "corruption" for an opponent. C is therefore correct. B is wrong because Moreno's framing holds that voters recode violations as decisiveness without regard to side; it does not predict the asymmetry of condemning the rival's identical act. D is wrong because the original exchange model assumes voters can readily identify transgressions and knowingly trade them away—it does not account for the partisan-dependent (non-)recognition the finding reveals. A is wrong because Adeyemi's contribution was a null experimental result about approval shifts; the new finding concerns how voters describe conduct, not a failure of approval as a measure, and the study described does produce a clear, non-null pattern.
+--------------------------------------------------------------------------------
+ID: CARS_P0003_q02
+Difficulty: easy
+STEM: According to the passage, Moreno's central disagreement with Pradhan's original model was that, in Moreno's view, voters who support a norm-breaking leader:
+
+  A. consciously weigh the costs of broken procedures against the benefits of tangible delivery
+  B. do not experience the situation as a sacrifice because they recode rule-bending as decisiveness or loyalty
+  C. recognize a violation when a rival commits it but excuse the identical act by their own side
+  D. show no measurable change in approval when exposed to a co-partisan's transgression
+CORRECT: B
+EXPLANATION: The passage states that Moreno "disputed the premise of a clean trade" and held that "voters rarely perceive any sacrifice at all," because what scholars call norm violation "ordinary partisans recode as decisiveness or loyalty to their side." This makes B correct. Option A describes Pradhan's original "exchange" model—the very view Moreno was disputing—not Moreno's position. Option C describes Pradhan's later, revised view (the "selective vision that depended on partisan position"), not Moreno's. Option D describes Adeyemi's experimental null result, which is presented as a separate strand and as a difficulty for both Pradhan and Moreno, not as Moreno's claim.
+--------------------------------------------------------------------------------
+ID: CARS_P0003_q03
+Difficulty: easy
+STEM: Suppose a researcher demonstrated that voters who reward a norm-breaking leader can accurately list, when asked directly, every procedural rule the leader has broken, yet report feeling that no genuine sacrifice has been made. This finding would most directly challenge which position?
+
+  A. Pradhan's original exchange model, which held that voters knowingly trade procedural integrity for tangible benefits
+  B. Moreno's view, which held that voters recode norm violations as decisiveness rather than perceiving any sacrifice
+  C. Pradhan's later view, which held that voters recognize violations selectively depending on partisan position
+  D. Adeyemi's experimental work, which found no measurable change in support after exposure to a co-partisan's violation
+CORRECT: A
+EXPLANATION: Pradhan's original model (paragraph 2) rests on the idea of a 'straightforward exchange' in which voters 'knowingly trade procedural integrity for tangible delivery'—that is, they experience a genuine cost (the broken procedure) weighed against a benefit. A finding that voters identify the broken rules yet feel no sacrifice has been made undercuts the 'cost' side of that calculated trade, so option A is the position most directly challenged. Option B is wrong because Moreno explicitly argued that voters 'rarely perceive any sacrifice at all'; a finding that voters perceive no sacrifice is consistent with, not a challenge to, his view. Option C concerns selective recognition tied to partisanship, which the new scenario does not address (the scenario says voters accurately list all the violations). Option D describes a null experimental result and is not contradicted by voters' self-reports about sacrifice. There is no fifth position to evaluate here; the question concerns the named theorists' claims about whether voters experience a cost.
+--------------------------------------------------------------------------------
+ID: CARS_P0003_q04
+Difficulty: medium
+STEM: A researcher studying restaurant inspections finds that diners who continue patronizing a favorite establishment after learning it failed a health inspection report no diminished enjoyment of their meals, insisting the violations are "just bureaucratic nitpicking" rather than real dangers. Which scholar discussed in the passage would find this finding most consistent with his or her account of voter behavior?
+
+  A. Pradhan in her original 1990s formulation, because the diners are knowingly accepting a cost (possible health risk) in exchange for a tangible benefit (an enjoyable meal).
+  B. Moreno, because the diners are not weighing a sacrifice against a benefit but redefining whether anything counts as a sacrifice at all.
+  C. Pradhan in her revised account, because the diners recognize the violations as real but apply that recognition selectively depending on loyalty.
+  D. Adeyemi, because the diners' unchanged enjoyment demonstrates a null result that no underlying theory can explain.
+CORRECT: B
+EXPLANATION: The scenario describes people who do not perceive the rule-breaking as a genuine cost—they recode the violations as mere "bureaucratic nitpicking" rather than real dangers, so no sacrifice registers. This mirrors Moreno's claim that voters "rarely perceive any sacrifice at all" and instead "redefin[e] what counts as a cost in the first place," making B correct. A fits Pradhan's original exchange model, which requires that the chooser knowingly trades one good for another and recognizes the cost—but the diners explicitly deny any cost exists, so A misapplies the analogy. C invokes Pradhan's revised view, which hinges on selectively recognizing violations as real depending on partisan position; the diners here uniformly deny the violations matter rather than acknowledging them while excusing their own side, so the selective-recognition element is absent. D misreads Adeyemi, whose work concerned experimental null results in approval measures and who, far from claiming theories cannot explain behavior, offered several possible interpretations of the null finding; the scenario reports a clear interpretive pattern, not an absence of measurable response.
+--------------------------------------------------------------------------------
+ID: CARS_P0003_q05
+Difficulty: medium
+STEM: Considering how the author characterizes Pradhan's revised view in relation to the positions of Moreno and her own earlier model, the passage suggests that Pradhan's later account is best understood as:
+
+  A. a partial accommodation that retains her exchange model's premise of a real trade while incorporating Moreno's insight that voters' recognition of violations is not fixed
+  B. a wholesale conversion to Moreno's view that voters never perceive any sacrifice in rewarding a norm-breaker
+  C. a reaffirmation of her original model, which she defends against Moreno by insisting voters always identify transgressions clearly
+  D. an abandonment of both prior positions in favor of Adeyemi's conclusion that violations produce no measurable shift in support
+CORRECT: A
+EXPLANATION: The passage states Pradhan 'conceded that the "exchange" model assumed voters could readily identify which acts were transgressions—an assumption her newer evidence undercut,' yet she insisted 'The trade was real.' Her new view is that voters recognize a violation when committed by a rival but not by their own side—a 'selective vision.' This keeps the trade (her original premise) while granting that perception of violations shifts, an insight aligned with Moreno's reframing—so A captures the partial accommodation. B is wrong because the passage explicitly says she 'did not adopt Moreno's framing wholesale.' C is wrong because she did NOT reaffirm clear identification; she undercut that assumption. D is wrong because Adeyemi's null result is a separate experimental strand she does not adopt; she still maintains the trade is real.
+--------------------------------------------------------------------------------
+ID: CARS_P0003_q06
+Difficulty: hard
+STEM: In the passage's final paragraph, the author claims that Adeyemi's experimental difficulty "exposes" something the earlier debate had obscured. Considering how this concluding observation relates to the dispute between Pradhan and Moreno developed earlier, the author's principal point is that:
+
+  A. Adeyemi's null results decisively favor neither Pradhan nor Moreno because the procedural violations his studies described were too mild to register any reaction.
+  B. the disagreement between Pradhan and Moreno can ultimately be settled only by more carefully designed experiments that measure approval below the level of stated opinion.
+  C. because voters cannot reliably identify which acts are transgressions, the question of whether they calculate or reframe is a distinction without a practical difference.
+  D. the rival theories survive the same evidence because each reconstructs an unobservable mental process, so electoral behavior alone cannot determine which account is correct.
+CORRECT: D
+EXPLANATION: The final paragraph states that each position "rests on inference about interior states that resist direct observation," that Pradhan "reads calculation" while Moreno "reads reinterpretation," and that "each can cite the same electoral outcome as confirmation" because the behavior "underdetermines the mental accounting behind it." The author frames the experimental trouble not as a victory for one side but as a reminder that the field must proceed "by reconstruction" and that "no tally of votes can adjudicate." Option D captures exactly this: rival theories survive identical evidence because each posits an unobservable mental process. Option A repeats only one of Adeyemi's three offered explanations for the null result and treats it as the author's conclusion, but the author lists it as merely one possibility, not the point being "exposed." Option B contradicts the author, who treats the matter as something "no tally of votes can adjudicate" and emphasizes states that "resist direct observation"—the passage doubts that better experiments will settle it, rather than promising they will. Option C draws on Pradhan's revised concern about identifying transgressions (from an earlier paragraph) but wrongly concludes the calculate-versus-reframe distinction is practically empty; the author's point is that the distinction is real yet observationally underdetermined, not meaningless.
+--------------------------------------------------------------------------------
+ID: CARS_P0003_q07
+Difficulty: hard
+STEM: In the fifth paragraph, the author notes that Adeyemi "was careful not to overstate the finding" and then lists several possible explanations for the null result. The function of this list within the passage's argument is most likely to:
+
+  A. demonstrate that Adeyemi's experimental method was more rigorous than the interview-based approaches of Pradhan and Moreno
+  B. establish that the null result decisively refutes both the exchange model and the reframing model
+  C. indicate that the absence of a measurable effect need not mean the underlying judgment is absent, since it may operate beyond what the experiment could detect
+  D. show that Adeyemi privately favored Moreno's reframing account over Pradhan's exchange model
+CORRECT: C
+EXPLANATION: The list of explanations Adeyemi offers—that the behaviors were too mild, that respondents distrusted the scenarios, or that approval is "a blunt instrument for capturing a judgment that operates below the level of stated opinion"—all function to caution against treating the null result as proof that nothing is happening in voters' minds. This directly supports C: the measured absence of an effect may reflect the limits of the instrument rather than the absence of the judgment itself, a point the final paragraph develops by stressing that mental accounting is hard to observe directly. B is wrong because the author explicitly frames Adeyemi's caution as a refusal to let the null result settle the dispute, not a decisive refutation; indeed the closing paragraph says no result can adjudicate. A misreads the passage, which never claims Adeyemi's method was superior—if anything the experimental difficulty reveals shared limits. D invents a preference Adeyemi never expresses; he describes a result that fit neither Pradhan's predicted penalty nor Moreno's predicted boost, taking no side.
+--------------------------------------------------------------------------------
