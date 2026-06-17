@@ -133,13 +133,17 @@ def build_science(rows, p_rows, q_rows, f_rows, skips):
                     "explanation": q.get("explanation"),
                     "difficulty": q.get("difficulty"),
                     "skill": q.get("skill_tested"),
-                    # section/content_category live on the passage, not the Q
+                    # section/content_category live on the passage; topic_id is now
+                    # per-question (assigned at generation) so science questions feed
+                    # the weak-topic engine — discrete already populated topic_id.
                     "section": section,
                     "content_category": content_category,
-                    "topic_id": None,
+                    "topic_id": q.get("topic_id"),
                     "passage_id": pid,
                     "answer_basis": q.get("answer_basis"),
-                    "metadata": {"validation": q.get("validation")},
+                    # metadata.topic mirrors discrete so fetchTopicNames() can resolve
+                    # the human topic name for science weak-topic rows too.
+                    "metadata": {"validation": q.get("validation"), "topic": q.get("topic")},
                 })
             except Exception as e:  # noqa: BLE001
                 skips.append(("science question", q.get("question_id", "?"), str(e)))

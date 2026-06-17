@@ -427,6 +427,11 @@ class ScienceQuestion(BaseModel):
     """A single passage-linked science question."""
     question_id: str
     passage_id: str
+    # Per-question content topic (one of the passage's cluster topics). Optional so
+    # older science records that predate per-question topic tagging still validate;
+    # populated for newly generated questions and consumed by the weak-topic engine.
+    topic_id: Optional[str] = None
+    topic: str = ""
     skill_tested: str  # AAMC SIRS skill (Skill 1-4)
     answer_basis: str  # "from_passage" | "apply_knowledge" | "data_interpretation"
     stem: str

@@ -198,7 +198,9 @@ def pick_num_questions(q_range: list) -> int:
     return random.randint(lo, hi)
 
 
-def build_question_plan(n: int, skill_weights: dict, has_exhibit: bool) -> list[dict]:
+def build_question_plan(
+    n: int, skill_weights: dict, has_exhibit: bool, topics: list[dict] = None
+) -> list[dict]:
     """Build a per-question plan: skill, answer_basis, difficulty, target answer.
 
     Guarantees a MIX of answer bases across the passage: it seeds the first
@@ -213,6 +215,13 @@ def build_question_plan(n: int, skill_weights: dict, has_exhibit: bool) -> list[
     figure). This shifts the overall skill mix away from the old Skill-1-heavy
     split toward Skill 4 (data reasoning), while the Skill 3 guarantee below is
     preserved from Phase 1.
+
+    TOPIC TAGGING: each question slot is also assigned ONE topic_id (+ name) drawn
+    round-robin from the passage's OWN cluster `topics` (shuffled so the spread and
+    the leftover slot vary), so a science question carries a truthful per-question
+    topic_id for the weak-topic engine. All cluster topics share one
+    content_category (clusters are grouped by it), so this stays category-coherent.
+    `topics` defaults to None -> topic_id/topic left None/"" (prior behavior).
     """
     skill_weights = skill_weights or DEFAULT_SKILL_WEIGHTS
 
@@ -293,6 +302,21 @@ def build_question_plan(n: int, skill_weights: dict, has_exhibit: bool) -> list[
         )
         plan[idx]["skill_key"] = "skill_3"
         plan[idx]["skill_label"] = SKILL_LABELS["skill_3"]
+
+    # TOPIC TAGGING — give each question slot ONE topic from the passage's OWN
+    # cluster topics so it carries a truthful per-question topic_id that feeds the
+    # weak-topic engine (science questions previously had none). Spread the 2-3
+    # cluster topics round-robin over a shuffled copy so questions cover different
+    # topics and the leftover slot isn't always the first topic. The generation
+    # prompt is steered to the assigned topic (see question_generation_prompt) so
+    # the tag is honest. No-op (topic_id=None) when no usable topics are supplied.
+    order = [t for t in (topics or []) if isinstance(t, dict) and t.get("topic_id")]
+    if order:
+        random.shuffle(order)
+    for i, p in enumerate(plan):
+        t = order[i % len(order)] if order else {}
+        p["topic_id"] = t.get("topic_id")
+        p["topic"] = t.get("topic", "")
 
     return plan
 
@@ -560,6 +584,10 @@ def question_generation_prompt(
     answer_basis = plan["answer_basis"]
     difficulty = plan["difficulty"]
     target_answer = plan["target_answer"]
+    # Per-question content topic assigned in build_question_plan (one of the
+    # passage's cluster topics). Steer generation to it so the stem genuinely tests
+    # the topic the question will be tagged with. Empty -> no steering line.
+    topic_focus = plan.get("topic") or ""
 
     difficulty_guidance = {
         "easy": (
@@ -620,6 +648,18 @@ def question_generation_prompt(
     other_bases = [b for b in ("from_passage", "apply_knowledge", "data_interpretation") if b != answer_basis]
     other_bases_str = "; ".join(f"\"{b}\" = {ANSWER_BASIS_BRIEF[b]}" for b in other_bases)
 
+    # ONE-LINE topic steering (only when a topic was assigned): aim the question at
+    # its tagged topic without disturbing the accuracy-first ordering or the JSON
+    # output contract (the model does NOT echo a topic key — we persist the
+    # pipeline-assigned topic_id, like skill_tested).
+    topic_focus_line = (
+        f"PRIMARY TOPIC FOCUS: Center this question on the following topic from the "
+        f"passage's content area: \"{topic_focus}\". The stem must genuinely test THIS "
+        f"topic (you may still draw on the broader passage for context).\n"
+        if topic_focus else ""
+    )
+    topic_user_line = f"\nPrimary topic focus: {topic_focus}" if topic_focus else ""
+
     system = f"""You are an expert MCAT question writer for the AAMC, writing a question \
 tied to a science passage in the {section} section.
 
@@ -639,7 +679,7 @@ contract, the answer_basis label) are easy compliance items — do not let them 
 away from getting the science right.
 
 {_SKILL_GUIDANCE[skill_key]}
-
+{topic_focus_line}
 This question's ANSWER BASIS is "{answer_basis}" — make this genuinely true:
 {ANSWER_BASIS_LABELS[answer_basis]}
 {ANSWER_BASIS_REQUIREMENTS[answer_basis]}
@@ -700,7 +740,7 @@ parseable JSON. Any text outside the JSON object will cause the response to be d
     user = f"""{context}
 
 Write ONE MCAT question about this passage.
-Target skill: {skill_label}
+Target skill: {skill_label}{topic_user_line}
 Answer basis: {answer_basis}
 Target difficulty: {difficulty}
 Target correct-answer position: {target_answer}{diversity_str}"""

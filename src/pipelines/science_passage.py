@@ -631,6 +631,12 @@ async def generate_and_validate_question(
             return {
                 "question_id": question_id,
                 "passage_id": passage_id,
+                # Per-question content topic (one of the passage's cluster topics),
+                # assigned in build_question_plan and steered in the generation
+                # prompt. Carries a truthful topic_id so science questions feed the
+                # weak-topic engine (discrete already had this; science did not).
+                "topic_id": plan.get("topic_id"),
+                "topic": plan.get("topic", ""),
                 # Persist the pipeline-ASSIGNED skill (authoritative), not the
                 # model's echoed skill_tested — the .get() fallback was dead code
                 # (RawScienceQuestion always carries skill_tested, default ""), so
@@ -755,7 +761,8 @@ async def _generate_passage_set_once(
         config.science_passage.questions_per_passage_range
     )
     plan = build_question_plan(
-        num_questions, config.science_passage.skill_weights, has_exhibit
+        num_questions, config.science_passage.skill_weights, has_exhibit,
+        topics=cluster["topics"],
     )
 
     # Generate sequentially so each new question sees the stems already accepted
