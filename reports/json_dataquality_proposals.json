@@ -1,0 +1,681 @@
+{
+  "column_bleed": [
+    {
+      "topic_id": "BB_2A_007",
+      "content_category": "2A",
+      "field": "subtopics[1]",
+      "current": "Osmosis Cell membranes separate the internal environment of",
+      "proposed": "Osmosis",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_008",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Colligative properties; osmotic pressure (GC) the cell from the external environment. The",
+      "proposed": "Colligative properties; osmotic pressure (GC)",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_008",
+      "content_category": "2A",
+      "field": "subtopics[0]",
+      "current": "Passive transport specialized structure of the membrane, as described in",
+      "proposed": "Passive transport",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_008",
+      "content_category": "2A",
+      "field": "subtopics[1]",
+      "current": "Active transport the fluid mosaic model, allows the cell to be",
+      "proposed": "Active transport",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_009",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Sodium/potassium pump selectively permeable and dynamic, with homeostasis",
+      "proposed": "Sodium/potassium pump",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_010",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Membrane channels maintained by the constant movement of molecules",
+      "proposed": "Membrane channels",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_011",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Membrane potential across the membranes through a combination of",
+      "proposed": "Membrane potential",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_012",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Membrane receptors active and passive processes driven by several forces,",
+      "proposed": "Membrane receptors",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_013",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Exocytosis and endocytosis including electrochemical gradients.",
+      "proposed": "Exocytosis and endocytosis",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_014",
+      "content_category": "2A",
+      "field": "subtopics[0]",
+      "current": "Gap junctions Eukaryotic cells also maintain internal membranes",
+      "proposed": "Gap junctions",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_014",
+      "content_category": "2A",
+      "field": "subtopics[1]",
+      "current": "Tight junctions that partition the cell into specialized regions. These",
+      "proposed": "Tight junctions",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_014",
+      "content_category": "2A",
+      "field": "subtopics[2]",
+      "current": "Desmosomes internal membranes facilitate cellular processes by minimizing conflicting interactions and increasing Membrane-Bound Organelles and Defining surface area where chemical reactions can occur.",
+      "proposed": "Desmosomes",
+      "confidence": "high",
+      "reason": "prose + header (Membrane-Bound Organelles...)"
+    },
+    {
+      "topic_id": "BB_2A_015",
+      "content_category": "2A",
+      "field": "subtopics[0]",
+      "current": "Compartmentalization, storage of genetic matrix, cells of multicellular organisms organize into information tissues, organs, and organ systems. Certain",
+      "proposed": "Compartmentalization, storage of genetic information",
+      "confidence": "high",
+      "reason": "prose (interleaved mid-phrase)"
+    },
+    {
+      "topic_id": "BB_2A_015",
+      "content_category": "2A",
+      "field": "subtopics[1]",
+      "current": "Nucleolus: location and function membrane-associated proteins also play key roles in",
+      "proposed": "Nucleolus: location and function",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_015",
+      "content_category": "2A",
+      "field": "subtopics[2]",
+      "current": "Nuclear envelope, nuclear pores identifying tissues or recent events in the cell’s history",
+      "proposed": "Nuclear envelope, nuclear pores",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_016",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Mitochondria for purposes of recognition of “self” versus foreign",
+      "proposed": "Mitochondria",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_016",
+      "content_category": "2A",
+      "field": "subtopics[2]",
+      "current": "Self-replication The content in this category covers the composition,",
+      "proposed": "Self-replication",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_017",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Endoplasmic reticulum organelles of eukaryotic cells; and the structure and",
+      "proposed": "Endoplasmic reticulum",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_017",
+      "content_category": "2A",
+      "field": "subtopics[0]",
+      "current": "Rough and smooth components function of the major cytoskeletal elements. It covers",
+      "proposed": "Rough and smooth components",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_017",
+      "content_category": "2A",
+      "field": "subtopics[1]",
+      "current": "Rough endoplasmic reticulum site of ribosomes the energetics of and mechanisms by which",
+      "proposed": "Rough endoplasmic reticulum site of ribosomes",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_017",
+      "content_category": "2A",
+      "field": "subtopics[2]",
+      "current": "Double-membrane structure molecules, or groups of molecules, move across cell",
+      "proposed": "Double-membrane structure",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_017",
+      "content_category": "2A",
+      "field": "subtopics[3]",
+      "current": "Role in membrane biosynthesis membranes. It also covers how cell-cell junctions and",
+      "proposed": "Role in membrane biosynthesis",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_017",
+      "content_category": "2A",
+      "field": "subtopics[4]",
+      "current": "Role in biosynthesis of secreted proteins the extracellular matrix interact to form tissues with",
+      "proposed": "Role in biosynthesis of secreted proteins",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2A_018",
+      "content_category": "2A",
+      "field": "topic",
+      "current": "Golgi apparatus: general structure and role in packaging and secretion within certain organelles that are different from their external environments.",
+      "proposed": "Golgi apparatus: general structure and role in packaging and secretion",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2C_007",
+      "content_category": "2C",
+      "field": "topic",
+      "current": "Oncogenes, apoptosis differentiate into many different types of cells, each",
+      "proposed": "Oncogenes, apoptosis",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2C_008",
+      "content_category": "2C",
+      "field": "topic",
+      "current": "Gametogenesis by meiosis spatial-temporal gradients in the interactions between",
+      "proposed": "Gametogenesis by meiosis",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2C_008",
+      "content_category": "2C",
+      "field": "subtopics[0]",
+      "current": "Differences in formation structural and functional divergence of cells into",
+      "proposed": "Differences in formation",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2C_008",
+      "content_category": "2C",
+      "field": "subtopics[1]",
+      "current": "Differences in morphology specialized structures, organs, and tissues. The",
+      "proposed": "Differences in morphology",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_2C_008",
+      "content_category": "2C",
+      "field": "subtopics[2]",
+      "current": "Relative contribution to next generation interaction of stimuli and genes is also explained by",
+      "proposed": "Relative contribution to next generation",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "BB_3A_016",
+      "content_category": "3A",
+      "field": "subtopics[1]",
+      "current": "Terpenes and terpenoids Endocrine System: Hormones and Their Sources (BIO)",
+      "proposed": "Terpenes and terpenoids",
+      "confidence": "high",
+      "reason": "header (Endocrine System: Hormones and Their Sources)"
+    },
+    {
+      "topic_id": "BB_3A_021",
+      "content_category": "3A",
+      "field": "topic",
+      "current": "Neuroendocrinology ― relation between neurons and hormonal systems Endocrine System: Mechanisms of Hormone Action (BIO)",
+      "proposed": "Neuroendocrinology - relation between neurons and hormonal systems",
+      "confidence": "high",
+      "reason": "header (Endocrine System: Mechanisms of Hormone Action)"
+    },
+    {
+      "topic_id": "BB_1D_013",
+      "content_category": "1D",
+      "field": "topic",
+      "current": "Polysaccharides Glycolysis, Gluconeogenesis, and the Pentose",
+      "proposed": "Polysaccharides",
+      "confidence": "high",
+      "reason": "header (Glycolysis, Gluconeogenesis, and the Pentose Phosphate Pathway)"
+    },
+    {
+      "topic_id": "BB_1D_040",
+      "content_category": "1D",
+      "field": "topic",
+      "current": "Mitochondria, apoptosis, oxidative stress (BC) Hormonal Regulation and Integration of",
+      "proposed": "Mitochondria, apoptosis, oxidative stress (BC)",
+      "confidence": "high",
+      "reason": "header (Hormonal Regulation and Integration of Metabolism)"
+    },
+    {
+      "topic_id": "BB_2B_002",
+      "content_category": "2B",
+      "field": "topic",
+      "current": "Impact on biology Classification and Structure of Prokaryotic Cells (BIO)",
+      "proposed": "Impact on biology",
+      "confidence": "high",
+      "reason": "header (Classification and Structure of Prokaryotic Cells)"
+    },
+    {
+      "topic_id": "CP_4A_001",
+      "content_category": "4A",
+      "field": "topic",
+      "current": "Units and dimensions The motion of any object can be described in terms of",
+      "proposed": "Units and dimensions",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4A_002",
+      "content_category": "4A",
+      "field": "topic",
+      "current": "Vectors, components displacement, velocity, and acceleration. Objects",
+      "proposed": "Vectors, components",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4A_004",
+      "content_category": "4A",
+      "field": "topic",
+      "current": "Acceleration acting on them are zero. Many aspects of motion can",
+      "proposed": "Acceleration",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4A_005",
+      "content_category": "4A",
+      "field": "topic",
+      "current": "Newton’s First Law, inertia different forms. In a living system, the energy for",
+      "proposed": "Newton's First Law, inertia",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4D_011",
+      "content_category": "4D",
+      "field": "topic",
+      "current": "Thin films, diffraction grating, single-slit diffraction When mechanical energy is transmitted through solids,",
+      "proposed": "Thin films, diffraction grating, single-slit diffraction",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4D_012",
+      "content_category": "4D",
+      "field": "topic",
+      "current": "Other diffraction phenomena, X-ray diffraction liquids, and gases, oscillating pressure waves known as",
+      "proposed": "Other diffraction phenomena, X-ray diffraction",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4D_013",
+      "content_category": "4D",
+      "field": "topic",
+      "current": "Polarization of light: linear and circular “sound” are generated. Sound waves are audible if the",
+      "proposed": "Polarization of light: linear and circular",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4D_014",
+      "content_category": "4D",
+      "field": "topic",
+      "current": "Properties of electromagnetic radiation sensory elements of the ear vibrate in response to",
+      "proposed": "Properties of electromagnetic radiation",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4D_014",
+      "content_category": "4D",
+      "field": "subtopics[0]",
+      "current": "Velocity equals constant c, in vacuo exposure to these vibrations. The detection of reflected",
+      "proposed": "Velocity equals constant c, in vacuo",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4D_014",
+      "content_category": "4D",
+      "field": "subtopics[1]",
+      "current": "Electromagnetic radiation consists of sound waves is used in ultrasound imaging. This perpendicularly oscillating electric and magnetic noninvasive technique readily locates dense fields; direction of propagation is perpendicular subcutaneous structures, such as bone and cartilage, to both and is very useful in diagnostic medicine.",
+      "proposed": "Electromagnetic radiation consists of perpendicularly oscillating electric and magnetic fields; direction of propagation is perpendicular to both",
+      "confidence": "med",
+      "reason": "prose (heavily interleaved - verify reconstruction)"
+    },
+    {
+      "topic_id": "CP_4D_016",
+      "content_category": "4D",
+      "field": "topic",
+      "current": "Visual spectrum, color interact with matter.",
+      "proposed": "Visual spectrum, color",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_4E_016",
+      "content_category": "4E",
+      "field": "topic",
+      "current": "Photoelectric effect The Periodic Table ― Classification of Elements",
+      "proposed": "Photoelectric effect",
+      "confidence": "high",
+      "reason": "header (The Periodic Table - Classification of Elements)"
+    },
+    {
+      "topic_id": "CP_5A_001",
+      "content_category": "5A",
+      "field": "subtopics[0]",
+      "current": "Kw, its approximate value (Kw = [H+][OH–] = 10–14 properties of water allow it to strongly interact with at 25°C, 1 atm) and mobilize many types of solutes, including ions.",
+      "proposed": "Kw, its approximate value (Kw = [H+][OH-] = 10-14 at 25C, 1 atm)",
+      "confidence": "med",
+      "reason": "prose (interleaved - verify)"
+    },
+    {
+      "topic_id": "CP_5A_001",
+      "content_category": "5A",
+      "field": "subtopics[1]",
+      "current": "Definition of pH: pH of pure water Water is also unique in its ability to absorb energy and ▪ Conjugate acids and bases (e.g., NH4+ and NH3) buffer living systems from the chemical changes",
+      "proposed": "Definition of pH: pH of pure water",
+      "confidence": "med",
+      "reason": "prose (a separate bullet \"Conjugate acids and bases\" is also fused in - verify)"
+    },
+    {
+      "topic_id": "CP_5A_002",
+      "content_category": "5A",
+      "field": "topic",
+      "current": "Strong acids and bases (e.g., nitric, sulfuric) necessary to sustain life.",
+      "proposed": "Strong acids and bases (e.g., nitric, sulfuric)",
+      "confidence": "high",
+      "reason": "prose"
+    },
+    {
+      "topic_id": "CP_5A_003",
+      "content_category": "5A",
+      "field": "subtopics[0]",
+      "current": "Dissociation of weak acids and bases with or The content in this category covers the nature of without added salt solutions, solubility, acids, bases, and buffers.",
+      "proposed": "Dissociation of weak acids and bases with or without added salt",
+      "confidence": "med",
+      "reason": "prose (interleaved - verify)"
+    },
+    {
+      "topic_id": "CP_5D_052",
+      "content_category": "5D",
+      "field": "topic",
+      "current": "Oxidation and reduction (e.g., hydroquinones, ubiquinones): biological 2e– redox centers Polycyclic and Heterocyclic Aromatic Compounds (OC, BC)",
+      "proposed": "Oxidation and reduction (e.g., hydroquinones, ubiquinones): biological 2e- redox centers",
+      "confidence": "high",
+      "reason": "header (Polycyclic and Heterocyclic Aromatic Compounds)"
+    },
+    {
+      "topic_id": "CP_5E_008",
+      "content_category": "5E",
+      "field": "subtopics[2]",
+      "current": "Flavoproteins Energy Changes in Chemical Reactions ―",
+      "proposed": "Flavoproteins",
+      "confidence": "high",
+      "reason": "header (Energy Changes in Chemical Reactions - Thermochemistry, Thermodynamics)"
+    },
+    {
+      "topic_id": "PS_8C_007",
+      "content_category": "8C",
+      "field": "topic",
+      "current": "Perspectives on bureaucracy (e.g., iron law of oligarchy, McDonaldization) Self-Presentation and Interacting With Others (PSY, SOC)",
+      "proposed": "Perspectives on bureaucracy (e.g., iron law of oligarchy, McDonaldization)",
+      "confidence": "high",
+      "reason": "header (Self-Presentation and Interacting With Others)"
+    }
+  ],
+  "mislabeled_topic_group": [
+    {
+      "topic_id": "BB_3A_017",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Hormones and Their Sources",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_018",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Hormones and Their Sources",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_019",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Hormones and Their Sources",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_020",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Hormones and Their Sources",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_021",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Hormones and Their Sources",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_022",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Mechanisms of Hormone Action",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_023",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Mechanisms of Hormone Action",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_024",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Mechanisms of Hormone Action",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_025",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Mechanisms of Hormone Action",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "BB_3A_026",
+      "content_category": "3A",
+      "current_group": "Lipids",
+      "proposed_group": "Endocrine System: Mechanisms of Hormone Action",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "endocrine content tagged \"Lipids\""
+    },
+    {
+      "topic_id": "CP_4C_018",
+      "content_category": "4C",
+      "current_group": "Electrochemistry",
+      "proposed_group": "Specialized Cell - Nerve Cell",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "nerve-cell content tagged \"Electrochemistry\""
+    },
+    {
+      "topic_id": "CP_4C_019",
+      "content_category": "4C",
+      "current_group": "Electrochemistry",
+      "proposed_group": "Specialized Cell - Nerve Cell",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "nerve-cell content tagged \"Electrochemistry\""
+    },
+    {
+      "topic_id": "CP_5B_011",
+      "content_category": "5B",
+      "current_group": "Covalent Bond",
+      "proposed_group": "Liquid Phase - Intermolecular Forces",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "IMF content lumped under \"Covalent Bond\""
+    },
+    {
+      "topic_id": "CP_5B_012",
+      "content_category": "5B",
+      "current_group": "Covalent Bond",
+      "proposed_group": "Liquid Phase - Intermolecular Forces",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "IMF content lumped under \"Covalent Bond\""
+    },
+    {
+      "topic_id": "CP_5B_013",
+      "content_category": "5B",
+      "current_group": "Covalent Bond",
+      "proposed_group": "Liquid Phase - Intermolecular Forces",
+      "changes_topic_id": false,
+      "confidence": "high",
+      "note": "IMF content lumped under \"Covalent Bond\""
+    },
+    {
+      "topic_id": "CP_5D_053",
+      "content_category": "5D",
+      "current_group": "Phenols",
+      "proposed_group": "Polycyclic and Heterocyclic Aromatic Compounds",
+      "changes_topic_id": false,
+      "confidence": "medium",
+      "note": "heterocyclic content tagged \"Phenols\""
+    },
+    {
+      "topic_id": "BB_3B_061",
+      "content_category": "3B",
+      "current_group": "Muscle System",
+      "proposed_group": "Specialized Cell - Muscle Cell",
+      "changes_topic_id": false,
+      "confidence": "low",
+      "note": "AAMC separates this from \"Muscle System\"; folding is arguably acceptable - verify"
+    },
+    {
+      "topic_id": "BB_3B_062",
+      "content_category": "3B",
+      "current_group": "Muscle System",
+      "proposed_group": "Specialized Cell - Muscle Cell",
+      "changes_topic_id": false,
+      "confidence": "low",
+      "note": "AAMC separates this from \"Muscle System\"; folding is arguably acceptable - verify"
+    },
+    {
+      "topic_id": "BB_3B_063",
+      "content_category": "3B",
+      "current_group": "Muscle System",
+      "proposed_group": "Specialized Cell - Muscle Cell",
+      "changes_topic_id": false,
+      "confidence": "low",
+      "note": "AAMC separates this from \"Muscle System\"; folding is arguably acceptable - verify"
+    },
+    {
+      "topic_id": "BB_3B_064",
+      "content_category": "3B",
+      "current_group": "Muscle System",
+      "proposed_group": "Specialized Cell - Muscle Cell",
+      "changes_topic_id": false,
+      "confidence": "low",
+      "note": "AAMC separates this from \"Muscle System\"; folding is arguably acceptable - verify"
+    },
+    {
+      "topic_id": "BB_3B_065",
+      "content_category": "3B",
+      "current_group": "Muscle System",
+      "proposed_group": "Specialized Cell - Muscle Cell",
+      "changes_topic_id": false,
+      "confidence": "low",
+      "note": "AAMC separates this from \"Muscle System\"; folding is arguably acceptable - verify"
+    },
+    {
+      "topic_id": "BB_3B_066",
+      "content_category": "3B",
+      "current_group": "Muscle System",
+      "proposed_group": "Specialized Cell - Muscle Cell",
+      "changes_topic_id": false,
+      "confidence": "low",
+      "note": "AAMC separates this from \"Muscle System\"; folding is arguably acceptable - verify"
+    }
+  ]
+}

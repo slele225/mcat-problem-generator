@@ -1,0 +1,90 @@
+{
+  "subtopic_additions": [
+    {
+      "content_category": "2A",
+      "target_topic_id": null,
+      "target_topic_group": "Characteristics of Eukaryotic Cells",
+      "proposed_subtopic": "Lysosomes: membrane-bound vesicles containing hydrolytic enzymes",
+      "aamc_source": "Lysosomes: membrane-bound vesicles containing hydrolytic enzymes",
+      "importance": "medium",
+      "note": "AAMC lists Lysosomes as a distinct membrane-bound organelle; JSON jumps Mitochondria (BB_2A_016) -> Endoplasmic reticulum (BB_2A_017), skipping it. AAMC group label is 'Membrane-Bound Organelles and Defining Characteristics of Eukaryotic Cells'."
+    },
+    {
+      "content_category": "4A",
+      "target_topic_id": null,
+      "target_topic_group": "Translational Motion",
+      "proposed_subtopic": "Speed, velocity (average and instantaneous)",
+      "aamc_source": "Speed, velocity (average and instantaneous)",
+      "importance": "medium",
+      "note": "JSON 4A has Units (CP_4A_001), Vectors (_002), Vector addition (_003), Acceleration (_004) but drops the 'Speed, velocity' bullet that sits between Vector addition and Acceleration in the outline."
+    },
+    {
+      "content_category": "3A",
+      "target_topic_id": null,
+      "target_topic_group": "Nervous System: Structure and Function",
+      "proposed_subtopic": "Major functions: high-level control and integration of body systems; adaptive capability to external influences",
+      "aamc_source": "Major functions ... High-level control and integration of body",
+      "importance": "medium",
+      "note": "Part of the entirely-absent 'Nervous System: Structure and Function' topic (see missing_topics)."
+    },
+    {
+      "content_category": "3A",
+      "target_topic_id": null,
+      "target_topic_group": "Nervous System: Structure and Function",
+      "proposed_subtopic": "Organization of vertebrate nervous system",
+      "aamc_source": "Organization of vertebrate nervous system",
+      "importance": "high",
+      "note": "Part of the entirely-absent 'Nervous System: Structure and Function' topic. CNS/PNS organization is high-yield."
+    },
+    {
+      "content_category": "3A",
+      "target_topic_id": null,
+      "target_topic_group": "Nervous System: Structure and Function",
+      "proposed_subtopic": "Sensor and effector neurons",
+      "aamc_source": "Sensor and effector neurons",
+      "importance": "medium",
+      "note": "Afferent/efferent neurons. Part of the absent 'Nervous System: Structure and Function' topic."
+    },
+    {
+      "content_category": "3A",
+      "target_topic_id": null,
+      "target_topic_group": "Nervous System: Structure and Function",
+      "proposed_subtopic": "Sympathetic and parasympathetic nervous systems: antagonistic control",
+      "aamc_source": "Sympathetic and parasympathetic nervous systems: antagonistic control",
+      "importance": "high",
+      "note": "Autonomic nervous system; high-yield. Part of the absent 'Nervous System: Structure and Function' topic."
+    },
+    {
+      "content_category": "3A",
+      "target_topic_id": null,
+      "target_topic_group": "Nervous System: Structure and Function",
+      "proposed_subtopic": "Reflexes: feedback loop, reflex arc; role of spinal cord and supraspinal circuits",
+      "aamc_source": "Reflexes ... Feedback loop, reflex arc",
+      "importance": "high",
+      "note": "Reflex arc is classic high-yield content. Part of the absent 'Nervous System: Structure and Function' topic."
+    },
+    {
+      "content_category": "3A",
+      "target_topic_id": null,
+      "target_topic_group": "Nervous System: Structure and Function",
+      "proposed_subtopic": "Integration with endocrine system: feedback control",
+      "aamc_source": "Integration with endocrine system: feedback control",
+      "importance": "medium",
+      "note": "POSSIBLY ALREADY PRESENT - VERIFY: BB_3A_025 has the reciprocal 'Integration with nervous system: feedback control' (under the mislabeled 'Lipids'/endocrine group)."
+    }
+  ],
+  "missing_topics": [
+    {
+      "content_category": "3A",
+      "aamc_topic": "Nervous System: Structure and Function",
+      "aamc_source": "Nervous System: Structure and Function (BIO)",
+      "note": "No JSON topic_group exists for it. JSON 3A covers only 'Nerve Cell' (cellular neuroscience), 'Electrochemistry', 'Biosignaling', and endocrine content (mislabeled under topic_group 'Lipids'). The entire SYSTEM-level nervous-system outline (organization of vertebrate NS; sensor/effector neurons; autonomic sympathetic/parasympathetic control; reflexes; reflex arc; spinal cord) is absent. Requires a NEW topic_id (or several). Its 6 subtopics are itemized in subtopic_additions. Highest-impact finding of this audit."
+    },
+    {
+      "content_category": "1C",
+      "aamc_topic": "Evidence That DNA Is Genetic Material",
+      "aamc_source": "Evidence That DNA Is Genetic Material (BIO)",
+      "note": "Appears in the AAMC outline as a bare topic header with NO subtopic bullets; no corresponding JSON entry exists (JSON 1C has Mendelian Concepts, Variability, Analytic Methods, Evolution). Would need a new topic_id. Low yield (classic experiments: Griffith; Avery-MacLeod-McCarty; Hershey-Chase)."
+    }
+  ]
+}

@@ -1,80 +1,88 @@
-# MCAT Question Generator
+# MCAT Question Generator (`mcat-gen`)
 
-Generate MCAT practice questions using a local LLM (Qwen2.5-32B-Instruct) served via vLLM on an A100 GPU.
+Generates validated MCAT practice questions with the **Anthropic Claude API**. Every
+item is gated by adversarial review **and** an independent blind-solve check before it
+is kept. Output is JSONL, consumed by the separate `mcat-app` web app.
 
-## Features
+> This is the **generation pipeline**, not the web app. For the full architecture,
+> conventions, and gotchas, read **[CLAUDE.md](CLAUDE.md)** and **[docs/](docs/)**.
 
-- **Discrete questions**: Standalone MCQs for Bio/Biochem, Chem/Phys, and Psych/Soc (50 per topic)
-- **CARS passages**: 500-600 word humanities passages with 10 questions each
-- **Two-stage validation**: Every question goes through adversarial review + blind solve
-- **Checkpoint/resume**: Interrupt anytime with Ctrl+C, resume by running again
-- **Configurable**: Counts, temperatures, batch sizes all in `config.yaml`
+## Item types
 
-## Quick Start
+- **Discrete** — standalone science MCQs, generated per topic.
+- **Science passage** — a science passage (+ optional table/figures) with 4–7 linked
+  questions, for a cluster of 2–3 related topics.
+- **CARS** — a 500–600 word humanities/social-science passage with ~5–7 questions.
 
-SSH into your GPU server, clone/copy this project, then:
+## How it works
+
+Each question runs through a three-stage funnel, and is **accepted only if both
+validation stages pass** (failures are discarded — no revision — and a retry
+regenerates):
+
+1. **Generate** (Opus) — produce one item as JSON.
+2. **Adversarial review** (Opus) — critique it for flaws.
+3. **Blind solve** (Sonnet) — an *independent* model re-solves with no answer key;
+   passes only if it picks the keyed answer.
+
+The blind-solve checker is a **different, cheaper model** (Sonnet) on purpose — an
+independent check is real signal, whereas "Opus checking Opus" is not.
+
+## Quick start
+
+You need an Anthropic API key and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-chmod +x run.sh
-./run.sh
+export ANTHROPIC_API_KEY=sk-ant-...      # PowerShell: $env:ANTHROPIC_API_KEY="sk-ant-..."
+uv sync                                   # install deps (anthropic, rdkit, matplotlib, psycopg, ...)
+
+# Production config (Opus generation/review, Sonnet checkers). --run-name keeps a run's
+# artifacts together; --max-topics + --seed give a small reproducible test run.
+uv run python -m src.main --config configs/opus.yaml --run-name myrun --max-topics 10 --seed 42
 ```
 
-That's it. The script handles everything: installs [uv](https://docs.astral.sh/uv/), creates a venv, installs dependencies, starts vLLM, waits for the model to load, and runs the pipeline.
+On **Windows**, use the project venv (`.venv\Scripts\python.exe -m src.main ...`) or
+`uv run` — the system Python lacks the dependencies.
 
-On first run it will download the Qwen2.5-32B-Instruct model (~20GB), so expect a few minutes of setup.
+`./run.sh` is a Linux/macOS convenience wrapper (installs uv, `uv sync`, runs the
+pipeline) — but it uses the default smoke `config.yaml`; pass `--config configs/opus.yaml`
+for a real run.
 
 ## Usage
 
 ```bash
-# Run both pipelines (discrete + CARS)
-./run.sh
-
-# Run only discrete questions
-./run.sh --discrete-only
-
-# Run only CARS passages
-./run.sh --cars-only
-
-# Check progress
-./run.sh --stats
-
-# Verbose/debug logging
-./run.sh -v
-
-# Clear all checkpoints and start fresh
-./run.sh --reset
+uv run python -m src.main --config configs/opus.yaml [flags]
 ```
 
-## Manual Setup (if you prefer)
+| flag | effect |
+|---|---|
+| `--discrete-only` / `--cars-only` / `--science-passage-only` | run just one pipeline (default: all three) |
+| `--run-name NAME` | write all artifacts into `runs/NAME/` (else shared `output/`) |
+| `--max-topics N` | process at most N topics this run, per pipeline (N passages for CARS) |
+| `--seed S` | reproducible topic/cluster selection |
+| `--topic-ids ID1,ID2` | targeted test: build ONE science passage from these ids, then stop |
+| `--stats` | show checkpoint/output counts and exit |
+| `--render-figures` | render science figures from the JSONL (no API calls); `--force-render` to redo |
+| `--recount` | rebuild the discrete checkpoint from its JSONL |
+| `--reset` | clear all checkpoints |
+| `-v` | verbose logging |
 
-If you'd rather manage things yourself instead of using `run.sh`:
-
-```bash
-# Install uv
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Install dependencies
-uv sync
-
-# Start vLLM in one terminal
-uv run python -m vllm.entrypoints.openai.api_server \
-    --model Qwen/Qwen2.5-32B-Instruct \
-    --port 8000 \
-    --gpu-memory-utilization 0.90 \
-    --max-model-len 4096 \
-    --dtype auto \
-    --trust-remote-code
-
-# Run the generator in another terminal
-uv run python -m src.main
-```
+Runs **checkpoint and resume** — re-run the same `--run-name` to continue. Use a fresh
+run name for long bank runs so they don't resume stale state.
 
 ## Output
 
-- `output/discrete_questions.jsonl` — One question per line
-- `output/cars_passages.jsonl` — One passage (with its questions) per line
+Per-run artifacts land in `runs/<name>/` (or `output/` with no `--run-name`):
 
-### Discrete question format
+- `discrete_questions.jsonl` — one question per line.
+- `science_passages.jsonl` / `cars_passages.jsonl` — one passage (with nested
+  questions) per line.
+- `*_generation_metrics.json` — funnel + per-model token/cost.
+- `rejected_*.jsonl` — discarded attempts (diagnostic only).
+- `checkpoints/`, `run.log`, and (after `--render-figures`) `figures/`.
+
+Field-by-field schemas are in **[docs/schemas.md](docs/schemas.md)**. Example discrete
+question:
 
 ```json
 {
@@ -82,109 +90,82 @@ uv run python -m src.main
   "topic_id": "BB_1A_001",
   "section": "Biological and Biochemical Foundations of Living Systems",
   "content_category": "1A: Structure and function of proteins...",
-  "topic": "Description",
+  "topic": "Amino acid structure and classification",
+  "subtopics_tested": ["..."],
   "stem": "A researcher observes that glycine...",
   "choices": {"A": "...", "B": "...", "C": "...", "D": "..."},
   "correct_answer": "B",
-  "explanation": "...",
+  "explanation": "**Choice B** is correct because...",
   "difficulty": "medium",
+  "skill_tested": "Skill 2",
   "validation": {"adversarial_pass": true, "blind_solve_pass": true}
-}
-```
-
-### CARS passage format
-
-```json
-{
-  "passage_id": "CARS_P0042",
-  "passage_text": "In the decades following...",
-  "word_count": 547,
-  "subject": "Philosophy",
-  "questions": [
-    {
-      "question_id": "CARS_P0042_q01",
-      "skill_type": "Foundations of Comprehension",
-      "stem": "The author's primary purpose...",
-      "choices": {"A": "...", "B": "...", "C": "...", "D": "..."},
-      "correct_answer": "C",
-      "explanation": "..."
-    }
-  ]
 }
 ```
 
 ## Configuration
 
-Edit `config.yaml` to adjust generation parameters:
+`configs/opus.yaml` is the production config; `configs/sonnet.yaml` is identical except
+the generation `model`. Root `config.yaml` is a tiny smoke config (the default when
+`--config` is omitted). Key knobs:
 
 ```yaml
-model: Qwen/Qwen2.5-32B-Instruct
-vllm_base_url: http://localhost:8000/v1
+model: claude-opus-4-8          # generation + adversarial review
 
 discrete:
-  questions_per_topic: 50    # MCQs per topic (746 non-CARS topics)
-  max_retries: 3             # Retries for failed validation
-  temperature_generate: 0.8  # Higher = more varied questions
-  temperature_validate: 0.3  # Lower = stricter validation
-  batch_size: 20             # Concurrent requests to vLLM
+  questions_per_topic: 10
+  discrete_checker_model: claude-sonnet-4-6   # independent blind-solve checker
 
 cars:
-  passages_per_topic: 100    # Total CARS passages to generate
-  questions_per_passage: 10  # Questions per passage
-  passage_word_range: [500, 600]
-  batch_size: 10             # Lower — passages are longer
+  passages_per_topic: 60                       # TOTAL passages this run
+  questions_per_passage_range: [5, 7]
+  cars_checker_model: claude-sonnet-4-6
+
+science_passage:
+  passages_per_topic_cluster: 2
+  questions_per_passage_range: [4, 7]
+  science_checker_model: claude-sonnet-4-6
+  enable_figures: true                         # SMILES (rdkit) + plots (matplotlib)
 ```
 
-**Tip**: Start small to test quality before doing a full run:
+See the config table in [CLAUDE.md](CLAUDE.md#config-configsopusyaml) for what each
+knob controls and its cost implication.
 
-```yaml
-discrete:
-  questions_per_topic: 5
+## Figures (science passages)
 
-cars:
-  passages_per_topic: 3
-```
+When `enable_figures: true`, science passages can carry chemistry structures (SMILES,
+via RDKit) and data plots (matplotlib), produced by a dedicated figure-pass stage and
+rendered in austere monochrome. Rendering is a separate `--render-figures` step. See
+**[docs/figures.md](docs/figures.md)**.
 
-## Resuming After Interruption
+## Loading into Supabase
 
-The checkpoint system tracks progress per-topic (discrete) and per-passage (CARS). Just run the same command again — it picks up where it left off.
+`scripts/load_to_supabase.py` upserts the JSONL banks into Postgres (re-runnable;
+needs `SUPABASE_DB_URL`); `scripts/upload_figures.py` uploads rendered figure PNGs to
+Storage (needs `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`). Details and the known
+harmless pooler note are in **[docs/operations.md](docs/operations.md)**.
 
-```bash
-./run.sh --stats   # See what's done
-./run.sh           # Continue
-```
-
-## Project Structure
+## Project structure
 
 ```
-mcat-gen/
-├── run.sh                    # One-shot setup + run script
-├── config.yaml               # All tunable parameters
-├── pyproject.toml            # uv/Python project config
-├── topics.json               # MCAT topic data (your file)
-├── src/
-│   ├── main.py               # CLI entry point
-│   ├── config.py             # Config loader
-│   ├── llm_client.py         # Async vLLM client with batching
-│   ├── schemas.py            # Pydantic models for output data
-│   ├── checkpoint.py         # Checkpoint/resume system
-│   ├── prompts/
-│   │   ├── discrete.py       # Prompt templates for discrete Qs
-│   │   └── cars.py           # Prompt templates for CARS
-│   └── pipelines/
-│       ├── discrete.py       # Discrete question pipeline
-│       └── cars.py           # CARS passage pipeline
-├── output/                   # Generated questions (JSONL)
-├── checkpoints/              # Resume state
-└── logs/                     # vLLM and generation logs
+src/
+  main.py            CLI entry point + run modes
+  config.py          config dataclasses + YAML loader
+  llm_client.py      async Anthropic client: batching, backoff, JSON parse/repair
+  schemas.py         Pydantic models, choice normalization, phantom-option detection
+  metrics.py         funnel + per-model token/cost tracking
+  figures.py         figure validation, text serialization, monochrome rendering
+  prompts/           common.py (shared fragments) + discrete/science_passage/cars
+  pipelines/         discrete / science_passage / cars + figure_pass
+configs/             opus.yaml (prod) · sonnet.yaml ; root config.yaml = smoke
+scripts/             Supabase load/upload, fixers, inspectors
+runs/<name>/         per-run output, metrics, checkpoints, logs, figures
+mcat_topics.json     the MCAT topic catalog
 ```
 
-## Troubleshooting
+## Docs
 
-**vLLM server crashes or OOMs**: Lower `gpu-memory-utilization` in `run.sh` (try 0.85) or reduce `max-model-len` to 2048.
-
-**Questions are too easy / low quality**: Increase `temperature_generate` (try 0.9) and lower `temperature_validate` (try 0.2) in `config.yaml`. The stricter validation will reject more, but what passes will be better.
-
-**Too many questions failing validation**: This is normal — the two-stage validation is intentionally strict. If your pass rate is below ~40%, try lowering `temperature_generate` to 0.7 so the model produces more "standard" questions.
-
-**Model download is slow**: The Qwen2.5-32B model is ~20GB. If Hugging Face is slow, set `HF_HUB_ENABLE_HF_TRANSFER=1` and `pip install hf_transfer` for faster downloads.
+- **[CLAUDE.md](CLAUDE.md)** — architecture, hard-won rules, config, metrics.
+- **[docs/schemas.md](docs/schemas.md)** — item types & every JSONL field.
+- **[docs/figures.md](docs/figures.md)** — figure pipeline & rendering conventions.
+- **[docs/conventions.md](docs/conventions.md)** — LaTeX/KaTeX, bolding, JSON repair, gotchas.
+- **[docs/operations.md](docs/operations.md)** — running, flags, Supabase, scripts.
