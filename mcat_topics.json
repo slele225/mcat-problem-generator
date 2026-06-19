@@ -1858,6 +1858,22 @@
     "last_seen": 0.0
   },
   {
+    "topic_id": "BB_1C_030",
+    "section": "Biological and Biochemical Foundations of Living Systems",
+    "foundational_concept": "Foundational Concept 1",
+    "content_category": "1C: Transmission of heritable information from generation to generation and the processes that increase genetic diversity",
+    "topic_group": "Evidence That DNA Is Genetic Material",
+    "discipline": "BIO",
+    "topic": "Evidence That DNA Is Genetic Material",
+    "subtopics": [],
+    "tags": [
+      "Biology",
+      "Evidence That DNA Is Genetic Material"
+    ],
+    "adaptive_score": 1.0,
+    "last_seen": 0.0
+  },
+  {
     "topic_id": "BB_1D_001",
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 1",
@@ -2089,7 +2105,7 @@
     "content_category": "1D: Principles of bioenergetics and fuel molecule metabolism",
     "topic_group": "Carbohydrates",
     "discipline": "BC, OC",
-    "topic": "Polysaccharides Glycolysis, Gluconeogenesis, and the Pentose",
+    "topic": "Polysaccharides",
     "subtopics": [],
     "tags": [
       "Biochemistry",
@@ -2558,7 +2574,7 @@
     "content_category": "1D: Principles of bioenergetics and fuel molecule metabolism",
     "topic_group": "Oxidative Phosphorylation",
     "discipline": "BIO, BC",
-    "topic": "Mitochondria, apoptosis, oxidative stress (BC) Hormonal Regulation and Integration of",
+    "topic": "Mitochondria, apoptosis, oxidative stress (BC)",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -2749,7 +2765,7 @@
     "topic": "Solute transport across membranes",
     "subtopics": [
       "Thermodynamic considerations",
-      "Osmosis Cell membranes separate the internal environment of"
+      "Osmosis"
     ],
     "tags": [
       "Biology",
@@ -2766,10 +2782,10 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Plasma Membrane",
     "discipline": "BIO, BC",
-    "topic": "Colligative properties; osmotic pressure (GC) the cell from the external environment. The",
+    "topic": "Colligative properties; osmotic pressure (GC)",
     "subtopics": [
-      "Passive transport specialized structure of the membrane, as described in",
-      "Active transport the fluid mosaic model, allows the cell to be"
+      "Passive transport",
+      "Active transport"
     ],
     "tags": [
       "Biology",
@@ -2786,7 +2802,7 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Plasma Membrane",
     "discipline": "BIO, BC",
-    "topic": "Sodium/potassium pump selectively permeable and dynamic, with homeostasis",
+    "topic": "Sodium/potassium pump",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -2803,7 +2819,7 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Plasma Membrane",
     "discipline": "BIO, BC",
-    "topic": "Membrane channels maintained by the constant movement of molecules",
+    "topic": "Membrane channels",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -2820,7 +2836,7 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Plasma Membrane",
     "discipline": "BIO, BC",
-    "topic": "Membrane potential across the membranes through a combination of",
+    "topic": "Membrane potential",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -2837,7 +2853,7 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Plasma Membrane",
     "discipline": "BIO, BC",
-    "topic": "Membrane receptors active and passive processes driven by several forces,",
+    "topic": "Membrane receptors",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -2854,7 +2870,7 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Plasma Membrane",
     "discipline": "BIO, BC",
-    "topic": "Exocytosis and endocytosis including electrochemical gradients.",
+    "topic": "Exocytosis and endocytosis",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -2873,9 +2889,9 @@
     "discipline": "BIO, BC",
     "topic": "Intercellular junctions (BIO)",
     "subtopics": [
-      "Gap junctions Eukaryotic cells also maintain internal membranes",
-      "Tight junctions that partition the cell into specialized regions. These",
-      "Desmosomes internal membranes facilitate cellular processes by minimizing conflicting interactions and increasing Membrane-Bound Organelles and Defining surface area where chemical reactions can occur."
+      "Gap junctions",
+      "Tight junctions",
+      "Desmosomes"
     ],
     "tags": [
       "Biology",
@@ -2894,9 +2910,9 @@
     "discipline": "BIO",
     "topic": "Defining characteristics of eukaryotic cells: membrane-bound nucleus, presence of organelles, mitotic division",
     "subtopics": [
-      "Compartmentalization, storage of genetic matrix, cells of multicellular organisms organize into information tissues, organs, and organ systems. Certain",
-      "Nucleolus: location and function membrane-associated proteins also play key roles in",
-      "Nuclear envelope, nuclear pores identifying tissues or recent events in the cell’s history"
+      "Compartmentalization, storage of genetic information",
+      "Nucleolus: location and function",
+      "Nuclear envelope, nuclear pores"
     ],
     "tags": [
       "Biology",
@@ -2912,11 +2928,11 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Characteristics of Eukaryotic Cells",
     "discipline": "BIO",
-    "topic": "Mitochondria for purposes of recognition of “self” versus foreign",
+    "topic": "Mitochondria",
     "subtopics": [
       "Site of ATP production molecules.",
       "Inner- and outer-membrane structure (BIO, BC)",
-      "Self-replication The content in this category covers the composition,"
+      "Self-replication"
     ],
     "tags": [
       "Biology",
@@ -2932,13 +2948,13 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Characteristics of Eukaryotic Cells",
     "discipline": "BIO",
-    "topic": "Endoplasmic reticulum organelles of eukaryotic cells; and the structure and",
+    "topic": "Endoplasmic reticulum",
     "subtopics": [
-      "Rough and smooth components function of the major cytoskeletal elements. It covers",
-      "Rough endoplasmic reticulum site of ribosomes the energetics of and mechanisms by which",
-      "Double-membrane structure molecules, or groups of molecules, move across cell",
-      "Role in membrane biosynthesis membranes. It also covers how cell-cell junctions and",
-      "Role in biosynthesis of secreted proteins the extracellular matrix interact to form tissues with"
+      "Rough and smooth components",
+      "Rough endoplasmic reticulum site of ribosomes",
+      "Double-membrane structure",
+      "Role in membrane biosynthesis",
+      "Role in biosynthesis of secreted proteins"
     ],
     "tags": [
       "Biology",
@@ -2954,7 +2970,7 @@
     "content_category": "2A: Assemblies of molecules, cells, and groups of cells within single-celled and multicellular organisms",
     "topic_group": "Characteristics of Eukaryotic Cells",
     "discipline": "BIO",
-    "topic": "Golgi apparatus: general structure and role in packaging and secretion within certain organelles that are different from their external environments.",
+    "topic": "Golgi apparatus: general structure and role in packaging and secretion",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -3130,7 +3146,7 @@
     "content_category": "2B: The structure, growth, physiology, and genetics of prokaryotes and viruses",
     "topic_group": "Cell Theory",
     "discipline": "BIO",
-    "topic": "Impact on biology Classification and Structure of Prokaryotic Cells (BIO)",
+    "topic": "Impact on biology",
     "subtopics": [],
     "tags": [
       "Biology",
@@ -3674,7 +3690,7 @@
     "content_category": "2C: Processes of cell division, differentiation, and specialization",
     "topic_group": "Biosignaling",
     "discipline": "BC",
-    "topic": "Oncogenes, apoptosis differentiate into many different types of cells, each",
+    "topic": "Oncogenes, apoptosis",
     "subtopics": [],
     "tags": [
       "Biochemistry",
@@ -3690,11 +3706,11 @@
     "content_category": "2C: Processes of cell division, differentiation, and specialization",
     "topic_group": "Reproductive System",
     "discipline": "BIO",
-    "topic": "Gametogenesis by meiosis spatial-temporal gradients in the interactions between",
+    "topic": "Gametogenesis by meiosis",
     "subtopics": [
-      "Differences in formation structural and functional divergence of cells into",
-      "Differences in morphology specialized structures, organs, and tissues. The",
-      "Relative contribution to next generation interaction of stimuli and genes is also explained by"
+      "Differences in formation",
+      "Differences in morphology",
+      "Relative contribution to next generation"
     ],
     "tags": [
       "Biology",
@@ -4224,7 +4240,7 @@
     "topic": "Description; structure",
     "subtopics": [
       "Steroids",
-      "Terpenes and terpenoids Endocrine System: Hormones and Their Sources (BIO)"
+      "Terpenes and terpenoids"
     ],
     "tags": [
       "Biochemistry",
@@ -4239,7 +4255,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Hormones and Their Sources",
     "discipline": "BC, OC",
     "topic": "Function of endocrine system: specific chemical control at cell, tissue, and organ level",
     "subtopics": [],
@@ -4256,7 +4272,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Hormones and Their Sources",
     "discipline": "BC, OC",
     "topic": "Definitions of endocrine gland, hormone",
     "subtopics": [],
@@ -4273,7 +4289,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Hormones and Their Sources",
     "discipline": "BC, OC",
     "topic": "Major endocrine glands: names, locations, products",
     "subtopics": [],
@@ -4290,7 +4306,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Hormones and Their Sources",
     "discipline": "BC, OC",
     "topic": "Major types of hormones",
     "subtopics": [],
@@ -4307,9 +4323,9 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Hormones and Their Sources",
     "discipline": "BC, OC",
-    "topic": "Neuroendocrinology ― relation between neurons and hormonal systems Endocrine System: Mechanisms of Hormone Action (BIO)",
+    "topic": "Neuroendocrinology - relation between neurons and hormonal systems",
     "subtopics": [],
     "tags": [
       "Biochemistry",
@@ -4324,7 +4340,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Mechanisms of Hormone Action",
     "discipline": "BC, OC",
     "topic": "Cellular mechanisms of hormone action",
     "subtopics": [],
@@ -4341,7 +4357,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Mechanisms of Hormone Action",
     "discipline": "BC, OC",
     "topic": "Transport of hormones: blood supply",
     "subtopics": [],
@@ -4358,7 +4374,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Mechanisms of Hormone Action",
     "discipline": "BC, OC",
     "topic": "Specificity of hormones: target tissue",
     "subtopics": [],
@@ -4375,7 +4391,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Mechanisms of Hormone Action",
     "discipline": "BC, OC",
     "topic": "Integration with nervous system: feedback control",
     "subtopics": [],
@@ -4392,7 +4408,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
-    "topic_group": "Lipids",
+    "topic_group": "Endocrine System: Mechanisms of Hormone Action",
     "discipline": "BC, OC",
     "topic": "Regulation by second messengers",
     "subtopics": [],
@@ -4400,6 +4416,29 @@
       "Biochemistry",
       "Organic Chemistry",
       "Lipids"
+    ],
+    "adaptive_score": 1.0,
+    "last_seen": 0.0
+  },
+  {
+    "topic_id": "BB_3A_027",
+    "section": "Biological and Biochemical Foundations of Living Systems",
+    "foundational_concept": "Foundational Concept 3",
+    "content_category": "3A: Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
+    "topic_group": "Nervous System: Structure and Function",
+    "discipline": "BIO",
+    "topic": "Nervous System: Structure and Function",
+    "subtopics": [
+      "Major functions: high-level control and integration of body systems; adaptive capability to external influences",
+      "Organization of vertebrate nervous system",
+      "Sensor and effector neurons",
+      "Sympathetic and parasympathetic nervous systems: antagonistic control",
+      "Reflexes: feedback loop, reflex arc; role of spinal cord and supraspinal circuits",
+      "Integration with endocrine system: feedback control"
+    ],
+    "tags": [
+      "Biology",
+      "Nervous System: Structure and Function"
     ],
     "adaptive_score": 1.0,
     "last_seen": 0.0
@@ -5488,7 +5527,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3B: Structure and integrative functions of the main organ systems",
-    "topic_group": "Muscle System",
+    "topic_group": "Specialized Cell - Muscle Cell",
     "discipline": "BIO",
     "topic": "Structural characteristics of striated, smooth, and cardiac muscle",
     "subtopics": [],
@@ -5504,7 +5543,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3B: Structure and integrative functions of the main organ systems",
-    "topic_group": "Muscle System",
+    "topic_group": "Specialized Cell - Muscle Cell",
     "discipline": "BIO",
     "topic": "Abundant mitochondria in red muscle cells: ATP source",
     "subtopics": [],
@@ -5520,7 +5559,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3B: Structure and integrative functions of the main organ systems",
-    "topic_group": "Muscle System",
+    "topic_group": "Specialized Cell - Muscle Cell",
     "discipline": "BIO",
     "topic": "Organization of contractile elements: actin and myosin filaments, crossbridges, sliding filament model",
     "subtopics": [],
@@ -5536,7 +5575,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3B: Structure and integrative functions of the main organ systems",
-    "topic_group": "Muscle System",
+    "topic_group": "Specialized Cell - Muscle Cell",
     "discipline": "BIO",
     "topic": "Sarcomeres: “I” and “A” bands, “M” and “Z” lines, “H” zone",
     "subtopics": [],
@@ -5552,7 +5591,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3B: Structure and integrative functions of the main organ systems",
-    "topic_group": "Muscle System",
+    "topic_group": "Specialized Cell - Muscle Cell",
     "discipline": "BIO",
     "topic": "Presence of troponin and tropomyosin",
     "subtopics": [],
@@ -5568,7 +5607,7 @@
     "section": "Biological and Biochemical Foundations of Living Systems",
     "foundational_concept": "Foundational Concept 3",
     "content_category": "3B: Structure and integrative functions of the main organ systems",
-    "topic_group": "Muscle System",
+    "topic_group": "Specialized Cell - Muscle Cell",
     "discipline": "BIO",
     "topic": "Calcium regulation of contraction",
     "subtopics": [],
@@ -5784,7 +5823,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Translational Motion",
     "discipline": "PHY",
-    "topic": "Units and dimensions The motion of any object can be described in terms of",
+    "topic": "Units and dimensions",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -5800,7 +5839,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Translational Motion",
     "discipline": "PHY",
-    "topic": "Vectors, components displacement, velocity, and acceleration. Objects",
+    "topic": "Vectors, components",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -5832,7 +5871,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Translational Motion",
     "discipline": "PHY",
-    "topic": "Acceleration acting on them are zero. Many aspects of motion can",
+    "topic": "Acceleration",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -5848,7 +5887,7 @@
     "content_category": "4A: Translational motion, forces, work, energy, and equilibrium in living systems",
     "topic_group": "Force",
     "discipline": "PHY",
-    "topic": "Newton’s First Law, inertia different forms. In a living system, the energy for",
+    "topic": "Newton's First Law, inertia",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6735,7 +6774,7 @@
     "section": "Chemical and Physical Foundations of Biological Systems",
     "foundational_concept": "Foundational Concept 4",
     "content_category": "4C: Electrochemistry and electrical circuits and their elements",
-    "topic_group": "Electrochemistry",
+    "topic_group": "Specialized Cell - Nerve Cell",
     "discipline": "GC",
     "topic": "Myelin sheath, Schwann cells, insulation of axon",
     "subtopics": [],
@@ -6751,7 +6790,7 @@
     "section": "Chemical and Physical Foundations of Biological Systems",
     "foundational_concept": "Foundational Concept 4",
     "content_category": "4C: Electrochemistry and electrical circuits and their elements",
-    "topic_group": "Electrochemistry",
+    "topic_group": "Specialized Cell - Nerve Cell",
     "discipline": "GC",
     "topic": "Nodes of Ranvier: propagation of nerve impulse along axon",
     "subtopics": [],
@@ -6929,7 +6968,7 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Light, Electromagnetic Radiation",
     "discipline": "PHY",
-    "topic": "Thin films, diffraction grating, single-slit diffraction When mechanical energy is transmitted through solids,",
+    "topic": "Thin films, diffraction grating, single-slit diffraction",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6945,7 +6984,7 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Light, Electromagnetic Radiation",
     "discipline": "PHY",
-    "topic": "Other diffraction phenomena, X-ray diffraction liquids, and gases, oscillating pressure waves known as",
+    "topic": "Other diffraction phenomena, X-ray diffraction",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6961,7 +7000,7 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Light, Electromagnetic Radiation",
     "discipline": "PHY",
-    "topic": "Polarization of light: linear and circular “sound” are generated. Sound waves are audible if the",
+    "topic": "Polarization of light: linear and circular",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -6977,10 +7016,10 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Light, Electromagnetic Radiation",
     "discipline": "PHY",
-    "topic": "Properties of electromagnetic radiation sensory elements of the ear vibrate in response to",
+    "topic": "Properties of electromagnetic radiation",
     "subtopics": [
-      "Velocity equals constant c, in vacuo exposure to these vibrations. The detection of reflected",
-      "Electromagnetic radiation consists of sound waves is used in ultrasound imaging. This perpendicularly oscillating electric and magnetic noninvasive technique readily locates dense fields; direction of propagation is perpendicular subcutaneous structures, such as bone and cartilage, to both and is very useful in diagnostic medicine."
+      "Velocity equals constant c, in vacuo",
+      "Electromagnetic radiation consists of perpendicularly oscillating electric and magnetic fields; direction of propagation is perpendicular to both"
     ],
     "tags": [
       "Physics",
@@ -7012,7 +7051,7 @@
     "content_category": "4D: How light and sound interact with matter",
     "topic_group": "Light, Electromagnetic Radiation",
     "discipline": "PHY",
-    "topic": "Visual spectrum, color interact with matter.",
+    "topic": "Visual spectrum, color",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -7514,7 +7553,7 @@
     "content_category": "4E: Atoms, nuclear decay, electronic structure, and atomic chemical behavior",
     "topic_group": "Electronic Structure",
     "discipline": "PHY, GC",
-    "topic": "Photoelectric effect The Periodic Table ― Classification of Elements",
+    "topic": "Photoelectric effect",
     "subtopics": [],
     "tags": [
       "Physics",
@@ -7902,8 +7941,8 @@
     "discipline": "GC, BC",
     "topic": "Brønsted-Lowry definition of acid, base",
     "subtopics": [
-      "Kw, its approximate value (Kw = [H+][OH–] = 10–14 properties of water allow it to strongly interact with at 25°C, 1 atm) and mobilize many types of solutes, including ions.",
-      "Definition of pH: pH of pure water Water is also unique in its ability to absorb energy and ▪ Conjugate acids and bases (e.g., NH4+ and NH3) buffer living systems from the chemical changes"
+      "Kw, its approximate value (Kw = [H+][OH-] = 10-14 at 25C, 1 atm)",
+      "Definition of pH: pH of pure water"
     ],
     "tags": [
       "General Chemistry",
@@ -7920,7 +7959,7 @@
     "content_category": "5A: Unique nature of water and its solutions",
     "topic_group": "Acid-Base Equilibria",
     "discipline": "GC, BC",
-    "topic": "Strong acids and bases (e.g., nitric, sulfuric) necessary to sustain life.",
+    "topic": "Strong acids and bases (e.g., nitric, sulfuric)",
     "subtopics": [],
     "tags": [
       "General Chemistry",
@@ -7939,7 +7978,7 @@
     "discipline": "GC, BC",
     "topic": "Weak acids and bases (e.g., acetic, benzoic)",
     "subtopics": [
-      "Dissociation of weak acids and bases with or The content in this category covers the nature of without added salt solutions, solubility, acids, bases, and buffers.",
+      "Dissociation of weak acids and bases with or without added salt",
       "Hydrolysis of salts of weak acids or bases",
       "Calculation of pH of solutions of salts of weak acids or bases"
     ],
@@ -8323,7 +8362,7 @@
     "section": "Chemical and Physical Foundations of Biological Systems",
     "foundational_concept": "Foundational Concept 5",
     "content_category": "5B: Nature of molecules and intermolecular interactions",
-    "topic_group": "Covalent Bond",
+    "topic_group": "Liquid Phase - Intermolecular Forces",
     "discipline": "GC",
     "topic": "Hydrogen bonding",
     "subtopics": [],
@@ -8339,7 +8378,7 @@
     "section": "Chemical and Physical Foundations of Biological Systems",
     "foundational_concept": "Foundational Concept 5",
     "content_category": "5B: Nature of molecules and intermolecular interactions",
-    "topic_group": "Covalent Bond",
+    "topic_group": "Liquid Phase - Intermolecular Forces",
     "discipline": "GC",
     "topic": "Dipole Interactions",
     "subtopics": [],
@@ -8355,7 +8394,7 @@
     "section": "Chemical and Physical Foundations of Biological Systems",
     "foundational_concept": "Foundational Concept 5",
     "content_category": "5B: Nature of molecules and intermolecular interactions",
-    "topic_group": "Covalent Bond",
+    "topic_group": "Liquid Phase - Intermolecular Forces",
     "discipline": "GC",
     "topic": "Van der Waals’ Forces (London dispersion forces)",
     "subtopics": [],
@@ -9461,7 +9500,7 @@
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
     "topic_group": "Phenols",
     "discipline": "OC, BC",
-    "topic": "Oxidation and reduction (e.g., hydroquinones, ubiquinones): biological 2e– redox centers Polycyclic and Heterocyclic Aromatic Compounds (OC, BC)",
+    "topic": "Oxidation and reduction (e.g., hydroquinones, ubiquinones): biological 2e- redox centers",
     "subtopics": [],
     "tags": [
       "Organic Chemistry",
@@ -9476,7 +9515,7 @@
     "section": "Chemical and Physical Foundations of Biological Systems",
     "foundational_concept": "Foundational Concept 5",
     "content_category": "5D: Structure, function, and reactivity of biologically relevant molecules",
-    "topic_group": "Phenols",
+    "topic_group": "Polycyclic and Heterocyclic Aromatic Compounds",
     "discipline": "OC, BC",
     "topic": "Biological aromatic heterocycles",
     "subtopics": [],
@@ -9636,7 +9675,7 @@
     "subtopics": [
       "Half-reactions",
       "Soluble electron carriers",
-      "Flavoproteins Energy Changes in Chemical Reactions ―"
+      "Flavoproteins"
     ],
     "tags": [
       "Biochemistry",
@@ -12018,7 +12057,7 @@
     "content_category": "8C: Social interactions",
     "topic_group": "Elements of Social Interaction",
     "discipline": "PSY, SOC",
-    "topic": "Perspectives on bureaucracy (e.g., iron law of oligarchy, McDonaldization) Self-Presentation and Interacting With Others (PSY, SOC)",
+    "topic": "Perspectives on bureaucracy (e.g., iron law of oligarchy, McDonaldization)",
     "subtopics": [],
     "tags": [
       "Psychology",
