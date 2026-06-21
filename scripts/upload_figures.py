@@ -8,9 +8,9 @@ the object's public URL. A SEPARATE task wires the app renderer to use image_url
 
 Which figures? The figures TABLE is authoritative - we read `figure_id, image_path`
 from it (via $env:SUPABASE_DB_URL, same connection the loader uses) and upload/populate
-only rows that were actually loaded. The excluded passage SP_CP_5C_001_01 has no DB
-rows, so its orphaned PNG is never uploaded. (If SUPABASE_DB_URL is unset, --dry-run
-falls back to scanning the local figures dir for a preview, skipping SP_CP_5C_001_01.)
+only rows that were actually loaded. (If SUPABASE_DB_URL is unset, --dry-run falls back
+to scanning the local figures dir for a preview.) Use --bucket-only to push every local
+PNG to the bucket WITHOUT any DB I/O, for staging figures before their rows are loaded.
 
 Connection / credentials (read from env, never hardcoded):
   SUPABASE_URL               https://<ref>.supabase.co
@@ -50,7 +50,6 @@ except ModuleNotFoundError:  # pragma: no cover
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_FIGURES_DIR = REPO_ROOT / "runs" / "beta_bank_v1" / "figures"
 BUCKET = "figures"
-EXCLUDED_PASSAGE_PREFIX = "SP_CP_5C_001_01_"  # excluded from the load; never upload
 
 
 # --- small helpers -----------------------------------------------------------
@@ -144,15 +143,65 @@ def fetch_db_figures(dsn: str) -> list[dict]:
 
 
 def scan_local_figures(figdir: Path) -> list[dict]:
-    """Fallback when no DB connection: derive a figure list from the PNG files,
-    skipping the excluded passage. image_url unknown (treated as None)."""
+    """Fallback when no DB connection: derive a figure list from the PNG files.
+    image_url unknown (treated as None)."""
     out = []
     for png in sorted(figdir.glob("*.png")):
-        if png.name.startswith(EXCLUDED_PASSAGE_PREFIX):
-            continue
         out.append({"figure_id": png.stem, "image_path": f"figures/{png.name}",
                     "image_url": None})
     return out
+
+
+# --- bucket-only (no DB) -----------------------------------------------------
+
+def _bucket_only(figdir: Path) -> int:
+    """Upload every local PNG to the Storage bucket, without reading or writing the
+    figures table. Idempotent (x-upsert)."""
+    supabase_url = env("SUPABASE_URL")
+    svc = env("SUPABASE_SERVICE_ROLE_KEY")
+    if not supabase_url:
+        print("ERROR: set SUPABASE_URL.", file=sys.stderr)
+        return 1
+    if not svc:
+        print("ERROR: set SUPABASE_SERVICE_ROLE_KEY (service_role secret).",
+              file=sys.stderr)
+        return 1
+
+    # Source of truth is "what rendered" = every PNG in figdir. The loader
+    # (load_to_supabase.py) creates a figure row for every passage figure, so each
+    # rendered PNG needs a bucket object or its row would be a broken ref.
+    pngs = sorted(figdir.glob("*.png"))
+    print(f"Bucket-only upload (NO DB writes)")
+    print(f"Local figures: {figdir}")
+    print(f"Bucket:        {BUCKET}  (public)")
+    print(f"To upload:     {len(pngs)} PNG(s) (no exclusions)\n")
+
+    base = f"{supabase_url}/storage/v1"
+    uploaded = 0
+    failed: list[tuple[str, str]] = []
+    with httpx.Client(timeout=60) as client:
+        try:
+            ensure_public_bucket(client, base, svc)
+        except Exception as e:  # noqa: BLE001
+            print(f"ERROR: {e}", file=sys.stderr)
+            return 1
+        print()
+        for png in pngs:
+            try:
+                upload_png(client, base, svc, png.name, png.read_bytes())
+                uploaded += 1
+            except Exception as e:  # noqa: BLE001
+                failed.append((png.name, str(e)))
+
+    print("\n=== Bucket-only upload complete ===")
+    print(f"  uploaded PNGs: {uploaded} / {len(pngs)}")
+    if failed:
+        print(f"\n  FAILED ({len(failed)}):")
+        for name, reason in failed:
+            print(f"    ! {name}: {reason}")
+    print("\n  (No figures rows touched; image_url unset — set it in the passage-load "
+          "pass via the normal `upload_figures.py` run.)\n")
+    return 1 if failed else 0
 
 
 # --- main --------------------------------------------------------------------
@@ -164,12 +213,21 @@ def main() -> int:
                     help="List what WOULD be uploaded/updated; touch nothing.")
     ap.add_argument("--figures-dir", default=str(DEFAULT_FIGURES_DIR),
                     help=f"Local PNG directory (default: {DEFAULT_FIGURES_DIR}).")
+    ap.add_argument("--bucket-only", action="store_true",
+                    help="Upload PNGs to the Storage bucket WITHOUT touching the DB "
+                         "(no figures rows read, no image_url set). For staging figures "
+                         "before their rows/passages are loaded. Source of truth is the "
+                         "local figures dir (every PNG in it).")
     args = ap.parse_args()
 
     figdir = Path(args.figures_dir)
     if not figdir.is_dir():
         print(f"ERROR: figures dir not found: {figdir}", file=sys.stderr)
         return 1
+
+    # --- bucket-only: push PNGs to Storage, no DB reads/writes ---
+    if args.bucket_only:
+        return _bucket_only(figdir)
 
     supabase_url = env("SUPABASE_URL")
     svc = env("SUPABASE_SERVICE_ROLE_KEY")

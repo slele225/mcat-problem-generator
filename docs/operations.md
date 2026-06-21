@@ -85,6 +85,7 @@ Two separate steps with **different credentials** — read the script docstrings
 ```
 .venv\Scripts\python.exe scripts/upload_figures.py --dry-run
 .venv\Scripts\python.exe scripts/upload_figures.py
+.venv\Scripts\python.exe scripts/upload_figures.py --bucket-only --figures-dir <dir>
 ```
 
 Uploads rendered PNGs to a public `figures` Storage bucket and sets
@@ -92,6 +93,12 @@ Uploads rendered PNGs to a public `figures` Storage bucket and sets
 role, not anon) **and `SUPABASE_DB_URL`** (to know which figures were actually
 loaded). Idempotent (`x-upsert`). The figures **table** is authoritative for what to
 upload.
+
+`--bucket-only` pushes **every** PNG in `--figures-dir` to the bucket with **no DB
+I/O** (no rows read, no `image_url` set) — for staging figures *before* their rows /
+passages are loaded, so the later load never produces broken figure refs. Needs only
+`SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`. Run a normal (non-bucket-only) pass
+after the load to set `image_url`.
 
 ## Helper scripts (`scripts/`)
 
@@ -103,4 +110,3 @@ Read-only inspectors and one-off fixers — most read from `runs/beta_bank_v1/`:
 - `recost.py` — recompute cost from metrics.
 - `fix_textmu.py` — rewrite KaTeX-incompatible `\textmu` in a bank (report /
   `--write-fixed` / `--apply`); see [conventions.md](conventions.md).
-- `exclude_broken_passage.py` — drop a specific passage from a bank.
